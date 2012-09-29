@@ -131,3 +131,6 @@ ro.config.low_ram=false
 ro.lmk.use_psi=true
 ro.lmk.kill_heaviest_task=false
 ro.lmk.swap_free_low_percentage=10
+
+# Earphone Jacks
+persist.sys.overlay.devinputjack=true
