@@ -464,6 +464,10 @@
     <!-- Flag specifying whether WFC over IMS is available on device -->
     <bool name="config_device_wfc_ims_available">true</bool>
     
-<!-- Auto-brightness sensor type string -->
+    <!-- Auto-brightness sensor type string -->
     <string name="config_displayLightSensorType">"android.sensor.light"</string>
+    
+    <!-- When true use the linux /dev/input/event subsystem to detect the switch changes
+        on the headphone/microphone jack. When false use the older uevent framework. -->
+    <bool name="config_useDevInputEventForAudioJack">true</bool>
     </resources>
