@@ -1,4 +1,4 @@
-#  blobs from stone-u 12 TP1A.220624.014 V816.0.1.0.ULUIDXM release-keys
+# blobs from stone-u 12 TP1A.220624.014 V816.0.1.0.ULUIDXM release-keys
  
 # AEE
 vendor/lib/libaedv.so
@@ -1154,11 +1154,6 @@ vendor/lib64/mt6789/arm.graphics-V1-ndk_platform.so
 vendor/lib64/mt6789/libaiselector.so
 vendor/lib64/mt6789/libdpframework.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
-
-# Lights
-vendor/bin/hw/android.hardware.lights-service.mediatek
-vendor/etc/init/lights-mtk-default.rc
-vendor/etc/vintf/manifest/lights-mtk-default.xml
 
 # DRM 
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
