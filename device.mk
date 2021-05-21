@@ -368,6 +368,8 @@ PRODUCT_PACKAGES += \
     FrameworkOverlayRock \
     SettingsOverlayRock \
     SettingsOverlayStone \
+    SettingsProviderResOverlayRock \
+    SettingsProviderResOverlayStone \
     SystemUIOverlayRock \
     TelephonyOverlayRock \
     WifiResOverlayRock \
