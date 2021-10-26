@@ -1751,7 +1751,6 @@ system_ext/framework/mediatek-common.jar:system/framework/mediatek-common.jar
 system_ext/framework/mediatek-framework.jar:system/framework/mediatek-framework.jar
 system_ext/framework/mediatek-ims-base.jar:system/framework/mediatek-ims-base.jar
 system_ext/framework/mediatek-ims-common.jar:system/framework/mediatek-ims-common.jar
-system_ext/framework/mediatek-ims-extension-plugin.jar:system/framework/mediatek-ims-extension-plugin.jar
 system_ext/framework/mediatek-telecom-common.jar:system/framework/mediatek-telecom-common.jar
 system_ext/framework/mediatek-telephony-base.jar:system/framework/mediatek-telephony-base.jar
 system_ext/framework/mediatek-telephony-common.jar:system/framework/mediatek-telephony-common.jar
