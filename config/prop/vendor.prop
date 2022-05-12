@@ -160,6 +160,7 @@ ro.hardware.kmsetkey=beanpod
 ro.hardware.vulkan=mali
 
 # HWUI
+debug.hwui.skia_atrace_enabled=false
 debug.renderengine.backend=skiaglthreaded
 
 # Logd
