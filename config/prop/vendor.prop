@@ -94,6 +94,7 @@ ro.vendor.builtin_fm_antenna_support=1
 ro.vendor.bt.platform=connac1x
 
 # Display
+debug.sf.enable_transaction_tracing=false
 debug.sf.use_phase_offsets_as_durations=1
 debug.sf.enable_gl_backpressure=1
 debug.sf.disable_client_composition_cache=1
