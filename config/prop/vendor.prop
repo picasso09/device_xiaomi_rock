@@ -109,6 +109,7 @@ ro.surface_flinger.has_HDR_display=true
 ro.surface_flinger.has_wide_color_display=true
 ro.surface_flinger.use_color_management=true
 ro.surface_flinger.wcg_composition_dataspace=143261696
+ro.surface_flinger.uclamp.min=130
 debug.sf.late.sf.duration=29100000
 debug.sf.late.app.duration=21500000
 debug.sf.early.sf.duration=29100000
