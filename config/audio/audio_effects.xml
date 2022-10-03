@@ -21,7 +21,7 @@
         <library name="downmix" path="libdownmix.so"/>
         <library name="loudness_enhancer" path="libldnhncr.so"/>
         <library name="dynamics_processing" path="libdynproc.so"/>
-        <library name="pre_processing" path="libaudiopreprocessing_mtk.so"/>
+        <library name="pre_processing" path="libaudiopreprocessing.so"/>
         <!--L19A code for HQ-194710 by dailei at 2022.05.06 misound start-->
         <library name="misoundfx" path="libmisoundfx.so"/>
         <!--L19A code for HQ-194710 by dailei at 2022.05.06 misound end-->
