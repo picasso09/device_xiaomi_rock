@@ -536,4 +536,7 @@
     <!-- If true, the screen can be rotated via the accelerometer in all 4
     rotations as the default behavior. -->
     <bool name="config_allowAllRotations">true</bool>
+
+    <!-- Whether or not wcg mode should be enabled on this device -->
+    <bool name="config_enableWcgMode">true</bool>
     </resources>
