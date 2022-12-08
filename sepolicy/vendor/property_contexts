@@ -29,3 +29,5 @@ vendor.panel.display       u:object_r:vendor_fp_prop:s0
 vendor.panel.touch_vendor  u:object_r:vendor_fp_prop:s0
 vendor.panel.vendor        u:object_r:vendor_fp_prop:s0
  
+# VT
+vendor.ims.vt.signalstrength.    u:object_r:system_mtk_ims_vt_signalstrength_prop:s0
