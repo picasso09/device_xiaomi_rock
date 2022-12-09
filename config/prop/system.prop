@@ -134,3 +134,12 @@ persist.sys.overlay.devinputjack=true
 
 # Brightness gamma
 persist.sys.brightness.low.gamma=true
+
+# Battery Saving & Performance
+ro.vold.umsdirtyratio=20 
+ro.ril.disable.power.collapse=0 
+power.saving.mode=1
+pm.sleep_mode=1
+ro.config.art_lowmem=true
+ro.mtk_gpu_optimizations=1
+ro.mtk_display_ovl_support=1
