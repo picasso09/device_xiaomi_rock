@@ -101,9 +101,6 @@ persist.vendor.night.charge=true
 #ACC/GYRO/ALS/PS/ALS_DARK/LUX_B/SAR/SAR_SECONDARY/...MAX_NUM=15
 persist.vendor.sensor.cali_sensor=111001100000000
 
-# gralloc4 log
-persist.log.tag.gralloc4=S
-
 # Memory Optimization
 ro.config.dha_cached_min=16
 ro.config.dha_cached_max=32

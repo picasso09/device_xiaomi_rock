@@ -481,3 +481,7 @@ PRODUCT_PACKAGES += \
 
 # Speed profile services and wifi-service to reduce RAM and storage
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+
+# MediaCas
+PRODUCT_PACKAGES += \
+    android.hardware.cas@1.2-service-lazy
