@@ -19,10 +19,10 @@ vendor /vendor ext4 ro wait,slotselect,avb,logical,first_stage_mount
 product /product ext4 ro wait,slotselect,avb,logical,first_stage_mount
 
 # 212 "vendor/mediatek/proprietary/hardware/fstab/mt6789/fstab.in.mt6789"
-/dev/block/by-name/metadata /metadata ext4 noatime,nosuid,nodev,discard wait,check,formattable,first_stage_mount
 
-/dev/block/by-name/userdata /data f2fs noatime,nosuid,nodev,discard,noflush_merge,checkpoint_merge,reserve_root=134217,resgid=1065,fsync_mode=nobarrier,gc_merge,atgc,inlinecrypt wait,check,formattable,quota,latemount,resize,reservedsize=128m,checkpoint=fs,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized,keydirectory=/metadata/vold/metadata_encryption,fsverity
-
+# Userdata
+/dev/block/by-name/metadata       /metadata              ext4   noatime,nosuid,nodev,discard                                                                                 wait,check,formattable,first_stage_mount
+/dev/block/by-name/userdata       /data                  f2fs   noatime,nosuid,nodev,discard,noflush_merge,fsync_mode=nobarrier,reserve_root=134217,resgid=1065,inlinecrypt  wait,check,formattable,quota,reservedsize=128m,latemount,resize,checkpoint=fs,fileencryption=aes-256-xts:aes-256-cts:v2+inlinecrypt_optimized,keydirectory=/metadata/vold/metadata_encryption,fsverity
 
 
 /dev/block/by-name/rescue /cache ext4 noatime,nosuid,nodev,noauto_da_alloc,discard wait,check,formattable
