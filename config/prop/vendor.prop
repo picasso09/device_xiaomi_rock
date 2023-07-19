@@ -247,3 +247,6 @@ ro.incremental.enable=yes
 
 # Dex2Oat
 dalvik.vm.dex2oat64.enabled=true
+
+# ConsumerIr
+ro.hardware.consumerir=common

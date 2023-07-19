@@ -1919,3 +1919,6 @@ vendor/etc/vintf/manifest/vibrator-mtk-default.xml|29ba9ceb104f16333dc07c811c0d8
 vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
 vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
 vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml
+
+# ConsumerIr
+vendor/lib64/hw/consumerir.common.so
