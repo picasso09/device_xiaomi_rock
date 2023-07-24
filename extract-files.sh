@@ -86,6 +86,10 @@ function blob_fixup() {
             system_ext/lib64/libsource.so)
             "${PATCHELF}" --add-needed "libshim_ui.so" "${2}"
             ;;
+            vendor/bin/hw/android.hardware.gnss-service.mediatek |\
+        vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so)
+            "$PATCHELF" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "$2"
+            ;;
     esac
 }
 
