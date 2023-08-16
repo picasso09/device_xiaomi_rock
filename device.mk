@@ -254,7 +254,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service.lineage-libperfmgr \
+    android.hardware.power-service.xiaomi-libperfmgr \
     vendor.mediatek.hardware.mtkpower@1.2-service.stub \
     android.hardware.power@1.0.vendor \
     android.hardware.power@1.1.vendor \

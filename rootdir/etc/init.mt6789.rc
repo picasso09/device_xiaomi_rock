@@ -1321,6 +1321,10 @@ service charger /system/bin/charger
     group system graphics
     seclabel u:r:healthd:s0
 
+# initialize powerHAL when boot is completed
+on property:sys.boot_completed=1
+    setprop vendor.powerhal.init 1
+
 # L19A code for HQ-211786 by qianxiaoming at 2022/05/30 start
 service headset_in_screenmode /system/vendor/bin/factory_bin q 1
     class main
