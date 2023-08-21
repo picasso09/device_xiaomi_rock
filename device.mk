@@ -474,3 +474,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
+
+# Remove Unwanted Packages
+PRODUCT_PACKAGES += \
+    RemovePackages
