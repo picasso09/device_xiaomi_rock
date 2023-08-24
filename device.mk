@@ -489,3 +489,6 @@ PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 # MediaCas
 PRODUCT_PACKAGES += \
     android.hardware.cas@1.2-service-lazy
+
+# ViPER4AndroidFX
+$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)

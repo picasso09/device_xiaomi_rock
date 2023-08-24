@@ -1,3 +1,7 @@
+type vendor_audio_prop, file_type;
 get_prop(audioserver, vendor_mtk_audio_prop)
 get_prop(audioserver, vendor_audioserver_prop)
+get_prop(audioserver, vendor_audio_prop)
 
+allow audioserver unlabeled:file { read write open getattr };
+allow hal_audio_default hal_audio_default:process { execmem };
