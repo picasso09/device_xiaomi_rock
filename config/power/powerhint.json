@@ -145,7 +145,7 @@
     {
       "Name": "TAUclampMin",
       "Path": "/dev/cpuctl/top-app/cpu.uclamp.min",
-      "Values": ["100", "75", "50", "25", "0"],
+      "Values": ["100", "50", "10"],
       "ResetOnInit": true
     },
     {
