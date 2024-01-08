@@ -1922,3 +1922,9 @@ vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml
 
 # ConsumerIr
 vendor/lib64/hw/consumerir.common.so
+
+# Firmware (recovery)
+vendor/firmware/focaltech_mp_fw_tianma.ini:recovery/root/vendor/firmware/focaltech_mp_fw_tianma.ini
+vendor/firmware/focaltech_ts_fw_tianma.bin:recovery/root/vendor/firmware/focaltech_ts_fw_tianma.bin
+vendor/firmware/nt36672c_tm_01_ts_fw.bin:recovery/root/vendor/firmware/nt36672c_tm_01_ts_fw.bin
+vendor/firmware/nt36672c_tm_01_ts_mp.bin:recovery/root/vendor/firmware/nt36672c_tm_01_ts_mp.bin
