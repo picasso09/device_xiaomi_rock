@@ -478,3 +478,6 @@ PRODUCT_PACKAGES_DEBUG += \
 # Remove Unwanted Packages
 PRODUCT_PACKAGES += \
     RemovePackages
+
+# MindTheGapps
+include vendor/gapps/arm64/arm64-vendor.mk
