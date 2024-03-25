@@ -40,7 +40,14 @@
      vibrator is capable of subtle vibrations -->
     <bool name="config_vibrateOnIconAnimation">true</bool>
 
-    <!-- Type of a sensor that provides a low-power estimate of the desired display
+    <!-- Whether long press is required to 
+    activate keyguard quick affordance 
+    buttons -->
+    <bool name="config_keyguardQuickAffordanceRequiresLongPress">false</bool> 
+
+    <!-- Type of a sensor that provides a 
+    low-power estimate of the desired 
+    display
          brightness, suitable to listen to while the device is asleep (e.g. during
          always-on display) -->
     <string name="doze_brightness_sensor_type" translatable="false">xiaomi.sensor.aod</string>
