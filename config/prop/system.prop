@@ -122,14 +122,9 @@ ro.lmk.critical_upgrade=false
 ro.lmk.use_minfree_levels=true
 ro.lmk.upgrade_pressure=50
 ro.lmk.downgrade_pressure=75
-ro.lmk.thrashing_limit=30
-ro.lmk.thrashing_limit_decay=50
 ro.config.low_ram=false
 ro.lmk.use_psi=true
 ro.lmk.kill_heaviest_task=true
-ro.lmk.swap_free_low_percentage=10
-ro.lmk.psi_complete_stall_ms=35
-ro.lmk.psi_partial_stall_ms=35
 
 # Earphone Jacks
 persist.sys.overlay.devinputjack=true
