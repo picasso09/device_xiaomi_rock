@@ -17,6 +17,9 @@ $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 # Bootanimation Res
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Call the BCR setup
+$(call inherit-product-if-exists, vendor/bcr/bcr.mk)
+
 # aosp stuffs
 TARGET_DISABLE_EPPE := true
 
