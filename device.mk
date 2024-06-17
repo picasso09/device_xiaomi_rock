@@ -209,7 +209,7 @@ PRODUCT_PACKAGES += \
 
 # Secure Element
 PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.2.vendor
+    android.hardware.secure_element@1.2.vendor \
 
 # Sensors
 PRODUCT_PACKAGES += \
@@ -414,6 +414,25 @@ PRODUCT_COPY_FILES += \
     prebuilts/vndk/v33/arm64/arch-arm-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_foundation-v33.so \
     prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_foundation-v33.so \
     prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v32.so \
+
+PRODUCT_PACKAGES += \
+    libexpat.vendor \
+    libunwindstack.vendor \
+    libcurl.vendor \
+    libutilscallstack.vendor \
+    libcamera_metadata.vendor \
+	libexif.vendor \
+	liblz4.vendor \
+	libpng.vendor \
+	libion.vendor \
+	libui.vendor \
+	libgatekeeper.vendor \
+	libjsoncpp.vendor \
+	libnetutils.vendor \
+	libdumpstateutil.vendor \
+	libpower.vendor \
+	libutilscallstack.vendor \
+	libhidlmemory.vendor \
 
 # Lights
 PRODUCT_PACKAGES += \
