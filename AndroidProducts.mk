@@ -16,6 +16,3 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/lineage_rock.mk
-
-COMMON_LUNCH_CHOICES := \
-    lineage_rock-user \
