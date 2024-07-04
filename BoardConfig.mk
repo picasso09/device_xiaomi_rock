@@ -25,6 +25,9 @@ TARGET_CPU_ABI2 :=
 TARGET_CPU_VARIANT := cortex-a76
 TARGET_CPU_VARIANT_RUNTIME := cortex-a76
 
+# Audio
+BOARD_USES_ALSA_AUDIO := true
+
 # Enable 64-bit for non-zygote.
 ZYGOTE_FORCE_64 := true
 
