@@ -1477,13 +1477,11 @@ vendor/lib64/libpowerhalwrap_vendor.so
 vendor/lib64/libmtkperf_client_vendor.so
 
 # Radio
-vendor/bin/ccci_fsd
+vendor/bin/hw/mtkfusionrild
+vendor/bin/atcid
 vendor/bin/ccci_mdinit
 vendor/bin/ccci_rpcd
-vendor/bin/hw/mtkfusionrild
 vendor/bin/gsm0710muxd
-vendor/bin/muxreport
-vendor/etc/MNL_Config.xml
 vendor/etc/apdb/APDB_MT6789___W2233
 vendor/etc/apdb/APDB_MT6789___W2233_ENUM
 vendor/etc/ecc_list.xml
@@ -1496,29 +1494,36 @@ vendor/etc/ecc_list_OP18.xml
 vendor/etc/ecc_list_OP20.xml
 vendor/etc/ecc_list_OP236.xml
 vendor/etc/ecc_list_preference.xml
+vendor/etc/smsdbvisitor.xml
+vendor/etc/special_pws_channel.xml
+vendor/etc/virtual-spn-conf-by-efgid1.xml
+vendor/etc/virtual-spn-conf-by-efpnn.xml
+vendor/etc/virtual-spn-conf-by-efspn.xml
+vendor/etc/virtual-spn-conf-by-imsi.xml
+vendor/etc/init/atcid.rc
 vendor/etc/init/gsm0710muxd.rc
-vendor/etc/init/init.cccifsd.rc
 vendor/etc/init/init.cccimdinit.rc
 vendor/etc/init/init.cccirpcd.rc
 vendor/etc/init/mtkrild.rc
-vendor/etc/init/muxreport.rc
+vendor/lib/libcapctrl.so
 vendor/lib/libcares_naptr.so
 vendor/lib/libcarrierconfig.so
 vendor/lib/libccci_util.so
+vendor/lib/libmnetlink_v104.so
 vendor/lib/libmtkares.so
 vendor/lib/libmtkcutils.so
 vendor/lib/libmtkhardware_legacy.so
 vendor/lib/libmtknetutils.so
 vendor/lib/libmtkproperty.so
 vendor/lib/libmtkrillog.so
+vendor/lib/libmtkspparser.so
 vendor/lib/libmtksysutils.so
-vendor/lib/libstorage_otp.so
+vendor/lib/librcs_interface.so
+vendor/lib/libsysenv.so
+vendor/lib64/libcapctrl.so
 vendor/lib64/libcares_naptr.so
 vendor/lib64/libcarrierconfig.so
 vendor/lib64/libccci_util.so
-vendor/lib64/libforkexecwrap.so
-vendor/lib64/libgwsd-ril.so
-vendor/lib64/libifcutils_mtk.so
 vendor/lib64/libmipc.so
 vendor/lib64/libmnetlink_v104.so
 vendor/lib64/libmtk-fusion-ril-prop-vsim.so
@@ -1534,6 +1539,7 @@ vendor/lib64/libmtknetutils.so
 vendor/lib64/libmtkproperty.so
 vendor/lib64/libmtkrillog.so
 vendor/lib64/libmtkrilutils.so
+vendor/lib64/libmtkspparser.so
 vendor/lib64/libmtksysutils.so
 vendor/lib64/libmtktinyxml.so
 vendor/lib64/libmtkutils.so
@@ -1545,10 +1551,9 @@ vendor/lib64/libtrm.so
 vendor/lib64/libvia-ril.so
 vendor/lib64/libviamipc-ril.so
 vendor/lib64/libwpfa.so
-vendor/lib64/mt6789/libmnl.so
-vendor/lib64/vendor.mediatek.hardware.mdmonitor@1.0.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@2.0.so
 vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
+
 
 # VO+++
 system_ext/bin/vtservice
@@ -1606,6 +1611,7 @@ vendor/etc/init/init.volte_stack.rc
 vendor/etc/init/init.volte_ua.rc
 vendor/etc/init/init.vtservice_hidl.rc
 vendor/etc/init/volte_clientapi_ua.rc
+vendor/etc/init/volte_rcs_ua.rc
 vendor/lib/librcs_volte_core.so
 vendor/lib/libipsec_ims_shr.so
 vendor/lib/libvolte_core_shr.so
