@@ -49,6 +49,7 @@ VENDOR_PLATFORM_LINKS := \
 	$(TARGET_OUT_VENDOR)/lib64/libdip_drv.so \
 	$(TARGET_OUT_VENDOR)/lib64/libdip_postproc.so \
 	$(TARGET_OUT_VENDOR)/lib64/libdpframework.so \
+	$(TARGET_OUT_VENDOR)/lib64/libDR.so \
 	$(TARGET_OUT_VENDOR)/lib64/liblpcnr.so \
 	$(TARGET_OUT_VENDOR)/lib64/libmnl.so \
 	$(TARGET_OUT_VENDOR)/lib64/libmsnr.so \
