@@ -90,6 +90,9 @@ ro.vendor.fm.platform=mt6631_6635
 vendor.connsys.driver.ready=no
 ro.vendor.builtin_fm_antenna_support=1
 
+#Bluetooth
+ro.vendor.bt.platform=connac1x
+
 # Display
 debug.sf.use_phase_offsets_as_durations=1
 debug.sf.enable_gl_backpressure=1
