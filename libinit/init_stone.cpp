@@ -104,9 +104,9 @@ void set_device_props(const std::string brand, const std::string device, const s
 }
 
 void vendor_load_properties() {
-    string region = android::base::GetProperty("ro.boot.hwc", "");
+    string sku = android::base::GetProperty("ro.boot.product.hardware.sku", "");
 
-    if (region == "INDIA") {
+    if (sku == "rock") {
         set_device_props(
             "Redmi", "rock", "22071219AI", "rock_in", "Redmi 11 Prime");
         property_override("ro.product.mod_device", "rock_in");
