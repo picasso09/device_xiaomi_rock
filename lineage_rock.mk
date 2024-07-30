@@ -9,15 +9,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit from device makefile
-$(call inherit-product, device/xiaomi/stone/device.mk)
+$(call inherit-product, device/xiaomi/rock/device.mk)
 
-# Inherit some common crDroid stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+# Inherit some common Rising stuff
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+
+# Bootanimation Res
 TARGET_BOOT_ANIMATION_RES := 1080
 
-## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := stone
-PRODUCT_NAME := aosp_stone
+# Device identifier. This must come after all inclusions
+PRODUCT_DEVICE := rock
+PRODUCT_NAME := lineage_rock
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := 22071219CG
 PRODUCT_MANUFACTURER := Xiaomi

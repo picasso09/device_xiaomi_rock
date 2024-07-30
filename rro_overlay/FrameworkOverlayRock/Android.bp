@@ -5,8 +5,8 @@
 //
 
 runtime_resource_overlay {
-    name: "FrameworkOverlayStone",
-    theme: "FrameworkOverlayStone",
+    name: "FrameworkOverlayRock",
+    theme: "FrameworkOverlayRock",
     certificate: "platform",
     sdk_version: "current",
     product_specific: true

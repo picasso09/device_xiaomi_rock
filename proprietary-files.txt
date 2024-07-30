@@ -1155,6 +1155,11 @@ vendor/lib64/mt6789/libaiselector.so
 vendor/lib64/mt6789/libdpframework.so
 vendor/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
 
+# Lights
+vendor/bin/hw/android.hardware.lights-service.mediatek
+vendor/etc/init/lights-mtk-default.rc
+vendor/etc/vintf/manifest/lights-mtk-default.xml
+
 # DRM 
 vendor/bin/hw/android.hardware.drm@1.4-service.widevine
 vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc

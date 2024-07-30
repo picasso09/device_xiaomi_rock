@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=stone
+DEVICE=rock
 VENDOR=xiaomi
 
 # Load extract_utils and do some sanity checks

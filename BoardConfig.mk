@@ -15,8 +15,8 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/stone
-KERNEL_PATH := kernel/xiaomi/stone
+DEVICE_PATH := device/xiaomi/rock
+KERNEL_PATH := kernel/xiaomi/rock
 
 # Architecture
 TARGET_ARCH := arm64

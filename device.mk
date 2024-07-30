@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/stone
+DEVICE_PATH := device/xiaomi/rock
 
 # Installs gsi keys into ramdisk, to boot a GSI with verified boot.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/developer_gsi_keys.mk)
@@ -31,12 +31,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
 
 # Call proprietary blob setup
-$(call inherit-product, vendor/xiaomi/stone/stone-vendor.mk)
+$(call inherit-product, vendor/xiaomi/rock/rock-vendor.mk)
 
 # Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
-
 
 # VNDK
 PRODUCT_SHIPPING_API_LEVEL := 31
@@ -57,10 +56,10 @@ AB_OTA_POSTINSTALL_CONFIG += \
     POSTINSTALL_PATH_vendor=bin/checkpoint_gc \
     FILESYSTEM_TYPE_vendor=ext4 \
     POSTINSTALL_OPTIONAL_vendor=true
- 
+
 # Audio 64bit
 $(call soong_config_set,android_hardware_audio,run_64bit,true)
- 
+
 # Audio
 PRODUCT_PACKAGES += \
 	android.hardware.audio.service \
@@ -74,8 +73,7 @@ PRODUCT_PACKAGES += \
 	libtinycompress:64 \
 	libnbaio_mono:64 \
 	libaudiofoundation.vendor:64
-	
-	
+
 # VENDOR BOOT RAMDISK GENERIC
 PRODUCT_COPY_FILES += \
      $(LOCAL_PATH)/rootdir/etc/fstab.emmc:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/first_stage_ramdisk/fstab.emmc \
@@ -87,7 +85,7 @@ PRODUCT_PACKAGES += \
 	libbluetooth_audio_session:64 \
 	android.hardware.bluetooth@1.0.vendor:64 \
 	android.hardware.bluetooth@1.1.vendor:64
-	
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/config/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
 
@@ -95,12 +93,12 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_in_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_in_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/bluetooth_audio_policy_configuration_7_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
-    
+
 # Boot control HAL
 PRODUCT_PACKAGES += \
     android.hardware.boot-service.default \
     android.hardware.boot-service.default_recovery
-    
+
 PRODUCT_PACKAGES += \
     android.hardware.boot@1.2-impl \
     android.hardware.boot@1.2-impl.recovery \
@@ -119,7 +117,6 @@ PRODUCT_PACKAGES += \
     fastbootd \
     android.hardware.fastboot@1.0-impl-mock
 
-
 # F2FS
 PRODUCT_PACKAGES += \
     sg_write_buffer \
@@ -136,7 +133,7 @@ PRODUCT_PACKAGES += \
     libhidltransport.vendor \
     libhwbinder \
     libhwbinder.vendor \
-    libhidlbase_shim 
+    libhidlbase_shim
 
 # Graphics
     PRODUCT_PACKAGES += \
@@ -145,21 +142,21 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.mediatek-mali \
     android.hardware.graphics.allocator@4.0.vendor \
-    android.hardware.graphics.mapper@4.0.vendor 
- 
-# DRM 
+    android.hardware.graphics.mapper@4.0.vendor
+
+# DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.4-service.clearkey \
     android.hardware.drm@1.4.vendor
 PRODUCT_PACKAGES += \
-    libdrm.vendor 
-    
+    libdrm.vendor
+
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service
-    
+
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail_vendor \
@@ -173,12 +170,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/config/media,$(TARGET_COPY_OUT_VENDOR)/etc) \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/config/seccomp,$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy) 
-    
+
     PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_c2_video.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_c2_video.xml
-    
+
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
@@ -197,20 +194,19 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss@2.1.vendor \
     android.hardware.gnss.measurement_corrections@1.1.vendor \
     android.hardware.gnss.visibility_control@1.0.vendor
-    
-    
+
 # Keymaster
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
-	
+
 # keymint
 PRODUCT_PACKAGES += \
     android.hardware.security.keymint-V1-ndk_platform.vendor \
     android.hardware.security.secureclock-V1-ndk_platform.vendor \
     android.hardware.security.sharedsecret-V1-ndk_platform.vendor \
     android.hardware.security.rkp-V1-ndk.vendor \
-    libcppbor_external.vendor:64 
-    
+    libcppbor_external.vendor:64
+
 # Secure Element
 PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor
@@ -242,7 +238,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libkeystore-wifi-hidl \
     libkeystore-engine-wifi-hidl
-    
+
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/config/wifi/,$(TARGET_COPY_OUT_VENDOR)/etc/wifi)
 
@@ -264,7 +260,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/config/perf,$(TARGET_COPY_OUT_VENDOR)/etc)
-    
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.audio.low_latency.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.audio.low_latency.xml \
@@ -309,7 +305,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.vulkan.deqp.level-2021-03-01.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.vulkan.deqp.level.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml \
     frameworks/native/data/etc/handheld_core_hardware.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/handheld_core_hardware.xml
-    
+
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml \
     $(LOCAL_PATH)/config/permissions/systemext-privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/systemext-privapp-permissions-mediatek.xml \
@@ -327,7 +323,7 @@ PRODUCT_PACKAGES += \
 	android.hardware.camera.provider@2.4.vendor:64 \
 	android.hardware.camera.provider@2.5.vendor:64 \
 	android.hardware.camera.provider@2.6.vendor:64 
-	
+
 # Keylayout
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/keylayout/uinput-fpc.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/uinput-fpc.kl \
@@ -346,7 +342,6 @@ PRODUCT_SOONG_NAMESPACES += \
 	hardware/mediatek \
 	hardware/xiaomi \
 	hardware/lineage/interfaces/power-libperfmgr
-    
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -357,12 +352,12 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    WifiResOverlayStone \
-    SystemUIOverlayStone \
-    SettingsOverlayStone \
-    FrameworkOverlayStone \
-    TelephonyOverlayStone \
-    CarrierConfigOverlayStone
+    WifiResOverlayRock \
+    SystemUIOverlayRock \
+    SettingsOverlayRock \
+    FrameworkOverlayRock \
+    TelephonyOverlayRock \
+    CarrierConfigOverlayRock
 
 # Rootdir
 PRODUCT_PACKAGES += \
@@ -384,13 +379,11 @@ PRODUCT_PACKAGES += \
     init.recovery.usb.rc \
     init.mt6789.rc \
     init.mtkgki.rc \
-    init.insmod.mt6789.cfg 
+    init.insmod.mt6789.cfg
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
-
-
 
 # Properties
 include $(LOCAL_PATH)/config/prop/default.mk
@@ -399,7 +392,7 @@ include $(LOCAL_PATH)/config/prop/vendor_logtag.mk
 # Public Libraries
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt
-    
+
 # Thermal
 PRODUCT_PACKAGES += \
     android.hardware.thermal@1.0-impl \
@@ -421,11 +414,10 @@ PRODUCT_COPY_FILES += \
     prebuilts/vndk/v33/arm64/arch-arm-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_foundation-v33.so \
     prebuilts/vndk/v33/arm64/arch-arm64-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_foundation-v33.so \
     prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v32.so \
-   
+
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light-service.xiaomi
-
+android.hardware.light-V1-ndk.vendor
 
 # Radio
 PRODUCT_PACKAGES += \

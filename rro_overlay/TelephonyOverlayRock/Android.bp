@@ -5,7 +5,7 @@
 //
 
 runtime_resource_overlay {
-    name: "TelephonyOverlayStone",
+    name: "TelephonyOverlayRock",
     sdk_version: "current",
     resource_dirs: ["res"],
     product_specific: true,
