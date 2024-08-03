@@ -134,6 +134,3 @@ ro.lmk.swap_free_low_percentage=10
 
 # Earphone Jacks
 persist.sys.overlay.devinputjack=true
-
-# Brightness gamma
-persist.sys.brightness.low.gamma=true
