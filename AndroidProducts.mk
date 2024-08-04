@@ -16,9 +16,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_rock.mk
+    $(LOCAL_DIR)/afterlife_rock.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_rock-user \
-    lineage_rock-userdebug \
-    lineage_rock-eng
+    afterlife_rock-ap2a-user \
+    afterlife_rock-ap2a-userdebug \
+    afterlife_rock-ap2a-eng
