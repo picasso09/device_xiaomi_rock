@@ -357,12 +357,12 @@ PRODUCT_PACKAGES += \
 
 # Overlays
 PRODUCT_PACKAGES += \
-    WifiResOverlayRock \
-    SystemUIOverlayRock \
-    SettingsOverlayRock \
+    CarrierConfigOverlayRock \
     FrameworkOverlayRock \
+    SettingsOverlayRock \
+    SystemUIOverlayRock \
     TelephonyOverlayRock \
-    CarrierConfigOverlayRock
+    WifiResOverlayRock \
 
 # Rootdir
 PRODUCT_PACKAGES += \
