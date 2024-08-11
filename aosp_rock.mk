@@ -12,23 +12,17 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/rock/device.mk)
 
 # Inherit some common Rising stuff
-$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Bootanimation Res
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Afterlife stuffs
-AFTERLIFE_GAPPS := true
-AFTERLIFE_CORE := true
-AFTERLIFE_MAINTAINER := Shakib (@Shakib_BD)
-TARGET_SUPPORTS_BLUR := true
-TARGET_SUPPORTS_QUICK_TAP := true
-TARGET_USES_AOSP_RECOVERY := true
-USE_PIXEL_CHARGING := true
+# aosp stuffs
+TARGET_DISABLE_EPPE := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rock
-PRODUCT_NAME := afterlife_rock
+PRODUCT_NAME := aosp_rock
 PRODUCT_BRAND := POCO
 PRODUCT_MODEL := 22071219CG
 PRODUCT_MANUFACTURER := Xiaomi

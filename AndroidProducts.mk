@@ -16,9 +16,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/afterlife_rock.mk
+    $(LOCAL_DIR)/aosp_rock.mk
 
 COMMON_LUNCH_CHOICES := \
-    afterlife_rock-ap2a-user \
-    afterlife_rock-ap2a-userdebug \
-    afterlife_rock-ap2a-eng
+    aosp_rock-ap2a-user \
+    aosp_rock-ap2a-userdebug \
+    aosp_rock-ap2a-eng
