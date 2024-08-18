@@ -1067,6 +1067,9 @@ on property:sys.boot_completed=1
     # stop bootprof
     write /proc/bootprof 0
 
+on property:sys.boot_completed=1
+    restart android-hardware-media-c2-hal-1-2
+
 #service dpfd /vendor/bin/dpfd
 #	user root
 #	group system media
@@ -1350,3 +1353,4 @@ service boot_lc /system/bin/logcat -b all -D -f /mnt/vendor/nvcfg/boot_lc_full.t
     group root system
     disabled
     oneshot
+
