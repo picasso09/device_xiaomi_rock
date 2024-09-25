@@ -489,7 +489,3 @@ PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 # MediaCas
 PRODUCT_PACKAGES += \
     android.hardware.cas@1.2-service-lazy
-
-# Rebalance interrupts
-PRODUCT_PACKAGES += \
-    rebalance_interrupts-vendor.mediatek
