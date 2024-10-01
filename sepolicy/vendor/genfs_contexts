@@ -40,3 +40,7 @@ genfscon sysfs /devices/platform/soc/10026000.pwrap/10026000.pwrap:mt6366/mt635x
 
 # Info
 genfscon sysfs /devices/virtual/huaqin/interface/hw_info/pcba_config u:object_r:version_info:s0
+
+# Audio
+genfscon sysfs /devices/platform/11f00000.i2c6/i2c-6/6-0058/vmax u:object_r:vendor_sia_mode:s0
+genfscon sysfs /devices/platform/soc/1101a000.i2c/i2c-6/6-0058/vmax u:object_r:vendor_sia_mode:s0 
