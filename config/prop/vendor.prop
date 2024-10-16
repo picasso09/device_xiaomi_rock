@@ -10,6 +10,8 @@ ro.vendor.have_aee_feature=0
 # Audio
 aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=2
+ro.vendor.audio.voice.change.version=2
+ro.vendor.audio_para_version=L19A-T-Audiopara-V03-20221212
 
 # Camera
 camera.disable_zsl_mode=1
@@ -119,6 +121,8 @@ debug.sf.early.app.duration=21500000
 debug.sf.earlyGl.sf.duration=29100000
 debug.sf.earlyGl.app.duration=21500000
 debug.sf.hwc.min.duration=18500000
+vendor.display.idle_time=1100
+ro.vendor.idle_fps=60
 
 # DRM
 drm.service.enabled=true
@@ -163,7 +167,7 @@ ro.netflix.bsp_rev=MTK6789-35965-1
 # Versions
 ro.vendor.mediatek.platform=MT6789
 ro.vendor.mediatek.version.branch=alps-mp-s0.mp1.tc8sp2-cs1
-ro.vendor.mediatek.version.release=alps-mp-s0.mp1.tc8sp2-cs1-xm.V1.0.13_xiaomi.s0mp1.k6789v1.64_P113
+ro.vendor.mediatek.version.release=alps-mp-s0.mp1.tc8sp2-cs1-xm.V1.0.13_xiaomi.s0mp1.k6789v1.64_P123
 # Mediatek
 ro.vendor.mgk_name=mikrn
 ro.vendor.mgvi_name=mihal
@@ -241,3 +245,5 @@ debug.mtk_tflite.target_nnapi=29
 # IncrementalFS
 ro.incremental.enable=yes
 
+# Dex2Oat
+dalvik.vm.dex2oat64.enabled=true

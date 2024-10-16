@@ -1,4 +1,4 @@
-# blobs from stone-u 12 TP1A.220624.014 V816.0.1.0.ULUIDXM release-keys
+# blobs from rock 12 UP1A.231005.007 V816.0.7.0.ULUINXM release-keys
  
 # AEE
 vendor/lib/libaedv.so
