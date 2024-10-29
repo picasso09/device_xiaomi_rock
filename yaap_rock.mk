@@ -12,17 +12,20 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/rock/device.mk)
 
 # Inherit some common Rising stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/yaap/config/common_full_phone.mk)
 
 # Bootanimation Res
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# aosp stuffs
+# Eppe
 TARGET_DISABLE_EPPE := true
+
+# Gapps
+TARGET_BUILD_GAPPS := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rock
-PRODUCT_NAME := aosp_rock
+PRODUCT_NAME := yaap_rock
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := 22071219AI
 PRODUCT_MANUFACTURER := Xiaomi

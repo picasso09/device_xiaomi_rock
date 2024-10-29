@@ -112,7 +112,7 @@ vendor/etc/audio_param/SpeechUI_AudioParam.xml
 vendor/etc/audio_param/SpeechUI_ParamUnitDesc.xml
 vendor/etc/audio_param/SpeechVolUI_AudioParam.xml
 vendor/etc/audio_param/SpeechVolUI_ParamUnitDesc.xml
-vendor/etc/audio_param/SpeechVol_AudioParam.xml|bd907725863fa84872d74f6e2c77c9f4c8d7525a
+vendor/etc/audio_param/SpeechVol_AudioParam.xml
 vendor/etc/audio_param/SpeechVol_ParamUnitDesc.xml
 vendor/etc/audio_param/Speech_AudioParam.xml
 vendor/etc/audio_param/Speech_ParamTreeView.xml
@@ -1911,9 +1911,10 @@ vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
 # Vibrator
 vendor/bin/hw/android.hardware.vibrator-service.mediatek
 vendor/etc/init/vibrator-mtk-default.rc
+vendor/etc/vintf/manifest/vibrator-mtk-default.xml
 vendor/lib/libvibrator.so
 vendor/lib64/libvibrator.so
-vendor/etc/vintf/manifest/vibrator-mtk-default.xml|29ba9ceb104f16333dc07c811c0d84ea31350cc4
+
 
 # USB
 vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
