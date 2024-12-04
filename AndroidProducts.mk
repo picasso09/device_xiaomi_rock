@@ -16,7 +16,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/yaap_rock.mk
+    $(LOCAL_DIR)/aosp_rock.mk
 
 COMMON_LUNCH_CHOICES := \
-    yaap_rock-user \
+    aosp_rock-user \

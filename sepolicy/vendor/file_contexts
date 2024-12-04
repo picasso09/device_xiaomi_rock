@@ -3,7 +3,6 @@
 /sys/devices/platform/soc/14013000.dsi/14013000.dsi.0/panel_event u:object_r:sysfs_graphics:s0
 /sys/devices/platform/soc/14013000.dsi/14013000.dsi.1/panel_event u:object_r:sysfs_graphics:s0
 
-
 # Health
 /(vendor|system/vendor)/bin/hw/android\.hardware\.health-service\.mt6789 u:object_r:hal_health_default_exec:s0
 
@@ -27,6 +26,8 @@
 /sys/devices/virtual/touch/touch_dev/touch_vendor       u:object_r:version_info:s0
 /sys/devices/virtual/touch/touch_dev/panel_display      u:object_r:version_info:s0
 
+# IR
+/dev/lirc0 u:object_r:lirc_device:s0
 
 # Fingerprint
 /data/vendor/gf_data(/.*)?                                           u:object_r:vendor_fingerprint_data_file:s0

@@ -8,6 +8,9 @@ ro.vendor.net.enable_dual_wifi=1
 # prop for cabc
 ro.vendor.cabc.enable=true
 
+# Charger
+ro.charger.enable_suspend=true
+
 # Bluetooth
 
 
@@ -16,6 +19,8 @@ ro.surface_flinger.supports_background_blur=1
 
 # Disable blur on app launch
 ro.launcher.blur.appLaunch=1
+persist.sys.sf.disable_blurs=0
+ro.sf.blurs_are_expensive=1
 
 # RIL
 # 5g capability(0: not support 1:nsa 2:sa 3: 1+2)
@@ -111,7 +116,7 @@ persist.thermal_config.mitigation=1
 
 # Thermal Configuration
 ro.config.thermal_limit=75
-ro.config.thermal_dcs=40
+ro.config.thermal_dcs=42
 
 # Cached app compaction
 persist.device_config.activity_manager.use_compaction=true

@@ -1,5 +1,6 @@
 # ADB
 persist.adb.nonblocking_ffs=0
+
 # Stock Stuff
 ro.vendor.rc=/vendor/etc/init/hw/
 
@@ -128,8 +129,11 @@ drm.service.enabled=true
 # FRP
 ro.frp.pst=/dev/block/by-name/frp
 
+# Fingerprint
+ro.hardware.fp.sideCap=true
+
 # SOC Props
-ro.soc.model=MT6789
+ro.soc.model=MT6789V/CD
 ro.soc.manufacturer=Mediatek
 
 # Media
@@ -161,11 +165,13 @@ ro.logd.size=2M
 
 # Netflix
 ro.netflix.bsp_rev=MTK6789-35965-1
+ro.netflix.signup=1
 
 # Versions
 ro.vendor.mediatek.platform=MT6789
 ro.vendor.mediatek.version.branch=alps-mp-s0.mp1.tc8sp2-cs1
 ro.vendor.mediatek.version.release=alps-mp-s0.mp1.tc8sp2-cs1-xm.V1.0.13_xiaomi.s0mp1.k6789v1.64_P123
+
 # Mediatek
 ro.vendor.mgk_name=mikrn
 ro.vendor.mgvi_name=mihal
