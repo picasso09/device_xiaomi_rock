@@ -316,7 +316,9 @@ on post-fs-data
     #chmod 666 /dev/mali0
     #chown system graphics /dev/mali
 
-
+    # Xiaomi touch
+    chown system system /dev/xiaomi-touch
+    chmod 0660 /dev/xiaomi-touch
 
     # Touch Panel
     # chmod 0664 /dev/touch
