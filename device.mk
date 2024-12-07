@@ -332,7 +332,7 @@ PRODUCT_PACKAGES += \
 	android.hardware.camera.device@3.6.vendor:64 \
 	android.hardware.camera.provider@2.4.vendor:64 \
 	android.hardware.camera.provider@2.5.vendor:64 \
-	android.hardware.camera.provider@2.6.vendor:64 
+	android.hardware.camera.provider@2.6.vendor:64
 
 # Keylayout
 PRODUCT_COPY_FILES += \
@@ -366,6 +366,7 @@ PRODUCT_PACKAGES += \
     CarrierConfigOverlayRock \
     FrameworkOverlayRock \
     SettingsOverlayRock \
+    SettingsOverlayStone \
     SystemUIOverlayRock \
     TelephonyOverlayRock \
     WifiResOverlayRock \

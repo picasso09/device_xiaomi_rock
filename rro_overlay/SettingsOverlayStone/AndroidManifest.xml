@@ -18,7 +18,7 @@
      <overlay
           android:targetPackage="com.android.settings"
           android:requiredSystemPropertyName="ro.product.model"
-          android:requiredSystemPropertyValue="22071219AI"
+          android:requiredSystemPropertyValue="22071219CG"
           android:isStatic="true"
           android:priority="0"/>
 </manifest>
