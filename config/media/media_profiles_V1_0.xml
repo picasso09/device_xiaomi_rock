@@ -176,7 +176,7 @@
                    channels="2" />
         </EncoderProfile>-->
         <EncoderProfile quality="timelapselow" fileFormat="mp4" duration="30">
-            <Video codec="h263"
+            <Video codec="h264"
                    bitRate="1000000"
                    width="176"
                    height="144"
@@ -198,7 +198,7 @@
                    channels="2" />
         </EncoderProfile>
         <EncoderProfile quality="timelapseqcif" fileFormat="mp4" duration="30">
-            <Video codec="h263"
+            <Video codec="h264"
                    bitRate="1000000"
                    width="176"
                    height="144"
@@ -414,7 +414,7 @@
         </EncoderProfile>
 
         <EncoderProfile quality="timelapselow" fileFormat="mp4" duration="30">
-            <Video codec="h263"
+            <Video codec="h264"
                    bitRate="1000000"
                    width="176"
                    height="144"
@@ -436,7 +436,7 @@
                    channels="2" />
         </EncoderProfile>
         <EncoderProfile quality="timelapseqcif" fileFormat="mp4" duration="30">
-            <Video codec="h263"
+            <Video codec="h264"
                    bitRate="1000000"
                    width="176"
                    height="144"
@@ -598,7 +598,7 @@
                    channels="2" />
         </EncoderProfile>
         <EncoderProfile quality="timelapselow" fileFormat="mp4" duration="30">
-            <Video codec="h263"
+            <Video codec="h264"
                    bitRate="1000000"
                    width="176"
                    height="144"
@@ -620,7 +620,7 @@
                    channels="2" />
         </EncoderProfile>
         <EncoderProfile quality="timelapseqcif" fileFormat="mp4" duration="30">
-            <Video codec="h263"
+            <Video codec="h264"
                    bitRate="1000000"
                    width="176"
                    height="144"
@@ -846,7 +846,7 @@
                    channels="2" />
         </EncoderProfile>
         <EncoderProfile quality="timelapselow" fileFormat="mp4" duration="30">
-            <Video codec="h263"
+            <Video codec="h264"
                    bitRate="1000000"
                    width="176"
                    height="144"
@@ -868,7 +868,7 @@
                    channels="2" />
         </EncoderProfile>
         <EncoderProfile quality="timelapseqcif" fileFormat="mp4" duration="30">
-            <Video codec="h263"
+            <Video codec="h264"
                    bitRate="1000000"
                    width="176"
                    height="144"
@@ -1006,7 +1006,7 @@
                    channels="2" />
         </EncoderProfile>
         <EncoderProfile quality="timelapselow" fileFormat="mp4" duration="30">
-            <Video codec="h263"
+            <Video codec="h264"
                    bitRate="1000000"
                    width="176"
                    height="144"
@@ -1028,7 +1028,7 @@
                    channels="2" />
         </EncoderProfile>
         <EncoderProfile quality="timelapseqcif" fileFormat="mp4" duration="30">
-            <Video codec="h263"
+            <Video codec="h264"
                    bitRate="1000000"
                    width="176"
                    height="144"
@@ -1177,7 +1177,7 @@
                    channels="2" />
         </EncoderProfile>
         <EncoderProfile quality="timelapselow" fileFormat="mp4" duration="30">
-            <Video codec="h263"
+            <Video codec="h264"
                    bitRate="1000000"
                    width="176"
                    height="144"
@@ -1199,7 +1199,7 @@
                    channels="2" />
         </EncoderProfile>
         <EncoderProfile quality="timelapseqcif" fileFormat="mp4" duration="30">
-            <Video codec="h263"
+            <Video codec="h264"
                    bitRate="1000000"
                    width="176"
                    height="144"
@@ -1359,7 +1359,7 @@
                    channels="2" />
         </EncoderProfile>
         <EncoderProfile quality="timelapselow" fileFormat="mp4" duration="30">
-            <Video codec="h263"
+            <Video codec="h264"
                    bitRate="1000000"
                    width="176"
                    height="144"
@@ -1381,7 +1381,7 @@
                    channels="2" />
         </EncoderProfile>
         <EncoderProfile quality="timelapseqcif" fileFormat="mp4" duration="30">
-            <Video codec="h263"
+            <Video codec="h264"
                    bitRate="1000000"
                    width="176"
                    height="144"
@@ -1541,7 +1541,7 @@
                    channels="2" />
         </EncoderProfile>
         <EncoderProfile quality="timelapselow" fileFormat="mp4" duration="30">
-            <Video codec="h263"
+            <Video codec="h264"
                    bitRate="1000000"
                    width="176"
                    height="144"
@@ -1563,7 +1563,7 @@
                    channels="2" />
         </EncoderProfile>
         <EncoderProfile quality="timelapseqcif" fileFormat="mp4" duration="30">
-            <Video codec="h263"
+            <Video codec="h264"
                    bitRate="1000000"
                    width="176"
                    height="144"
