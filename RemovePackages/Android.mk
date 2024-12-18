@@ -9,8 +9,6 @@ LOCAL_OVERRIDES_PACKAGES := \
 		  CalendarGooglePrebuilt \
 		  Camera2 \
 		  Chrome-Stub \
-		  DeskClock \
-                  Drive \
 		  Eleven \
 		  Etar \
 		  ExactCalculator \
@@ -18,19 +16,13 @@ LOCAL_OVERRIDES_PACKAGES := \
 		  Jelly \
                   MaestroPrebuilt \
 		  MatLog \
-                  Maps \
-                  Gmail2 \
 		  PersonalSafety \
-		  Photos \
 		  PrebuiltDeskClockGoogle \
-		  Recorder \
                   RecorderPrebuilt \
                   SafetyHubPrebuilt \
                   Snap \
                   Turbo \
                   TipsPrebuilt \
-		  Velvet \
-                  YouTube \
 
 LOCAL_UNINSTALLABLE_MODULE := true
 LOCAL_CERTIFICATE := platform
