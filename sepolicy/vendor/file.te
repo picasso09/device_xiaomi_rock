@@ -1,15 +1,20 @@
 # Graphics
 type vendor_sysfs_displayfeature, fs_type, sysfs_type;
 type sysfs_graphics, fs_type, sysfs_type;
+type vendor_sysfs_graphics, fs_type, sysfs_type;
 
 # Health HAL
 type vendor_sysfs_usb_supply, fs_type, sysfs_type;
 
 # Touch gestures
 type sysfs_tp_gesture, fs_type, sysfs_type;
+type touchfeature_device, dev_type;
 
 # Version Info
 type version_info, fs_type, sysfs_type;
+
+# NFC
+type lirc_device, dev_type;
 
 #TP
 type sysfs_tp_virtual_prox, fs_type, sysfs_type;

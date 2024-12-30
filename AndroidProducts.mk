@@ -16,7 +16,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_rock.mk
+    $(LOCAL_DIR)/pixelstar_rock.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_rock-user \
+    pixelstar_rock-user \

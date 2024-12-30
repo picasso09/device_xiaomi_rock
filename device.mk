@@ -108,8 +108,8 @@ PRODUCT_PACKAGES += \
     create_pl_dev.recovery
 
 # DT2W
-PRODUCT_PACKAGES += \
-    DT2W-Service-MT6789
+#PRODUCT_PACKAGES += \
+#    DT2W-Service-MT6789
 
 # fastbootd
 PRODUCT_PACKAGES += \
@@ -134,9 +134,14 @@ PRODUCT_PACKAGES += \
     libhwbinder.vendor \
     libhidlbase_shim
 
+PRODUCT_PACKAGES += \
+    libui_shim
+
 # Graphics
     PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.3-service
+    android.hardware.graphics.composer@2.3-service \
+    android.hardware.graphics.composer@2.3 \
+    libutils-v32
 
 PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.mediatek-mali \
@@ -147,15 +152,27 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.drm-service.clearkey \
     android.hardware.drm@1.4.vendor
-    
+
 PRODUCT_PACKAGES += \
     libdrm.vendor
+
+# Fingerprint
+PRODUCT_PACKAGES += \
+    android.hardware.biometrics.fingerprint@2.1.so
 
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-impl.recovery \
     android.hardware.health@2.1-service
+
+# Charger
+PRODUCT_PACKAGES += \
+    android.system.suspend-V1-ndk \
+    android.system.suspend.control-V1-cpp \
+    android.system.suspend.control.internal-cpp \
+    android.system.suspend@1.0 \
+    libsuspend
 
 # Media
 PRODUCT_PACKAGES += \
@@ -219,10 +236,10 @@ PRODUCT_PACKAGES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.frameworks.sensorservice@1.0.vendor \
-	android.hardware.sensors-service.multihal \
+    android.hardware.sensors-service.multihal \
     android.hardware.sensors@1.0.vendor \
     android.hardware.sensors@2.0.vendor \
-    android.hardware.sensors@2.0-ScopedWakelock.vendor 
+    android.hardware.sensors@2.0-ScopedWakelock.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
@@ -254,11 +271,16 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
+    vendor.mediatek.hardware.mtkpower@1.2.vendor \
     vendor.mediatek.hardware.mtkpower@1.2-service.stub \
     android.hardware.power@1.0.vendor \
     android.hardware.power@1.1.vendor \
     android.hardware.power@1.2.vendor \
     android.hardware.power@1.3.vendor
+
+PRODUCT_PACKAGES += \
+    libmtkperf_client_vendor \
+    libmtkperf_client
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
@@ -347,11 +369,8 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
 	$(LOCAL_PATH) \
-    hardware/google/interfaces \
-    hardware/google/pixel \
 	hardware/mediatek \
 	hardware/xiaomi \
-	hardware/lineage/interfaces/power-libperfmgr
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -375,7 +394,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     fstab.mt6789 \
     fstab.emmc \
-    fstab.enableswap \
     init.cgroup.rc \
     init_connectivity.rc \
     init.connectivity.common.rc \

@@ -104,12 +104,19 @@ on charger
     start fuelgauged
     start fuelgauged_nvram
 
-    chown system system /sys/class/leds/lcd-backlight/brightness
-    chown system system /sys/class/leds/red/brightness
-    chown system system /sys/class/leds/green/brightness
 
 on early-fs
     write /proc/bootprof "INIT:early-fs"
+
+    # charger node
+    chmod 0666 /sys/class/mtk-battery/battery/input_suspend
+    chown system system /sys/class/mtk-battery/battery/input_suspend
+# /*L19A HQ-194739 modify input_suspend node by gengyifei at 2022/5/12 end */
+
+# charger node
+# /*L19A HQ-193822 modify charging enable node by miaozhichao at 2022/4/18 */
+    chmod 0666 /sys/class/mtk-battery/battery/charging_enabled
+    chown system system /sys/class/mtk-battery/battery/charging_enabled
 
 on fs
     write /proc/bootprof "INIT:fs"
@@ -954,6 +961,8 @@ on boot
 # /*L19A HQ-193822 modify charging enable node by miaozhichao at 2022/4/18 */
     chmod 0666 /sys/class/mtk-battery/battery/charging_enabled
     chown system system /sys/class/mtk-battery/battery/charging_enabled
+# backlight trigger
+    write /sys/class/leds/lcd-backlight/trigger "backlight"
 
 # WMT proc
     chown shell system /proc/driver/wmt_dbg
@@ -1304,12 +1313,14 @@ service mi_thermald /system/vendor/bin/mi_thermald
     group system
     seclabel u:r:mi_thermald:s0
 
-service charger /system/bin/charger
+service vendor.charger /system/bin/charger
     class charger
-    critical
-    #seclabel u:r:charger:s0
-    group system graphics
-    seclabel u:r:healthd:s0
+    user system
+    group system graphics wakelock input
+    capabilities SYS_BOOT
+    file /dev/kmsg w
+    file /sys/fs/pstore/console-ramoops-0 r
+    file /sys/fs/pstore/console-ramoops r
 
 # initialize powerHAL when boot is completed
 on property:sys.boot_completed=1
