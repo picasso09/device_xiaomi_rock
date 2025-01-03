@@ -11,8 +11,8 @@ on charger
 
 
 on post-fs-data
-    write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor sugov_ext
-    write /sys/devices/system/cpu/cpufreq/policy6/scaling_governor sugov_ext
+    write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor schedhorizon
+    write /sys/devices/system/cpu/cpufreq/policy6/scaling_governor schedhorizon
 
 on init
     write /sys/devices/platform/soc/11270000.ufshci/clkgate_enable 0
