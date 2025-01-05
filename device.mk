@@ -134,12 +134,15 @@ PRODUCT_PACKAGES += \
     libhwbinder.vendor \
     libhidlbase_shim
 
+PRODUCT_PACKAGES += \
+    libui_shim
+
 # Graphics
     PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.3-service \
     android.hardware.graphics.composer@2.1 \
     android.hardware.graphics.composer@2.2 \
-    android.hardware.graphics.composer@2.3
+    android.hardware.graphics.composer@2.3 \
+    android.hardware.graphics.composer@2.3-service
 
 PRODUCT_PACKAGES += \
     android.hardware.memtrack-service.mediatek-mali \
