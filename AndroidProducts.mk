@@ -1,6 +1,5 @@
 #
-# Copyright (C) 2019 Potato Open Sauce Project
-# Copyright (C) 2020 The LineageOS Project
+# Copyright (C) 2020 The AfterLife Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/pixelstar_rock.mk
+    $(LOCAL_DIR)/afterlife_rock.mk
 
 COMMON_LUNCH_CHOICES := \
-    pixelstar_rock-user \
+    afterlife_rock-user \

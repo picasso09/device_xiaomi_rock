@@ -159,7 +159,7 @@ PRODUCT_PACKAGES += \
 
 # Fingerprint
 PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.1.so
+    android.hardware.biometrics.fingerprint@2.1
 
 # Health
 PRODUCT_PACKAGES += \
@@ -375,7 +375,7 @@ PRODUCT_SOONG_NAMESPACES += \
 	hardware/google/pixel \
 	hardware/mediatek \
 	hardware/xiaomi \
-	hardware/lineage/interfaces/power-libperfmgr
+	hardware/afterlife/interfaces/power-libperfmgr
 
 # NFC
 PRODUCT_PACKAGES += \
