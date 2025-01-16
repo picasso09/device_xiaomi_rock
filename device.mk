@@ -524,9 +524,6 @@ PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 PRODUCT_PACKAGES += \
     android.hardware.cas@1.2-service-lazy
 
-# ViPER4AndroidFX
-#$(call inherit-product, packages/apps/ViPER4AndroidFX/config.mk)
-
 # ConsumerIr
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
@@ -540,4 +537,3 @@ $(warning "vendor/afterlife-priv/keys/keys.mk" is missing. Proceeding with unsig
 else
 include vendor/afterlife-priv/keys/keys.mk
 endif
-
