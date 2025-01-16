@@ -18,6 +18,6 @@ git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-22.0 h
 git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr device/mediatek/sepolicy_vndr
 
 # Signed
-git clone https://github.com/picasso09/vendor_afterlife-priv_keys vendor/afterlife-priv/keys
+#git clone https://github.com/picasso09/vendor_afterlife-priv_keys vendor/afterlife-priv/keys
 
 echo -e "\033[32mDone go cook\033[0m"
