@@ -20,6 +20,8 @@ import init.mishow.ctl.rc
 #L19A code for HQ-194739 by qianxiaoming at 20220512 end
 
 on early-init
+    write /proc/bootprof "INIT:early-init"
+
     # initialize vendor.all.modules.ready to 1 here to prevent NOT GKI project blocked
     setprop vendor.all.modules.ready 1
 
@@ -77,6 +79,8 @@ on late-init
 
 on charger
 
+    exec /system/bin/e2fsck -f -p /dev/block/by-name/cache
+    mount ext4 /dev/block/by-name/cache /cache rw wait
     chmod 0660 /dev/spm
     chown system system /dev/spm
     start spm_script
@@ -104,6 +108,11 @@ on charger
     start fuelgauged
     start fuelgauged_nvram
 
+
+    start vendor.light-default
+
+    # Stop bootprof
+    write /proc/bootprof "0"
 
 on early-fs
     write /proc/bootprof "INIT:early-fs"
@@ -1065,6 +1074,9 @@ on property:sys.boot_completed=1
 on property:sys.boot_completed=1
     write /proc/perfmgr/boost_ctrl/cpu_ctrl/boot_freq "-1 -1 -1 -1 -1 -1"
     write /sys/devices/platform/boot_dramboost/dramboost/dramboost 0
+
+    # stop bootprof
+    write /proc/bootprof 0
 
 on property:sys.boot_completed=1
     restart android-hardware-media-c2-hal-1-2
