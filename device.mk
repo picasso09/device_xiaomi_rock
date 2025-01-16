@@ -420,6 +420,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 
+# Google camera
+PRODUCT_PACKAGES += \
+    GooglePDFViewer
+
 # Power Off Alarm
 PRODUCT_PACKAGES += \
     PowerOffAlarm
