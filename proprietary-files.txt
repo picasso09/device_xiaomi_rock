@@ -1846,11 +1846,9 @@ vendor/thh/ta/e97c270ea5c44c58bcd3384a2fa2539e.ta
 vendor/thh/ta/isee_model.json
 
 # Thermal
-vendor/bin/hw/android.hardware.thermal@2.0-service.mtk
 vendor/bin/mi_thermald
 vendor/bin/thermal_core
 vendor/bin/thermal_intf
-vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc
 vendor/etc/init/init.thermal_core.rc
 vendor/etc/thermal-camera.conf
 vendor/etc/thermal-chg-only.conf
@@ -1870,8 +1868,6 @@ vendor/etc/thermal/thermal_policy_00.conf
 vendor/etc/thermal/thermal_policy_02.conf
 vendor/etc/thermal/thermal_policy_08.conf
 vendor/etc/thermald-devices.conf
-vendor/lib64/hw/android.hardware.thermal@2.0-impl.so
-vendor/lib64/hw/thermal_hal.so
 
 # Wi-Fi
 vendor/bin/conninfra_loader
