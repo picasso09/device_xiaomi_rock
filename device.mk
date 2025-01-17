@@ -67,12 +67,15 @@ PRODUCT_PACKAGES += \
 	android.hardware.audio.effect@7.0-impl:64 \
 	audioclient-types-aidl-cpp.vendor:64 \
 	audio.bluetooth.default:64 \
+	audio.primary.default:64 \
+	audio.r_submix.default:64 \
 	audio.usb.default:64 \
 	libalsautils:64 \
 	libopus.vendor:64 \
 	libtinycompress:64 \
 	libnbaio_mono:64 \
-	libaudiofoundation.vendor:64
+	libaudiofoundation.vendor:64 \
+	libstagefrighthw.vendor:64
 
 # VENDOR BOOT RAMDISK GENERIC
 PRODUCT_COPY_FILES += \
@@ -84,7 +87,9 @@ PRODUCT_PACKAGES += \
 	android.hardware.bluetooth.audio-impl:64 \
 	libbluetooth_audio_session:64 \
 	android.hardware.bluetooth@1.0.vendor:64 \
-	android.hardware.bluetooth@1.1.vendor:64
+	android.hardware.bluetooth@1.1.vendor:64 \
+	android.hardware.bluetooth.a2dp@1.0-impl:64 \
+	android.hardware.bluetooth.a2dp@1.0-service
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/config/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
