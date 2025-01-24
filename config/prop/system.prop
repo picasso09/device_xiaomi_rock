@@ -11,8 +11,8 @@ ro.vendor.cabc.enable=true
 # Charger
 ro.charger.enable_suspend=true
 
-# Bluetooth
-
+# Saturation
+persist.sys.sf.color_saturation=1.80
 
 # Blur
 ro.surface_flinger.supports_background_blur=1
