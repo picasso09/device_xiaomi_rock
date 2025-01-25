@@ -20,4 +20,6 @@ git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr dev
 # Signed
 #git clone https://github.com/picasso09/vendor_afterlife-priv_keys vendor/afterlife-priv/keys
 
+# Clone Moto Dolby
+git clone https://github.com/userariii/vendor_motorola-dolby -b v1.3 vendor/motorola-dolby
 echo -e "\033[32mDone go cook\033[0m"
