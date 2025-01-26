@@ -17,6 +17,14 @@ persist.sys.sf.color_saturation=1.80
 # Blur
 ro.surface_flinger.supports_background_blur=1
 
+# HWUI
+persist.sys.purgeable_assets=1
+persist.service.pcsync.enable=0
+persist.service.lgospd.enable=0
+ro.config.avoid_gfx_accel=true
+debug.sf.enable_gl_backpressure=0
+ro.hwui.render_ahead=20
+
 # Disable blur on app launch
 ro.launcher.blur.appLaunch=1
 persist.sys.sf.disable_blurs=0
@@ -24,7 +32,6 @@ ro.sf.blurs_are_expensive=1
 
 # RIL
 # 5g capability(0: not support 1:nsa 2:sa 3: 1+2)
-
 
 #RIL
 ro.vendor.radio.features_common=2
