@@ -1,5 +1,6 @@
 # Audio
 vendor.audiomediatek. u:object_r:vendor_audioserver_prop:s0
+persist.audio.headset.plug.status            u:object_r:audio_prop:s0
 
 # Camera
 vendor.camera. u:object_r:vendor_mtk_camera_prop:s0
@@ -31,3 +32,6 @@ vendor.panel.vendor        u:object_r:vendor_fp_prop:s0
  
 # VT
 vendor.ims.vt.signalstrength.    u:object_r:system_mtk_ims_vt_signalstrength_prop:s0
+
+# VTS
+vts.native_server.on                         u:object_r:vts_status_prop:s0
