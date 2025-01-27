@@ -79,7 +79,8 @@ PRODUCT_PACKAGES += \
 	libnbaio_mono:64 \
 	libaudiofoundation.vendor:64 \
 	libstagefrighthw.vendor:64 \
-	libprocessgroup.vendor:64
+	libprocessgroup.vendor:64 \
+	libsqlite.vendor:64
 
 # VENDOR BOOT RAMDISK GENERIC
 PRODUCT_COPY_FILES += \
