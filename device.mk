@@ -387,7 +387,7 @@ PRODUCT_SOONG_NAMESPACES += \
 	hardware/google/pixel \
 	hardware/mediatek \
 	hardware/xiaomi \
-	hardware/afterlife/interfaces/power-libperfmgr
+	hardware/lineage/interfaces/power-libperfmgr
 
 # NFC
 PRODUCT_PACKAGES += \
@@ -552,9 +552,3 @@ PRODUCT_PACKAGES += \
     android.hardware.ir-service.example \
     android.hardware.ir-V1-ndk.vendor
 
-# Signed Build
-ifeq ($(wildcard vendor/afterlife-priv/keys/keys.mk),)
-$(warning "vendor/afterlife-priv/keys/keys.mk" is missing. Proceeding with unsigned build.)
-else
-include vendor/afterlife-priv/keys/keys.mk
-endif

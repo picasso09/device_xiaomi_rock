@@ -15,10 +15,7 @@ git clone https://github.com/LineageOS/android_hardware_mediatek -b lineage-21 h
 git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-22.0 hardware/xiaomi
 
 # Sepolicy
-git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr device/mediatek/sepolicy_vndr
-
-# Signed
-#git clone https://github.com/picasso09/vendor_afterlife-priv_keys vendor/afterlife-priv/keys
+git clone https://github.com/picasso09/android_device_mediatek_sepolicy_vndr-pixelstar device/mediatek/sepolicy_vndr
 
 # Clone Moto Dolby
 git clone https://github.com/userariii/vendor_motorola-dolby -b v1.3 vendor/motorola-dolby
