@@ -80,7 +80,8 @@ PRODUCT_PACKAGES += \
 	libaudiofoundation.vendor:64 \
 	libstagefrighthw.vendor:64 \
 	libprocessgroup.vendor:64 \
-	libsqlite.vendor:64
+	libsqlite.vendor:64 \
+	libaudioroute.vendor:64
 
 # VENDOR BOOT RAMDISK GENERIC
 PRODUCT_COPY_FILES += \
@@ -486,6 +487,7 @@ PRODUCT_PACKAGES += \
     libutilscallstack.vendor \
     libcamera_metadata.vendor \
 	libexif.vendor \
+	libpiex \
 	liblz4.vendor \
 	libpng.vendor \
 	libion.vendor \
