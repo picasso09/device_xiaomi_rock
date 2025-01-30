@@ -14,7 +14,6 @@ service fpsgo /vendor/bin/fpsgo
     
 on early-init
     setprop vendor.all.modules.ready 0
-    write /proc/bootprof "modprobe: Load_Module_START"
     start insmod_sh
     
 on boot
