@@ -1,0 +1,155 @@
+#
+#
+# For special ro override property
+
+#support dual wifi feature
+ro.vendor.net.enable_dual_wifi=1
+
+# prop for cabc
+ro.vendor.cabc.enable=true
+
+# Charger
+ro.charger.enable_suspend=true
+
+# Saturation
+persist.sys.sf.color_saturation=1.80
+
+# Blur
+ro.surface_flinger.supports_background_blur=1
+
+# HWUI
+persist.sys.purgeable_assets=1
+persist.service.pcsync.enable=0
+persist.service.lgospd.enable=0
+ro.config.avoid_gfx_accel=true
+debug.sf.enable_gl_backpressure=0
+ro.hwui.render_ahead=20
+
+# Disable blur on app launch
+persist.sys.sf.disable_blurs=0
+ro.sf.blurs_are_expensive=1
+
+# Hardware Description
+ro.device.chipset=HelioG99 | MT6789V/CD
+ro.device.display_resolution=2408x1080
+
+#RIL
+ro.vendor.radio.features_common=2
+vendor.rild.libpath=mtk-ril.so
+vendor.rild.libargs=-d /dev/ttyC0
+
+# SLA
+ro.vendor.net.enable_sla=1
+
+# Media
+media.stagefright.thumbnail.prefer_hw_codecs=true
+
+# WiFi
+wifi.interface=wlan0
+ro.mediatek.wlan.wsc=1
+ro.mediatek.wlan.p2p=1
+mediatek.wlan.ctia=0
+wifi.tethering.interface=ap0
+wifi.direct.interface=p2p0
+
+# USB
+ro.sys.usb.mtp.whql.enable=0
+ro.sys.usb.storage.type=mtp
+ro.sys.usb.bicr=no
+ro.sys.usb.charging.only=yes
+
+# VoLTE
+persist.dbg.allow_ims_off=1
+persist.dbg.volte_avail_ovr=1
+persist.dbg.vt_avail_ovr=1
+persist.dbg.wfc_avail_ovr=1
+
+# MTK vendor
+ro.vendor.mtk_omacp_support=1
+ro.vendor.mtk_flv_playback_support=1
+ro.vendor.mtk_telephony_add_on_policy=0
+
+# audio
+ro.camera.sound.forced=0
+ro.audio.silent=0
+
+# Kernel
+ro.kernel.zio=38,108,105,16
+
+# Display
+ro.sf.lcd_density=440
+sys.displayfeature_hidl=true
+
+# performance
+ro.mtk_perf_simple_start_win=1
+ro.mtk_perf_fast_start_win=1
+ro.mtk_perf_response_time=1
+
+#logd buffer size
+ro.logd.size=2M
+
+#disable mtk aggressive_dex2oat
+pm.dexopt.aggressive_dex2oat.enable=false
+
+#sysprop for thermal
+vendor.sys.thermal.data.path=/data/vendor/thermal/
+
+# displayfeature and displayfeatureservice use it to debug pq effect
+vendor.displayfeature.entry.enable=true
+
+#system property for HBM mode
+vendor.hbm.enable=true
+
+#system prop for dc backlight
+persist.vendor.dc_backlight.enable=false
+
+#property for display fps switch
+persist.vendor.power.dfps.level=0
+
+#support night charge property
+persist.vendor.night.charge=true
+
+#For Test Factory Whether Calibrated
+#ACC/GYRO/ALS/PS/ALS_DARK/LUX_B/SAR/SAR_SECONDARY/...MAX_NUM=15
+persist.vendor.sensor.cali_sensor=111001100000000
+
+# Memory Optimization
+ro.config.dha_cached_min=16
+ro.config.dha_cached_max=32
+
+# Thermal Management
+ro.mtk_thermal_monitor.enabled=true
+persist.thermal_config.mitigation=1
+
+# Thermal Configuration
+ro.config.thermal_limit=75
+ro.config.thermal_dcs=42
+
+# Cached app compaction
+persist.device_config.activity_manager.use_compaction=true
+
+# Lmk Properties
+ro.lmk.critical=0
+ro.lmk.critical_upgrade=false
+ro.lmk.use_minfree_levels=true
+ro.lmk.upgrade_pressure=30
+ro.lmk.thrashing_limit_decay=50
+ro.lmk.downgrade_pressure=75
+ro.config.low_ram=false
+ro.lmk.use_psi=true
+ro.lmk.kill_heaviest_task=true
+
+# Earphone Jacks
+persist.sys.overlay.devinputjack=true
+
+# Brightness gamma
+persist.sys.brightness.low.gamma=true
+
+# Battery Saving & Performance
+ro.vold.umsdirtyratio=20 
+ro.ril.disable.power.collapse=0 
+power.saving.mode=1
+pm.sleep_mode=1
+ro.config.art_lowmem=true
+ro.mtk_gpu_optimizations=1
+ro.mtk_display_ovl_support=1

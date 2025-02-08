@@ -1,0 +1,5 @@
+#============= flags_health_check ==============
+# set_prop(flags_health_check, default_prop)
+allow flags_health_check aac_drc_prop:file { getattr map open };
+allow flags_health_check ab_update_gki_prop:file { getattr map open };
+allow flags_health_check adaptive_haptics_prop:file { getattr map open };
