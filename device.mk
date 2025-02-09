@@ -90,9 +90,7 @@ PRODUCT_PACKAGES += \
 	android.hardware.bluetooth.audio-impl:64 \
 	libbluetooth_audio_session:64 \
 	android.hardware.bluetooth@1.0.vendor:64 \
-	android.hardware.bluetooth@1.1.vendor:64 \
-	android.hardware.bluetooth.a2dp@1.0-impl:64 \
-	android.hardware.bluetooth.a2dp@1.0-service
+	android.hardware.bluetooth@1.1.vendor:64
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/config/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
