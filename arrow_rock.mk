@@ -17,13 +17,14 @@ $(call inherit-product, vendor/arrow/config/common.mk)
 # Bootanimation Res
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# AfterLife flags
+# ARROW flags
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 USE_PIXEL_CHARGER := true
 
 DEVICE_MAINTAINER := picasso09
 DEVICE_MAINTAINER_LINK := t.me/picasso170606
+ARROW_GAPPS := true
 
 # Blur
 TARGET_SUPPORTS_BLUR := true
@@ -36,7 +37,7 @@ PRODUCT_MODEL := 22071219AI
 PRODUCT_MANUFACTURER := Xiaomi
 
 BUILD_HOSTNAME := picasso09
-BUILD_FINGERPRINT :=Redmi/rock/rock:12/UP1A.231005.007/V816.0.7.0.ULUINXM:user/release-keys
-PRIVATE_BUILD_DESC="rock-user 14 UP1A.231005.007 V816.0.7.0.ULUINXM release-keys"
+BUILD_FINGERPRINT :=Redmi/rock/rock:13/TP1A.220624.014/V14.0.6.0.TLUIDXM:user/release-keys
+PRIVATE_BUILD_DESC="rock-user 13 TP1A.220624.014 V14.0.6.0.TLUIDXM release-keys"
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
