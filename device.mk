@@ -226,9 +226,9 @@ PRODUCT_PACKAGES += \
     android.hardware.gnss.visibility_control@1.0.vendor
 
 # Shim
-#PRODUCT_PACKAGES += \
-#    libshim_ui \
-#    libshim_sink
+PRODUCT_PACKAGES += \
+    libshim_ui \
+    libshim_sink
 
 # Keymaster
 PRODUCT_COPY_FILES += \
