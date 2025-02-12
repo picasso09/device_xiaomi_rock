@@ -48,7 +48,6 @@ vendor/lib64/libvow_ap_test_hh.so
 vendor/lib64/libvow_ap_test_nn.so
 vendor/lib64/libspeech_enh_lib.so
 vendor/lib64/libspeechparser_vendor.so
-vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib64/vendor.mediatek.hardware.audio@7.1.so
 
 # Audio Conf
@@ -178,9 +177,7 @@ vendor/lib64/libbt-vendor.so
 vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
 vendor/lib/libbluetooth_audio_session_mediatek.so
-vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
 vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so
-vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
 vendor/lib64/libbluetooth_audio_session_mediatek.so
 vendor/lib64/vendor.mediatek.hardware.bluetooth.audio@2.1.so
