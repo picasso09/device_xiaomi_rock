@@ -1171,14 +1171,12 @@ vendor/lib/libtlcWidevineModularDrm.so
 vendor/lib/liburee_meta_drmkeyinstall.so
 vendor/lib/libwvhidl.so
 vendor/lib/mediadrm/libwvdrmengine.so
-vendor/lib/libprotobuf-cpp-lite-3.9.1.so
 vendor/lib64/liboemcrypto.so
 vendor/lib64/libtlcWidevineModularDrm.so
 vendor/lib64/liburee_meta_drmkeyinstall.so
 vendor/lib64/libwvhidl.so
 vendor/lib64/libwvkeybox.so
 vendor/lib64/mediadrm/libwvdrmengine.so
-vendor/lib64/libprotobuf-cpp-lite-3.9.1.so
 
 # Display conf
 vendor/etc/AbnormalDisplayLog_dynamic.xml
