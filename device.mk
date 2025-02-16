@@ -73,12 +73,7 @@ PRODUCT_PACKAGES += \
 	libalsautils:64 \
 	libopus.vendor:64 \
 	libtinycompress:64 \
-	libnbaio_mono:64 \
-	libaudiofoundation.vendor:64 \
-	libstagefrighthw.vendor:64 \
-	libprocessgroup.vendor:64 \
-	libsqlite.vendor:64 \
-	libaudioroute.vendor:64
+	libaudiofoundation.vendor:64
 
 # VENDOR BOOT RAMDISK GENERIC
 PRODUCT_COPY_FILES += \
