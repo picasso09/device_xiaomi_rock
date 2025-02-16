@@ -24,4 +24,5 @@ type camera_persist_file, file_type;
 type camera_vendor_data_file, file_type, data_file_type;
 
 # Audio
+type vendor_audio_prop, file_type;
 type vendor_sia_mode, fs_type, sysfs_type;
