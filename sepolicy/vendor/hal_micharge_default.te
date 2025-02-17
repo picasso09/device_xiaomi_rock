@@ -10,6 +10,7 @@ allow hal_micharge_server hal_micharge_client:binder transfer;
 allow init hal_micharge_default_exec:file { read getattr map execute open };
 allow hal_micharge_server hal_micharge_hwservice:hwservice_manager { add find };
 allow hal_micharge_default hidl_base_hwservice:hwservice_manager { add };
+allow hal_micharge_default hal_micharge_hwservice:hwservice_manager { add find };
 
 init_daemon_domain(hal_micharge_default)
 hal_server_domain(hal_micharge_default, hal_micharge)
