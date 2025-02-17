@@ -6,6 +6,3 @@ vendor_public_prop(vendor_displayfeature_prop)
 
 # Info
 vendor_public_prop(vendor_fp_prop)
-
-# Mtk Camera
-vendor_public_prop(vendor_mtk_camera_prop)
