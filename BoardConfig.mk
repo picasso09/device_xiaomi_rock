@@ -45,6 +45,7 @@ AB_OTA_PARTITIONS += \
     mcupm \
     md1img \
     pi_img \
+    preloader_raw \
     product \
     scp \
     spmfw \
