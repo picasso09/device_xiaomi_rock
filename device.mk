@@ -556,8 +556,6 @@ PRODUCT_PACKAGES += \
     android.hardware.ir-V1-ndk.vendor
 
 # Signed Build
-ifeq ($(wildcard vendor/afterlife-priv/keys/keys.mk),)
-$(warning "vendor/afterlife-priv/keys/keys.mk" is missing. Proceeding with unsigned build.)
-else
-include vendor/afterlife-priv/keys/keys.mk
+ifeq ($(wildcard vendor/afterlife-priv/keys),)
+$(warning "vendor/afterlife-priv/keys" is missing. Proceeding with unsigned build.)
 endif
