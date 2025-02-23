@@ -34,7 +34,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
 $(call inherit-product, vendor/xiaomi/rock/rock-vendor.mk)
 
 # Include Moto Dolby
-$(call inherit-product, vendor/motorola-dolby/setup.mk)
+#$(call inherit-product, vendor/motorola-dolby/setup.mk)
 
 # Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
