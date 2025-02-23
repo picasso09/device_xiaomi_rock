@@ -81,7 +81,8 @@ PRODUCT_PACKAGES += \
 	libstagefrighthw.vendor:64 \
 	libprocessgroup.vendor:64 \
 	libsqlite.vendor:64 \
-	libaudioroute.vendor:64
+	libaudioroute.vendor:64 \
+	audio_policy.stub
 
 # VENDOR BOOT RAMDISK GENERIC
 PRODUCT_COPY_FILES += \
