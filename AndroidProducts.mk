@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The arrow Project
+# Copyright (C) 2020 The aosp Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_rock.mk
+    $(LOCAL_DIR)/aosp_rock.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_rock-user \
+    aosp_rock-user \

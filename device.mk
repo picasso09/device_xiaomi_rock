@@ -547,3 +547,7 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-service \
     android.hardware.ir-service.example \
     android.hardware.ir-V1-ndk.vendor
+
+ifeq ($(wildcard vendor/aosp/signing/keys),)
+$(warning "vendor/aosp/signing/keys" is missing. Proceeding with unsigned build.)
+endif
