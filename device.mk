@@ -66,22 +66,22 @@ $(call soong_config_set,android_hardware_audio,run_64bit,true)
 # Audio
 PRODUCT_PACKAGES += \
 	android.hardware.audio.service \
-	android.hardware.audio@7.0-impl:64 \
-	android.hardware.audio.effect@7.0-impl:64 \
-	audioclient-types-aidl-cpp.vendor:64 \
-	audio.bluetooth.default:64 \
-	audio.primary.default:64 \
-	audio.r_submix.default:64 \
-	audio.usb.default:64 \
-	libalsautils:64 \
-	libopus.vendor:64 \
-	libtinycompress:64 \
-	libnbaio_mono:64 \
-	libaudiofoundation.vendor:64 \
-	libstagefrighthw.vendor:64 \
-	libprocessgroup.vendor:64 \
-	libsqlite.vendor:64 \
-	libaudioroute.vendor:64 \
+	android.hardware.audio@7.0-impl \
+	android.hardware.audio.effect@7.0-impl \
+	audioclient-types-aidl-cpp.vendor \
+	audio.bluetooth.default \
+	audio.primary.default \
+	audio.r_submix.default \
+	audio.usb.default \
+	libalsautils \
+	libopus.vendor \
+	libtinycompress \
+	libnbaio_mono \
+	libaudiofoundation.vendor \
+	libstagefrighthw.vendor \
+	libprocessgroup.vendor \
+	libsqlite.vendor \
+	libaudioroute.vendor \
 	audio_policy.stub
 
 # VENDOR BOOT RAMDISK GENERIC
@@ -91,11 +91,11 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-	android.hardware.bluetooth.audio-impl:64 \
-	libbluetooth_audio_session:64 \
-	android.hardware.bluetooth@1.0.vendor:64 \
-	android.hardware.bluetooth@1.1.vendor:64 \
-	android.hardware.bluetooth.a2dp@1.0-impl:64 \
+	android.hardware.bluetooth.audio-impl \
+	libbluetooth_audio_session \
+	android.hardware.bluetooth@1.0.vendor \
+	android.hardware.bluetooth@1.1.vendor \
+	android.hardware.bluetooth.a2dp@1.0-impl \
 	android.hardware.bluetooth.a2dp@1.0-service
 
 PRODUCT_COPY_FILES += \
@@ -215,10 +215,10 @@ PRODUCT_PACKAGES += \
 
 # Keymaster / Keymint
 PRODUCT_PACKAGES += \
-	libkeymaster_messages.vendor:64 \
-	libkeymaster_portable.vendor:64 \
-	libkeymint.vendor:64 \
-	libpuresoftkeymasterdevice.vendor:64
+	libkeymaster_messages.vendor \
+	libkeymaster_portable.vendor \
+	libkeymint.vendor \
+	libpuresoftkeymasterdevice.vendor
 
 # GNSS
 PRODUCT_PACKAGES += \
@@ -243,7 +243,11 @@ PRODUCT_PACKAGES += \
     android.hardware.security.secureclock-V1-ndk_platform.vendor \
     android.hardware.security.sharedsecret-V1-ndk_platform.vendor \
     android.hardware.security.rkp-V3-ndk.vendor \
-    libcppbor_external.vendor:64
+    libcppbor_external.vendor
+
+# Keystore
+PRODUCT_PACKAGES += \
+     android.system.keystore2
 
 # Secure Element
 PRODUCT_PACKAGES += \
@@ -361,16 +365,16 @@ PRODUCT_COPY_FILES += \
 
 # Cam
 PRODUCT_PACKAGES += \
-	android.hardware.camera.common@1.0.vendor:64 \
-	android.hardware.camera.device@1.0.vendor:64 \
-	android.hardware.camera.device@3.2.vendor:64 \
-	android.hardware.camera.device@3.3.vendor:64 \
-	android.hardware.camera.device@3.4.vendor:64 \
-	android.hardware.camera.device@3.5.vendor:64 \
-	android.hardware.camera.device@3.6.vendor:64 \
-	android.hardware.camera.provider@2.4.vendor:64 \
-	android.hardware.camera.provider@2.5.vendor:64 \
-	android.hardware.camera.provider@2.6.vendor:64
+	android.hardware.camera.common@1.0.vendor \
+	android.hardware.camera.device@1.0.vendor \
+	android.hardware.camera.device@3.2.vendor \
+	android.hardware.camera.device@3.3.vendor \
+	android.hardware.camera.device@3.4.vendor \
+	android.hardware.camera.device@3.5.vendor \
+	android.hardware.camera.device@3.6.vendor \
+	android.hardware.camera.provider@2.4.vendor \
+	android.hardware.camera.provider@2.5.vendor \
+	android.hardware.camera.provider@2.6.vendor
 
 # Keylayout
 PRODUCT_COPY_FILES += \
