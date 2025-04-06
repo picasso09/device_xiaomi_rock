@@ -53,5 +53,5 @@ genfscon sysfs /devices/platform/soc/11f00000.i2c/i2c-7/7-0060/wakeup           
 genfscon sysfs /devices/virtual/huaqin/interface/hw_info/pcba_config                        u:object_r:version_info:s0
 
 # Audio
-genfscon sysfs /devices/platform/11f00000.i2c6/i2c-6/6-0058/vmax                            u:object_r:vendor_sia_mode:s0
-genfscon sysfs /devices/platform/soc/1101a000.i2c/i2c-6/6-0058/vmax                         u:object_r:vendor_sia_mode:s0 
+genfscon sysfs /devices/platform/1101a000.i2c/i2c-6/6-0058/vmax                             u:object_r:vendor_aw87xxx_mode:s0
+genfscon sysfs /devices/platform/soc/1101a000.i2c/i2c-6/6-0058/vmax                         u:object_r:vendor_aw87xxx_mode:s0
