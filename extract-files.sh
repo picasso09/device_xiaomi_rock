@@ -67,6 +67,9 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "libavservices_minijail_vendor.so" "libavservices_minijail.so" "${2}"
             "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}"
             ;;
+	vendor/lib/libstagefright_softomx.so)
+             "${PATCHELF}" --add-needed "libshim_ui.so" "${2}"
+            ;;
 	vendor/lib64/ese_spi_nxp.so \
 	|vendor/lib64/libnvram.so \
 	|vendor/lib64/libsysenv.so)
