@@ -11,8 +11,8 @@ git clone https://github.com/picasso09/kernel_xiaomi_rock -b fifteen kernel/xiao
 git clone https://github.com/picasso09/proprietary_vendor_xiaomi_rock -b fifteen vendor/xiaomi/rock
 
 # Hardware
-git clone https://github.com/LineageOS/android_hardware_mediatek -b lineage-21 hardware/mediatek
-git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-22.0 hardware/xiaomi
+git clone https://github.com/LineageOS/android_hardware_mediatek -b lineage-22.2 hardware/mediatek
+git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-22.2 hardware/xiaomi
 
 # Sepolicy
 git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr device/mediatek/sepolicy_vndr

@@ -67,6 +67,9 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "libavservices_minijail_vendor.so" "libavservices_minijail.so" "${2}"
             "${PATCHELF}" --add-needed "libstagefright_foundation-v33.so" "${2}"
             ;;
+	vendor/lib64/vendor.mediatek.hardware.pq@2.14.so)
+             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+            ;;
 	vendor/lib64/vendor.mediatek.hardware.pq@2.15.so)
              "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;

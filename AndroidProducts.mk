@@ -15,7 +15,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/afterlife_rock.mk
+    $(LOCAL_DIR)/aosp_rock.mk
 
 COMMON_LUNCH_CHOICES := \
-    afterlife_rock-user \
+    aosp_rock-user \

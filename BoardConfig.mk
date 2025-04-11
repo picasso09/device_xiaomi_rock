@@ -63,7 +63,7 @@ AB_OTA_PARTITIONS += \
 DEXPREOPT_GENERATE_APEX_IMAGE := true
 
 # Assertation
-TARGET_OTA_ASSERT_DEVICE := rock,stone
+TARGET_OTA_ASSERT_DEVICE := stone,rock
 
 # Android Verified Boot
 BOARD_AVB_ENABLE := true
@@ -212,7 +212,7 @@ TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
 # Recovery
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 TARGET_NO_RECOVERY := true
-TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
+TARGET_RECOVERY_PIXEL_FORMAT := RGBX_8888
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/rootdir/etc/fstab.mt6789
 TARGET_USERIMAGES_USE_EXT4 := true
 TARGET_USERIMAGES_USE_F2FS := true
@@ -220,7 +220,7 @@ TARGET_USES_MKE2FS := true
 
 # Sepolicy
 include device/mediatek/sepolicy_vndr/SEPolicy.mk
-SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
+#SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
 
@@ -232,7 +232,7 @@ BOARD_VNDK_VERSION := current
 
 # VINTF
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += \
-	vendor/afterlife/config/device_framework_matrix.xml \
+	vendor/aosp/config/device_framework_matrix.xml \
 	$(DEVICE_PATH)/config/vintf/framework_compatibility_matrix.xml
 DEVICE_MANIFEST_FILE += $(DEVICE_PATH)/config/vintf/manifest.xml
 DEVICE_MATRIX_FILE += $(DEVICE_PATH)/config/vintf/compatibility_matrix.xml

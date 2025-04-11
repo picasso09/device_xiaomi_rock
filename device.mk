@@ -33,9 +33,6 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/compression.mk)
 # Call proprietary blob setup
 $(call inherit-product, vendor/xiaomi/rock/rock-vendor.mk)
 
-# Include Moto Dolby
-#$(call inherit-product, vendor/motorola-dolby/setup.mk)
-
 # Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
@@ -78,7 +75,6 @@ PRODUCT_PACKAGES += \
 	libtinycompress \
 	libnbaio_mono \
 	libaudiofoundation.vendor \
-	libstagefrighthw.vendor \
 	libprocessgroup.vendor \
 	libsqlite.vendor \
 	libaudioroute.vendor \
@@ -95,8 +91,6 @@ PRODUCT_PACKAGES += \
 	libbluetooth_audio_session \
 	android.hardware.bluetooth@1.0.vendor \
 	android.hardware.bluetooth@1.1.vendor \
-	android.hardware.bluetooth.a2dp@1.0-impl \
-	android.hardware.bluetooth.a2dp@1.0-service
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/config/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -120,10 +114,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     create_pl_dev \
     create_pl_dev.recovery
-
-# DT2W
-#PRODUCT_PACKAGES += \
-#    DT2W-Service-MT6789
 
 # fastbootd
 PRODUCT_PACKAGES += \
@@ -234,6 +224,9 @@ PRODUCT_PACKAGES += \
     libshim_sink
 
 # Keymaster
+PRODUCT_PACKAGES += \
+    android.hardware.hardware_keystore.xml \
+
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
 
@@ -244,10 +237,6 @@ PRODUCT_PACKAGES += \
     android.hardware.security.sharedsecret-V1-ndk_platform.vendor \
     android.hardware.security.rkp-V3-ndk.vendor \
     libcppbor_external.vendor
-
-# Keystore
-PRODUCT_PACKAGES += \
-     android.system.keystore2
 
 # Secure Element
 PRODUCT_PACKAGES += \
@@ -292,22 +281,17 @@ PRODUCT_COPY_FILES += \
 # Power
 PRODUCT_PACKAGES += \
     vendor.mediatek.hardware.mtkpower@1.2.vendor \
-    vendor.mediatek.hardware.mtkpower@1.2-service.stub \
     android.hardware.power@1.0.vendor \
     android.hardware.power@1.1.vendor \
     android.hardware.power@1.2.vendor \
     android.hardware.power@1.3.vendor
 
-PRODUCT_PACKAGES += \
-    libmtkperf_client_vendor \
-    libmtkperf_client
+#PRODUCT_PACKAGES += \
+#    libmtkperf_client_vendor \
+#    libmtkperf_client
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
-
-# Soundtrigger
-PRODUCT_PACKAGES += \
-	android.hardware.soundtrigger@2.3-impl
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/config/perf,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -391,13 +375,12 @@ PRODUCT_SOONG_NAMESPACES += \
 	$(LOCAL_PATH) \
 	hardware/google/interfaces \
 	hardware/google/pixel \
+	hardware/lineage/interfaces/power-libperfmgr \
 	hardware/mediatek \
-	hardware/xiaomi \
-	hardware/afterlife/interfaces/power-libperfmgr
+	hardware/xiaomi
 
 # NFC
 PRODUCT_PACKAGES += \
-    NfcNci \
     android.hardware.nfc@1.2-service \
     com.android.nfc_extras \
     Tag \
@@ -507,7 +490,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-android.hardware.light-service.xiaomi
+android.hardware.light-service.lineage
 
 # Radio
 PRODUCT_PACKAGES += \
@@ -558,8 +541,3 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-service \
     android.hardware.ir-service.example \
     android.hardware.ir-V1-ndk.vendor
-
-# Signed Build
-ifeq ($(wildcard vendor/afterlife-priv/keys),)
-$(warning "vendor/afterlife-priv/keys" is missing. Proceeding with unsigned build.)
-endif
