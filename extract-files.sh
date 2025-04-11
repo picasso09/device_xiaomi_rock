@@ -10,7 +10,7 @@ set -e
 
 DEVICE=rock
 VENDOR=xiaomi
-export PATCHELF_VERSION="0_17_2"
+#export PATCHELF_VERSION="0_17_2"
 export EU_ENABLE_BINARY_CHECKS="true" # Enabled shared_libs, symbols and soname checks
 
 # Load extract_utils and do some sanity checks
@@ -75,6 +75,10 @@ function blob_fixup() {
 	|vendor/lib64/libsysenv.so)
              "${PATCHELF}" --add-needed "libbase_shim.so" "$2"
 	    ;;
+	vendor/lib64/hw/hwcomposer.mtk_common.so \
+        |vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service)
+             "${PATCHELF}" --add-needed "libprocessgroup_shim.so" "$2"
+	    ;;
 	vendor/lib64/vendor.mediatek.hardware.pq@2.14.so)
              "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
@@ -96,6 +100,7 @@ function blob_fixup() {
             vendor/lib64/libmtkcam_stdutils.so|\
         vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so)
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
+	    "${PATCHELF}" --add-needed "libprocessgroup_shim.so" "$2"
             ;;
             system_ext/lib64/libsource.so)
             "${PATCHELF}" --add-needed "libshim_ui.so" "${2}"
