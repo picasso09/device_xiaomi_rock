@@ -1554,6 +1554,8 @@ vendor/lib/AVCSecureVdecCA.so
 vendor/lib/HEVCSecureVdecCA.so
 vendor/lib/VP9SecureVdecCA.so
 vendor/lib/libAVCSecureVencCA.so
+vendor/lib/libavservices_minijail.so
+vendor/lib/libbessound_hd_mtk_vendor.so
 vendor/lib/libHEVCdec_sa.ca7.android.so
 vendor/lib/libadpcmdec_mtk.so
 vendor/lib/libbwc.so
@@ -1572,6 +1574,7 @@ vendor/lib/libvcodecdrv_header_stub.so
 vendor/lib/libvp8dec_sa.ca7.so
 vendor/lib/libvp8enc_sa.ca7.so
 vendor/lib/libvp9dec_sa.ca7.so
+vendor/lib/libstagefrighthw.so
 vendor/lib/libstagefright_amrnb_common.so
 vendor/lib/libstagefright_bufferpool@2.0.1.so
 vendor/lib/libstagefright_enc_common.so
