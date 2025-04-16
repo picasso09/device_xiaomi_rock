@@ -74,6 +74,7 @@ PRODUCT_PACKAGES += \
 	libopus.vendor \
 	libtinycompress \
 	libnbaio_mono \
+	libstagefright \
 	libaudiofoundation.vendor \
 	libprocessgroup.vendor \
 	libsqlite.vendor \
@@ -207,7 +208,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	libkeymaster_messages.vendor \
 	libkeymaster_portable.vendor \
-	libkeymint.vendor \
 	libpuresoftkeymasterdevice.vendor
 
 # GNSS
@@ -232,9 +232,9 @@ PRODUCT_COPY_FILES += \
 
 # keymint
 PRODUCT_PACKAGES += \
-    android.hardware.security.keymint-V1-ndk_platform.vendor \
-    android.hardware.security.secureclock-V1-ndk_platform.vendor \
-    android.hardware.security.sharedsecret-V1-ndk_platform.vendor \
+    android.hardware.security.keymint-V1-ndk.vendor \
+    android.hardware.security.secureclock-V1-ndk.vendor \
+    android.hardware.security.sharedsecret-V1-ndk.vendor \
     android.hardware.security.rkp-V3-ndk.vendor \
     libcppbor_external.vendor
 
