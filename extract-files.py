@@ -10,6 +10,7 @@ from extract_utils.fixups_blob import (
 )
 
 from extract_utils.fixups_lib import (
+     lib_fixup_remove,
      lib_fixups,
      lib_fixups_user_type,
 )
@@ -32,6 +33,7 @@ def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
  lib_fixups: lib_fixups_user_type = {
      **lib_fixups,
      ('vendor.mediatek.hardware.videotelephony@1.0',): lib_fixup_vendor_suffix,
+     ('libsink',): lib_fixup_remove,
  }
 
 blob_fixups: blob_fixups_user_type = {
@@ -65,7 +67,12 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/lib64/ese_spi_nxp.so', 'vendor/lib64/libnvram.so', 'vendor/lib64/libsysenv.so'): blob_fixup()
         .add_needed('libbase_shim.so'),
     ('vendor/lib64/hw/hwcomposer.mtk_common.so', 'vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service') : blob_fixup()
-        .add_needed('libprocessgroup_shim.so')
+        .add_needed('libprocessgroup_shim.so'),
+    ('vendor/lib64/libteei_daemon_vfs.so', 'vendor/lib64/lib3a.flash.so', 'vendor/lib64/libSQLiteModule_VER_ALL.so'): blob_fixup()
+         .add_needed('liblog.so'),
+     'vendor/lib64/libmnl.so' : blob_fixup()
+         .add_needed('libcutils.so')
+
 }  # fmt: skip
 
 module = ExtractUtilsModule(
