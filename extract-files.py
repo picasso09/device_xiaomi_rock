@@ -30,11 +30,11 @@ def lib_fixup_vendor_suffix(lib: str, partition: str, *args, **kwargs):
      return f'{lib}_{partition}' if partition == 'vendor' else None
 
 
- lib_fixups: lib_fixups_user_type = {
+lib_fixups: lib_fixups_user_type = {
      **lib_fixups,
      ('vendor.mediatek.hardware.videotelephony@1.0',): lib_fixup_vendor_suffix,
      ('libsink',): lib_fixup_remove,
- }
+}
 
 blob_fixups: blob_fixups_user_type = {
     'system_ext/lib64/libsink.so': blob_fixup()
@@ -42,7 +42,7 @@ blob_fixups: blob_fixups_user_type = {
     'system_ext/lib64/libsource.so': blob_fixup()
         .add_needed('libui_shim.so'),
     'vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b': blob_fixup()
-        .add_needed('libstagefright_foundation-v33.so'),
+        .add_needed('libstagefright_foundation-v33.so')
 	.replace_needed('libavservices_minijail_vendor.so', 'libavservices_minijail.so'),
     ('vendor/bin/hw/android.hardware.gnss-service.mediatek', 'vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so'): blob_fixup()
         .replace_needed('android.hardware.gnss-V1-ndk_platform.so', 'android.hardware.gnss-V1-ndk.so'),
@@ -57,12 +57,12 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/bin/mnld', 'vendor/lib64/mt6789/libaalservice.so', 'vendor/lib64/mt6789/libcam.utils.sensorprovider.so'): blob_fixup()
         .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
     ('vendor/lib64/vendor.mediatek.hardware.pq@2.14.so', 'vendor/lib64/vendor.mediatek.hardware.pq@2.15.so', 'vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so'): blob_fixup()
-        .replace_needed('libutils.so', 'libutils-v32.so'),
+        .replace_needed('libutils.so', 'libutils-v32.so')
         .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
     'vendor/lib64/mt6789/libmtkcam_featurepolicy.so': blob_fixup()
         .binary_regex_replace(b'\x34\xE8\x87\x40\xB9', b'\x34\x28\x02\x80\x52'),
     ('vendor/lib64/mt6789/libmtkcam_stdutils.so', 'vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so'): blob_fixup()
-        .replace_needed('libutils.so', 'libutils-v32.so'),
+        .replace_needed('libutils.so', 'libutils-v32.so')
 	.add_needed('libprocessgroup_shim.so'),
     ('vendor/lib64/ese_spi_nxp.so', 'vendor/lib64/libnvram.so', 'vendor/lib64/libsysenv.so'): blob_fixup()
         .add_needed('libbase_shim.so'),

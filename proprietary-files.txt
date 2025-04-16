@@ -1535,7 +1535,7 @@ vendor/lib64/libviagpsrpc.so
 # Keymint / Keymaster
 vendor/bin/hw/android.hardware.security.keymint@1.0-service.beanpod
 vendor/bin/bp_kmsetkey_ca
-vendor/bin/kmsetkey;NODEPS
+vendor/bin/kmsetkey
 vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
 vendor/etc/init/android.hardware.security.keymint-service.beanpod.rc
 vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
