@@ -1558,7 +1558,6 @@ vendor/lib/libAVCSecureVencCA.so
 vendor/lib/libavservices_minijail.so
 vendor/lib/libbessound_hd_mtk_vendor.so
 vendor/lib/libHEVCdec_sa.ca7.android.so:DISABLE_CHECKELF
-vendor/lib/libadpcmdec_mtk.so
 vendor/lib/libbwc.so
 vendor/lib/libh264dec_customize.so
 vendor/lib/libh264dec_sa.ca7.so:DISABLE_CHECKELF
@@ -1566,7 +1565,6 @@ vendor/lib/libh264dec_sd.ca7.so:DISABLE_CHECKELF
 vendor/lib/libh264dec_se.ca7.so:DISABLE_CHECKELF
 vendor/lib/libh264enc_sa.ca7.so:DISABLE_CHECKELF
 vendor/lib/libhevce_sb.ca7.android.so:DISABLE_CHECKELF
-vendor/lib/libmp3dec_mtk.so
 vendor/lib/libmp4enc_sa.ca7.so:DISABLE_CHECKELF
 vendor/lib/libmp4enc_xa.ca7.so:DISABLE_CHECKELF
 vendor/lib/libvcodec_oal.so:DISABLE_CHECKELF
