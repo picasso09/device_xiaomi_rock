@@ -70,6 +70,15 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/lib64/mt6789/libmtkcam_stdutils.so', 'vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so'): blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so')
 	.add_needed('libprocessgroup_shim.so'),
+    'vendor/lib64/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so': blob_fixup()
+	.clear_symbol_version('AHardwareBuffer_allocate')
+	.clear_symbol_version('AHardwareBuffer_describe')
+	.clear_symbol_version('AHardwareBuffer_createFromHandle')
+	.clear_symbol_version('AHardwareBuffer_getNativeHandle')
+	.clear_symbol_version('AHardwareBuffer_lock')
+	.clear_symbol_version('AHardwareBuffer_lockPlanes')
+	.clear_symbol_version('AHardwareBuffer_release')
+	.clear_symbol_version('AHardwareBuffer_unlock'),
     ('vendor/lib64/ese_spi_nxp.so', 'vendor/lib64/libnvram.so', 'vendor/lib64/libsysenv.so'): blob_fixup()
         .add_needed('libbase_shim.so'),
     ('vendor/lib64/hw/hwcomposer.mtk_common.so', 'vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service') : blob_fixup()
