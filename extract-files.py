@@ -74,7 +74,7 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libbase_shim.so'),
     ('vendor/lib64/hw/hwcomposer.mtk_common.so', 'vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service') : blob_fixup()
         .add_needed('libprocessgroup_shim.so'),
-    ('vendor/lib64/libteei_daemon_vfs.so', 'vendor/lib64/lib3a.flash.so', 'vendor/lib64/libSQLiteModule_VER_ALL.so'): blob_fixup()
+    ('vendor/lib64/libteei_daemon_vfs.so', 'vendor/lib64/mt6789/libaaa_ltm.so', 'vendor/lib64/mt6789/lib3a.flash.so', 'vendor/lib64/mt6789/lib3a.ae.stat.so', 'vendor/lib64/mt6789/lib3a.sensors.color.so', 'vendor/lib64/mt6789/lib3a.sensors.flicker.so', 'vendor/lib64/libSQLiteModule_VER_ALL.so'): blob_fixup()
          .add_needed('liblog.so'),
      'vendor/lib64/libmnl.so' : blob_fixup()
          .add_needed('libcutils.so')
