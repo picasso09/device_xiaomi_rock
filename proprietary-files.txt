@@ -2064,8 +2064,6 @@ vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
 vendor/bin/hw/android.hardware.vibrator-service.mediatek
 vendor/etc/init/vibrator-mtk-default.rc
 vendor/etc/vintf/manifest/vibrator-mtk-default.xml
-vendor/lib/libvibrator.so
-vendor/lib64/libvibrator.so
 
 
 # USB
