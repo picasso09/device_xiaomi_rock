@@ -38,6 +38,10 @@ lib_fixups: lib_fixups_user_type = {
 }
 
 blob_fixups: blob_fixups_user_type = {
+    'system/lib64/libshowlogo.so': blob_fixup()
+	.replace_needed('libui.so', 'libui-v32.so')
+	.add_needed('libui_shim.so')
+	.add_needed('libbase_shim.so'),
     'system_ext/lib64/libsink.so': blob_fixup()
         .add_needed('libaudioclient_shim.so'),
     'system_ext/lib64/libsource.so': blob_fixup()

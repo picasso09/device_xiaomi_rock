@@ -1245,7 +1245,7 @@ vendor/etc/camera/single_morpho_lowlight_2.0_India_sunny_s5kjn1_main_i_qq.xml
 # Charger
 system/bin/kpoc_charger
 system/etc/init/kpoc_charger.rc
-system/lib64/libshowlogo.so
+system/lib64/libshowlogo.so;DISABLE_CHECKELF
 
 # Display
 vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789
