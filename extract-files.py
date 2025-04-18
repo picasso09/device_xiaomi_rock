@@ -85,7 +85,7 @@ blob_fixups: blob_fixups_user_type = {
 	.clear_symbol_version('AHardwareBuffer_lockPlanes')
 	.clear_symbol_version('AHardwareBuffer_release')
 	.clear_symbol_version('AHardwareBuffer_unlock'),
-    ('vendor/lib64/ese_spi_nxp.so', 'vendor/lib64/libnvram.so', 'vendor/lib64/libsysenv.so'): blob_fixup()
+    ('vendor/lib64/ese_spi_nxp.so', 'vendor/lib/libsysenv.so', 'vendor/lib64/libsysenv.so'): blob_fixup()
         .add_needed('libbase_shim.so'),
     ('vendor/lib64/hw/hwcomposer.mtk_common.so', 'vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service') : blob_fixup()
         .add_needed('libprocessgroup_shim.so'),
