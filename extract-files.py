@@ -68,7 +68,7 @@ blob_fixups: blob_fixups_user_type = {
         .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
      ('vendor/lib/libnvram.so', 'vendor/lib64/libnvram.so'): blob_fixup()
 	.add_needed('libbase_shim.so'),
-    ('vendor/lib64/vendor.mediatek.hardware.pq@2.14.so', 'vendor/lib64/vendor.mediatek.hardware.pq@2.15.so', 'vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so'): blob_fixup()
+    ('vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so'): blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so')
         .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
     'vendor/lib64/mt6789/libmtkcam_featurepolicy.so': blob_fixup()
@@ -102,6 +102,7 @@ module = ExtractUtilsModule(
     blob_fixups=blob_fixups,
     namespace_imports=namespace_imports,
     lib_fixups=lib_fixups,
+    add_firmware_proprietary_file=True,
 )
 
 if __name__ == '__main__':
