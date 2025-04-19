@@ -1,0 +1,6 @@
+prebuilt_hidl_interfaces { 
+    name: "hidl_atci_interface",
+    interfaces: [  
+        "vendor.mediatek.hardware.atci@1.0::IAtcid",
+    ],
+}
