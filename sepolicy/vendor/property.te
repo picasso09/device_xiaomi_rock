@@ -4,6 +4,9 @@ vendor_public_prop(vendor_audioserver_prop)
 # Display
 vendor_public_prop(vendor_displayfeature_prop)
 
+# health_check
+system_public_prop(flags_health_check_prop)
+
 # Info
 vendor_public_prop(vendor_fp_prop)
 
