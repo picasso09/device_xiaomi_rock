@@ -37,22 +37,10 @@ AB_OTA_UPDATER := true
 
 AB_OTA_PARTITIONS += \
     boot \
-    dpm \
     dtbo \
-    gz \
-    lk \
-    logo \
-    mcupm \
-    md1img \
-    pi_img \
-    preloader_raw \
     product \
-    scp \
-    spmfw \
-    sspm \
     system \
     system_ext \
-    tee \
     vbmeta \
     vbmeta_system \
     vbmeta_vendor \
@@ -253,3 +241,6 @@ WIFI_HIDL_FEATURE_DUAL_INTERFACE := true
 
 # Enable F2FS Compression
 #PRODUCT_FS_COMPRESSION := 1
+
+# Inherit the proprietary files
+include vendor/xiaomi/rock/BoardConfigVendor.mk
