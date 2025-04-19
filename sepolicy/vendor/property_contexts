@@ -15,6 +15,9 @@ ro.vendor.sdr2hdr.by.layer.support u:object_r:vendor_displayfeature_prop:s0
 ro.vendor.standard.video.enable u:object_r:vendor_displayfeature_prop:s0
 vendor.hbm.enable u:object_r:vendor_displayfeature_prop:s0
 
+# Health Check
+persist.device_config.activity_manager.use_compaction	u:object_r:flags_health_check_prop:s0
+
 # Mi thermald properties
 vendor.sys.thermal.data.path u:object_r:vendor_thermal_normal_prop:s0
 
