@@ -1802,6 +1802,7 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 
 # Power
+vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
 vendor/etc/task_profiles.json
 vendor/lib/libmtkperf_client_vendor.so
 vendor/lib64/vendor.mediatek.hardware.power@1.1.so
