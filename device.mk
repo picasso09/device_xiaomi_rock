@@ -133,7 +133,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service
 
 PRODUCT_PACKAGES += \
-    android.hardware.memtrack-service.mediatek-mali
+    android.hardware.memtrack-service.mediatek
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -192,6 +192,9 @@ PRODUCT_PACKAGES += \
     wpa_supplicant \
     libwifi-hal-wrapper
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/config/wifi/txpowerctrl.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl.cfg
+
 # Local time
 PRODUCT_PACKAGES += \
     local_time.default
@@ -206,7 +209,8 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    vendor.mediatek.hardware.mtkpower@1.2.vendor
+    android.hardware.power-service-mediatek \
+    vendor.mediatek.hardware.mtkpower@1.2-service.stub
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json

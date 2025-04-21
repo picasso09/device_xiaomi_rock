@@ -1,4 +1,4 @@
-# blobs from rock 14 UP1A.231005.007 V816.0.12.0.ULUMIXM release-keys
+#blobs from rock 14 UP1A.231005.007 V816.0.12.0.ULUMIXM release-keys
  
 # AEE
 vendor/lib/libaedv.so
@@ -1247,7 +1247,7 @@ vendor/etc/camera/single_morpho_lowlight_2.0_India_sunny_s5kjn1_main_i_qq.xml
 # Charger
 system/bin/kpoc_charger
 system/etc/init/kpoc_charger.rc
-system/lib64/libshowlogo.so;DISABLE_CHECKELF
+system/lib64/libshowlogo.so
 
 # Display
 vendor/bin/hw/mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789;SYMLINK=vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789;SYMLINK=vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek
@@ -1278,7 +1278,7 @@ vendor/lib/libion_mtk.so
 vendor/lib/libion_ulit.so
 vendor/lib/libladder.so
 vendor/lib/mt6789/arm.graphics-V1-ndk_platform.so;SYMLINK=vendor/lib/arm.graphics-V1-ndk_platform.so
-vendor/lib/mt6789/libaiselector.so
+vendor/lib/mt6789/libaiselector.so;SYMLINK=vendor/lib/libaiselector.so
 vendor/lib/mt6789/libdpframework.so;SYMLINK=vendor/lib/libdpframework.so
 vendor/lib/mt6789/libgpudataproducer.so;SYMLINK=vendor/lib/libgpudataproducer.so
 vendor/lib/hw/mt6789/vulkan.mali.so;SYMLINK=vendor/lib/hw/vulkan.mali.so
@@ -1374,7 +1374,6 @@ vendor/firmware/soc2_2_ram_wifi_1d_1_hdr.bin
 vendor/firmware/soc2_2_ram_wifi_1e_1_hdr.bin
 vendor/firmware/soc_fm_v1_coeff.bin
 vendor/firmware/soc_fm_v1_patch.bin
-vendor/firmware/txpowerctrl.cfg
 vendor/firmware/wifi.cfg
 vendor/firmware/WIFI_RAM_CODE_soc2_2_1d_1.bin
 vendor/firmware/WIFI_RAM_CODE_soc2_2_1e_1.bin
@@ -1778,7 +1777,7 @@ vendor/etc/init/vendor.mediatek.hardware.pq@2.2-service.rc
 vendor/lib/mt6789/libpq_cust_base.so;SYMLINK=vendor/lib/libpq_cust_base.so
 vendor/lib/mt6789/libpq_prot.so;SYMLINK=vendor/lib/libpq_prot.so
 vendor/lib/vendor.mediatek.hardware.pq@2.0.so
-vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so
+vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so;SYMLINK=vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so
 vendor/lib64/libpqframework.so
 vendor/lib64/librgbwlightsensor.so
 vendor/lib64/mt6789/libpq_cust_base.so;SYMLINK=vendor/lib64/libpq_cust_base.so
@@ -1802,7 +1801,6 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.8.so
 vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 
 # Power
-vendor/bin/hw/vendor.mediatek.hardware.mtkpower@1.0-service
 vendor/etc/task_profiles.json
 vendor/lib/libmtkperf_client_vendor.so
 vendor/lib64/vendor.mediatek.hardware.power@1.1.so

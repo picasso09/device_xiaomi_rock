@@ -63,7 +63,7 @@ blob_fixups: blob_fixups_user_type = {
 	.replace_needed('android.hardware.security.secureclock-V1-ndk_platform.so', 'android.hardware.security.secureclock-V1-ndk.so')
 	.add_needed('android.hardware.security.rkp-V3-ndk.so'),
     'vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so': blob_fixup()
-	.replace_needed('libhidltransport.so', 'libhidlbase-v32.so'),
+	.replace_needed('libhidlbase.so', 'libhidlbase-v32.so'),
     ('vendor/bin/mnld', 'vendor/lib64/mt6789/libaalservice.so', 'vendor/lib64/mt6789/libcam.utils.sensorprovider.so'): blob_fixup()
         .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
      ('vendor/lib/libnvram.so', 'vendor/lib64/libnvram.so'): blob_fixup()
@@ -71,8 +71,6 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so'): blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so')
         .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so'),
-    'vendor/lib64/mt6789/libmtkcam_featurepolicy.so': blob_fixup()
-        .binary_regex_replace(b'\x34\xE8\x87\x40\xB9', b'\x34\x28\x02\x80\x52'),
     ('vendor/lib64/mt6789/libmtkcam_stdutils.so', 'vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so'): blob_fixup()
         .replace_needed('libutils.so', 'libutils-v32.so')
 	.add_needed('libprocessgroup_shim.so'),
