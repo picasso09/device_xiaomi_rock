@@ -209,7 +209,7 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power-service-mediatek \
+    android.hardware.power-service.lineage-libperfmgr \
     vendor.mediatek.hardware.mtkpower@1.2-service.stub
 
 PRODUCT_COPY_FILES += \
@@ -349,10 +349,8 @@ PRODUCT_COPY_FILES += \
 
 # Thermal
 PRODUCT_PACKAGES += \
-    android.hardware.thermal-service.mediatek
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/config/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
+    android.hardware.thermal@1.0-impl \
+    android.hardware.thermal@2.0.vendor
 
 # Vibrator
 PRODUCT_PACKAGES += \
