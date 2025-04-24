@@ -133,7 +133,7 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.3-service
 
 PRODUCT_PACKAGES += \
-    android.hardware.memtrack-service.mediatek
+    android.hardware.memtrack-service.mediatek-mali
 
 # DRM
 PRODUCT_PACKAGES += \
@@ -176,6 +176,7 @@ PRODUCT_COPY_FILES += \
 
 # Sensors
 PRODUCT_PACKAGES += \
+    android.hardware.sensors@2.0-subhal-impl-1.0:64 \
     android.hardware.sensors-service.multihal
 
 PRODUCT_COPY_FILES += \
