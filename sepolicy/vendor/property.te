@@ -6,3 +6,6 @@ vendor_public_prop(vendor_displayfeature_prop)
 
 # Info
 vendor_public_prop(vendor_fp_prop)
+
+# Mi Thermal
+vendor_public_prop(vendor_thermal_engine_prop)
