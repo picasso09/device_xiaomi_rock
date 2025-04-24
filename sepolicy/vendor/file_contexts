@@ -13,7 +13,8 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.xiaomi-libperfmgr  u:object_r:hal_power_default_exec:s0
 
 # Thermals
-/(vendor|system/vendor)/bin/mi_thermald u:object_r:mi_thermald_exec:s0
+# Thermal
+/(vendor|system/vendor)/bin/mi_thermald						    u:object_r:mi_thermald_exec:s0
 
 # Touch panel gesture
 /sys/devices/virtual/touch/touch_dev/gesture_double_tap_state                       u:object_r:sysfs_tp_gesture:s0
