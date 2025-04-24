@@ -9,3 +9,6 @@ system_public_prop(flags_health_check_prop)
 
 # Info
 vendor_public_prop(vendor_fp_prop)
+
+# Mi Thermal
+vendor_public_prop(vendor_thermal_engine_prop)
