@@ -4,6 +4,9 @@ vendor_public_prop(vendor_audioserver_prop)
 # Display
 vendor_public_prop(vendor_displayfeature_prop)
 
+# Fingerprint
+vendor_internal_prop(vendor_fingerprint_persist_prop)
+
 # health_check
 system_public_prop(flags_health_check_prop)
 
