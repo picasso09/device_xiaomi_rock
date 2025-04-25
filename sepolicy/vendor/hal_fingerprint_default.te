@@ -9,6 +9,9 @@ allow hal_fingerprint_default vendor_hal_fingerprint_hwservice_xiaomi:hwservice_
 allow init hal_fingerprint_default:process { ptrace };
 
 
-
 binder_call(hal_fingerprint_default, mtk_hal_power)
+
+# Allow fingerprint HAL to get and set its props
+get_prop(hal_fingerprint_default, vendor_fingerprint_persist_prop)
 set_prop(hal_fingerprint_default, vendor_fp_prop)
+set_prop(hal_fingerprint_default, vendor_fingerprint_persist_prop)
