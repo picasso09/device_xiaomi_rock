@@ -39,6 +39,9 @@ vendor.panel.vendor        u:object_r:vendor_fp_prop:s0
 
 # RIL
 ro.vendor.oem.sno                        u:object_r:vendor_mtk_radio_prop:s0
+ro.vendor.oem.psno                       u:object_r:vendor_mtk_radio_prop:s0
+ro.vendor.oem.imei                       u:object_r:vendor_mtk_radio_prop:s0
+ro.vendor.oem.meid                       u:object_r:vendor_mtk_radio_prop:s0
   
 # VT
 vendor.ims.vt.signalstrength.    u:object_r:system_mtk_ims_vt_signalstrength_prop:s0
