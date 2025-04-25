@@ -33,6 +33,7 @@
 /dev/lirc0                                                                          u:object_r:lirc_device:s0
 
 # Fingerprint
+/mnt/vendor/persist/goodix(/.*)?                                                    u:object_r:vendor_fingerprint_data_file:s0
 /data/vendor/gf_data(/.*)?                                                          u:object_r:vendor_fingerprint_data_file:s0
 
 # Camera
