@@ -1,6 +1,7 @@
 # Battery
 genfscon sysfs /class/power_supply/usb/quick_charge_type                                    u:object_r:sysfs_power_supply:s0
 genfscon sysfs /devices/platform/charger/power_supply/usb(/.*)?                             u:object_r:sysfs_power_supply:s0
+genfscon sysfs /devices/platform/mtk_ctd/power_supply                                       u:object_r:sysfs_power_supply:s0
 genfscon sysfs /devices/platform/soc/11017000.i2c/i2c-5/5-006a/power_supply/charger(/.*)?   u:object_r:sysfs_power_supply:s0
 genfscon sysfs /class/mtk-battery/battery/input_suspend                                     u:object_r:sysfs_power_supply:s0
 
