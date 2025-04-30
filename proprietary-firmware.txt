@@ -6,7 +6,7 @@ logo.img;AB
 mcupm.img;AB
 md1img.img;AB
 pi_img.img;AB
-preloader_raw.img;AB
+preloader_raw.img;AB|7b98750858165a58ebfa65bfe7c01112c5198efd)
 scp.img;AB
 spmfw.img;AB
 sspm.img;AB
