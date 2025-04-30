@@ -1,0 +1,10 @@
+android_app_import {
+	name: "GoogleCameraGo",
+	owner: "google",
+	apk: "GoogleCameraGo.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: true,
+	},
+	privileged: true,
+}

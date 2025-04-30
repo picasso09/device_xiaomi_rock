@@ -332,7 +332,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
 
-# Google camera
+# Google CameraGo
+PRODUCT_PACKAGES += \
+    GoogleCameraGo
+
+# Google PDF
 PRODUCT_PACKAGES += \
     GooglePDFViewer
 
