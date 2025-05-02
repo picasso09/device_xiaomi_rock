@@ -169,21 +169,4 @@ on init
     insmod /vendor/lib/modules/millet_pkg.ko
     insmod /vendor/lib/modules/millet_sig.ko
     insmod /vendor/lib/modules/millet_oem_cgroup.ko
-    
-# DT2W
-on boot
-    chmod 0666 /system/bin/sendevent
-    chmod 0666 /dev/input/event4
-    chmod 0666 /dev/input/event3
-    exec - root -- /vendor/bin/init.panel_info.sh
-on property:persist.sys.MT6789.dt2w=0 && property:vendor.panel.touch_vendor=3
-    exec - root -- /system/bin/sendevent /dev/input/event4 0 1 4
 
-on property:persist.sys.MT6789.dt2w=1 && property:vendor.panel.touch_vendor=3
-    exec - root -- /system/bin/sendevent /dev/input/event4 0 1 5
-
-on property:persist.sys.MT6789.dt2w=1 && property:vendor.panel.touch_vendor=4
-    exec - root -- /system/bin/sendevent /dev/input/event3 0 1 5
-
-on property:persist.sys.MT6789.dt2w=0 && property:vendor.panel.touch_vendor=4
-    exec - root -- /system/bin/sendevent /dev/input/event3 0 1 4
