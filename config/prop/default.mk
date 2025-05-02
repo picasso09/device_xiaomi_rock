@@ -9,7 +9,7 @@ endif
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.secure=0 \
     ro.adb.secure=0 \
-    ro.force.debuggable=1 \
+    ro.force.debuggable=0 \
 # Bluetooth
 # ro.bluetooth.a2dp_offload.supported=false
 # ro.vendor.mtk.bt_bleaudio_enable=false 
