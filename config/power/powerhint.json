@@ -175,15 +175,6 @@
       "Type": "Property"
     },
     {
-      "Name": "SchedBoost",
-      "Path": "/proc/perfmgr/boost_ctrl/eas_ctrl/sched_boost",
-      "Values": [
-        "1",
-        "0"
-      ],
-      "ResetOnInit": true
-    },
-    {
       "Name": "DoubleTapToWakeEnable",
       "Path": "/sys/devices/platform/soc/1100a000.spi0/spi_master/spi0/spi0.1/fts_gesture_mode",
       "Values": [
@@ -330,12 +321,6 @@
       "Node": "GPUBlockBoost",
       "Duration": 5000,
       "Value": "101"
-    },
-    {
-      "PowerHint": "LAUNCH",
-      "Node": "SchedBoost",
-      "Duration": 3000,
-      "Value": "1"
     },
     {
       "PowerHint": "CAMERA_LAUNCH",
