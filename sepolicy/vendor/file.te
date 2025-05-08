@@ -23,4 +23,3 @@ type vendor_camera_data_file, file_type, data_file_type;
 # Audio
 type vendor_audio_prop, file_type;
 type vendor_aw87xxx_mode, fs_type, sysfs_type;
-type vendor_audio_data_file, file_type, data_file_type;
