@@ -12,32 +12,24 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/rock/device.mk)
 
 # Inherit some common AfterLife stuff
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Bootanimation Res
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Axion flags
+# Pixel flags
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+TARGET_INCLUDE_LIVE_WALLPAPERS := true
+TARGET_SUPPORTS_GOOGLE_BATTERY := false
+TARGET_SUPPORTS_NOW_PLAYING := true
 USE_PIXEL_CHARGER := true
-
-# Define rear camera specs (multiple sensors supported)
-AXION_CAMERA_REAR_INFO := 50,2,2
-# Define front camera specs
-AXION_CAMERA_FRONT_INFO := 5
-AXION_MAINTAINER := picasso09
-BYPASS_CHARGE_SUPPORTED := true
-# Define small and big core groups
-AXION_CPU_SMALL_CORES := 0,1,2,3,4,5
-AXION_CPU_BIG_CORES := 6,7
-
-# Processor name (use "_" for spaces)
-AXION_PROCESSOR := Mediatek_Helio_G99
+TARGET_ENABLE_BLUR := true
+CUSTOM_MAINTAINER := picasso09
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rock
-PRODUCT_NAME := lineage_rock
+PRODUCT_NAME := aosp_rock
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := 22071219AI
 PRODUCT_MANUFACTURER := Xiaomi
