@@ -27,9 +27,6 @@ TARGET_CPU_VARIANT_RUNTIME := cortex-a76
 # Audio
 BOARD_USES_ALSA_AUDIO := true
 
-# Enable 64-bit for non-zygote.
-ZYGOTE_FORCE_64 := true
-
 # Force any prefer32 targets to be compiled as 64 bit.
 IGNORE_PREFER32_ON_DEVICE := true
 
