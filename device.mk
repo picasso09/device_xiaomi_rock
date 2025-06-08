@@ -48,13 +48,13 @@ TARGET_SCREEN_WIDTH := 1080
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_system=true \
     POSTINSTALL_PATH_system=system/bin/otapreopt_script \
-    FILESYSTEM_TYPE_system=erofs \
+    FILESYSTEM_TYPE_system=$(BOARD_SYSTEMIMAGE_FILE_SYSTEM_TYPE) \
     POSTINSTALL_OPTIONAL_system=true
 
 AB_OTA_POSTINSTALL_CONFIG += \
     RUN_POSTINSTALL_vendor=true \
     POSTINSTALL_PATH_vendor=bin/checkpoint_gc \
-    FILESYSTEM_TYPE_vendor=erofs \
+    FILESYSTEM_TYPE_vendor=$(BOARD_VENDORIMAGE_FILE_SYSTEM_TYPE) \
     POSTINSTALL_OPTIONAL_vendor=true
 
 # Audio 64bit
@@ -63,21 +63,21 @@ $(call soong_config_set,android_hardware_audio,run_64bit,true)
 # Audio
 PRODUCT_PACKAGES += \
 	android.hardware.audio.service \
-	android.hardware.audio@7.0-impl:64 \
-	android.hardware.audio.effect@7.0-impl:64 \
-	audioclient-types-aidl-cpp.vendor:64 \
-	audio.bluetooth.default:64 \
-	audio.primary.default:64 \
-	audio.r_submix.default:64 \
-	audio.usb.default:64 \
-	libalsautils:64 \
-	libopus.vendor:64 \
-	libtinycompress:64 \
-	libaudiofoundation.vendor:64 \
-	libstagefrighthw.vendor:64 \
-	libprocessgroup.vendor:64 \
-	libsqlite.vendor:64 \
-	libaudioroute.vendor:64 \
+	android.hardware.audio@7.0-impl \
+	android.hardware.audio.effect@7.0-impl \
+	audioclient-types-aidl-cpp.vendor \
+	audio.bluetooth.default \
+	audio.primary.default \
+	audio.r_submix.default \
+	audio.usb.default \
+	libalsautils \
+	libopus.vendor \
+	libtinycompress \
+	libaudiofoundation.vendor \
+	libstagefrighthw.vendor \
+	libprocessgroup.vendor \
+	libsqlite.vendor \
+	libaudioroute.vendor \
 	audio_policy.stub
 
 # VENDOR BOOT RAMDISK GENERIC
@@ -87,10 +87,10 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-	android.hardware.bluetooth.audio-impl:64 \
-	libbluetooth_audio_session:64 \
-	android.hardware.bluetooth@1.0.vendor:64 \
-	android.hardware.bluetooth@1.1.vendor:64
+	android.hardware.bluetooth.audio-impl \
+	libbluetooth_audio_session \
+	android.hardware.bluetooth@1.0.vendor \
+	android.hardware.bluetooth@1.1.vendor
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/config/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -111,10 +111,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     create_pl_dev \
     create_pl_dev.recovery
-
-# DT2W
-#PRODUCT_PACKAGES += \
-#    DT2W-Service-MT6789
 
 # fastbootd
 PRODUCT_PACKAGES += \
@@ -207,10 +203,10 @@ PRODUCT_PACKAGES += \
 
 # Keymaster / Keymint
 PRODUCT_PACKAGES += \
-	libkeymaster_messages.vendor:64 \
-	libkeymaster_portable.vendor:64 \
-	libkeymint.vendor:64 \
-	libpuresoftkeymasterdevice.vendor:64
+	libkeymaster_messages.vendor \
+	libkeymaster_portable.vendor \
+	libkeymint.vendor \
+	libpuresoftkeymasterdevice.vendor
 
 # GNSS
 PRODUCT_PACKAGES += \
@@ -235,7 +231,7 @@ PRODUCT_PACKAGES += \
     android.hardware.security.secureclock-V1-ndk_platform.vendor \
     android.hardware.security.sharedsecret-V1-ndk_platform.vendor \
     android.hardware.security.rkp-V3-ndk.vendor \
-    libcppbor_external.vendor:64
+    libcppbor_external.vendor
 
 # Secure Element
 PRODUCT_PACKAGES += \
@@ -353,16 +349,16 @@ PRODUCT_COPY_FILES += \
 
 # Cam
 PRODUCT_PACKAGES += \
-	android.hardware.camera.common@1.0.vendor:64 \
-	android.hardware.camera.device@1.0.vendor:64 \
-	android.hardware.camera.device@3.2.vendor:64 \
-	android.hardware.camera.device@3.3.vendor:64 \
-	android.hardware.camera.device@3.4.vendor:64 \
-	android.hardware.camera.device@3.5.vendor:64 \
-	android.hardware.camera.device@3.6.vendor:64 \
-	android.hardware.camera.provider@2.4.vendor:64 \
-	android.hardware.camera.provider@2.5.vendor:64 \
-	android.hardware.camera.provider@2.6.vendor:64
+	android.hardware.camera.common@1.0.vendor \
+	android.hardware.camera.device@1.0.vendor \
+	android.hardware.camera.device@3.2.vendor \
+	android.hardware.camera.device@3.3.vendor \
+	android.hardware.camera.device@3.4.vendor \
+	android.hardware.camera.device@3.5.vendor \
+	android.hardware.camera.device@3.6.vendor \
+	android.hardware.camera.provider@2.4.vendor \
+	android.hardware.camera.provider@2.5.vendor \
+	android.hardware.camera.provider@2.6.vendor
 
 # Keylayout
 PRODUCT_COPY_FILES += \
@@ -530,10 +526,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
 
-# Remove Unwanted Packages
-PRODUCT_PACKAGES += \
-    RemovePackages
-
 # Speed profile services and wifi-service to reduce RAM and storage
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 
@@ -547,7 +539,3 @@ PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-service \
     android.hardware.ir-service.example \
     android.hardware.ir-V1-ndk.vendor
-
-ifeq ($(wildcard vendor/aosp/signing/keys),)
-$(warning "vendor/aosp/signing/keys" is missing. Proceeding with unsigned build.)
-endif
