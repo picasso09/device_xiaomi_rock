@@ -6,9 +6,6 @@ type vendor_sysfs_displayfeature, fs_type, sysfs_type;
 type sysfs_graphics, fs_type, sysfs_type;
 type vendor_sysfs_graphics, fs_type, sysfs_type;
 
-# Health HAL
-type sysfs_power_supply, fs_type, sysfs_type;
-
 # Touch gestures
 type sysfs_tp_gesture, fs_type, sysfs_type;
 type touchfeature_device, dev_type;
