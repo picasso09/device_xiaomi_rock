@@ -1,13 +1,13 @@
 # Firmware - from rock 13 TP1A.220624.014/V14.0.9.0.TLUMIXM release-keys
-dpm.img;AB
-gz.img;AB
-lk.img;AB
-logo.img;AB
-mcupm.img;AB
-md1img.img;AB
-pi_img.img;AB
-preloader_raw.img;AB|7b98750858165a58ebfa65bfe7c01112c5198efd
-scp.img;AB
-spmfw.img;AB
-sspm.img;AB
-tee.img;AB
+dpm.img
+gz.img
+lk.img
+logo.img
+mcupm.img
+md1img.img
+pi_img.img
+preloader_raw.img
+scp.img
+spmfw.img
+sspm.img
+tee.img
