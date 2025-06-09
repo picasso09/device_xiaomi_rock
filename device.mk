@@ -261,6 +261,9 @@ PRODUCT_PACKAGES += \
     android.hardware.tetheroffload.control@1.1.vendor \
     android.hardware.tetheroffload.config@1.0.vendor \
 
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/config/txpowerctrl.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl.cfg
+
 # Local time
 PRODUCT_PACKAGES += \
     local_time.default
