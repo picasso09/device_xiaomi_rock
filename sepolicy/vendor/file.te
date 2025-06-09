@@ -1,3 +1,6 @@
+# Firmware
+type preloader_raw_block_device, dev_type;
+
 # Graphics
 type vendor_sysfs_displayfeature, fs_type, sysfs_type;
 type sysfs_graphics, fs_type, sysfs_type;

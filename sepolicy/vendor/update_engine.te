@@ -1,0 +1,2 @@
+allow update_engine logo_block_device:blk_file rw_file_perms;
+allow update_engine preloader_raw_block_device:blk_file rw_file_perms;
