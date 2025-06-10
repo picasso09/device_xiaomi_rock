@@ -19,3 +19,5 @@ PRODUCT_MAKEFILES := \
 
 COMMON_LUNCH_CHOICES := \
     aosp_rock-user \
+    aosp_rock-userdebug \
+    aosp_rock-eng
