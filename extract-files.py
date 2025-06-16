@@ -94,7 +94,11 @@ blob_fixups: blob_fixups_user_type = {
 
    # MTK HWCOMPOSER
     ('vendor/lib64/hw/hwcomposer.mtk_common.so', 'vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service') : blob_fixup()
-        .add_needed('libprocessgroup_shim.so')
+        .add_needed('libprocessgroup_shim.so'),
+
+   # RIL
+    'vendor/bin/hw/mtkfusionrild': blob_fixup()
+        .add_needed('libutils-v32.so')
 
 }  # fmt: skip
 
