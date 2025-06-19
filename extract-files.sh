@@ -90,7 +90,7 @@ function blob_fixup() {
             "${PATCHELF}" --replace-needed "libutils.so" "libutils-v32.so" "${2}"
             ;;
             system_ext/lib64/libsource.so)
-            "${PATCHELF}" --add-needed "libshim_ui.so" "${2}"
+            "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
             ;;
             vendor/bin/hw/android.hardware.gnss-service.mediatek |\
         vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so)
