@@ -1808,6 +1808,7 @@ vendor/lib/libpowerhalwrap_vendor.so
 vendor/lib/libpower_timer.so
 vendor/lib/vendor.mediatek.hardware.mtkpower@1.0.so
 vendor/lib/vendor.mediatek.hardware.mtkpower@1.1.so
+vendor/lib/vendor.mediatek.hardware.mtkpower@1.2.so
 vendor/lib64/vendor.mediatek.hardware.power@1.1.so
 vendor/lib64/vendor.mediatek.hardware.power@2.0.so
 vendor/lib64/libpowerhal.so
@@ -1922,7 +1923,7 @@ system/system/lib64/libmtk_vt_service.so:system/lib64/libmtk_vt_service.so:
 system/system/lib64/libmtk_vt_wrapper.so:system/lib64/libmtk_vt_wrapper.so:
 system/system/lib64/libmtkperf_client.so:system/lib64/libmtkperf_client.so
 system/system/lib64/libsignal.so:system/lib64/libsignal.so:
-system/system/lib64/libsink.so|f8b24a602c80de5d89bc3a67b7b07315c787066d:system/lib64/libsink.so
+system/system/lib64/libsink.so|8d69c77e4294f45e7a2d16536c79adc52f134ff9:system/lib64/libsink.so
 system/system/lib64/libsource.so:system/lib64/libsource.so
 system/system/lib64/libvcodec_cap.so:system/lib64/libvcodec_cap.so
 system/system/lib64/libvcodec_capenc.so:system/lib64/libvcodec_capenc.so

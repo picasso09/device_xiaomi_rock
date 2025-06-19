@@ -132,11 +132,7 @@ PRODUCT_PACKAGES += \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
-    libhwbinder.vendor \
-    libhidlbase_shim
-
-PRODUCT_PACKAGES += \
-    libui_shim
+    libhwbinder.vendor
 
 # Graphics
     PRODUCT_PACKAGES += \
@@ -218,7 +214,7 @@ PRODUCT_PACKAGES += \
 
 # Shim
 PRODUCT_PACKAGES += \
-    libshim_ui \
+    libui_shim \
     libshim_sink
 
 # Keymaster
@@ -230,7 +226,6 @@ PRODUCT_PACKAGES += \
     android.hardware.security.keymint-V1-ndk_platform.vendor \
     android.hardware.security.secureclock-V1-ndk_platform.vendor \
     android.hardware.security.sharedsecret-V1-ndk_platform.vendor \
-    android.hardware.security.rkp-V3-ndk.vendor \
     libcppbor_external.vendor
 
 # Secure Element
@@ -463,14 +458,9 @@ PRODUCT_PACKAGES += \
 
 # VNDK
 PRODUCT_COPY_FILES += \
-    prebuilts/vndk/v31/arm64/arch-arm-armv8-a/shared/vndk-core/libbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbinder-v31.so \
-    prebuilts/vndk/v31/arm64/arch-arm-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib/libhidlbase-v31.so \
-    prebuilts/vndk/v31/arm64/arch-arm-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutils-v31.so \
-    prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/vndk-core/libbinder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbinder-v31.so \
-    prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidlbase-v31.so \
-    prebuilts/vndk/v31/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v31.so \
     prebuilts/vndk/v32/arm64/arch-arm-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libutils-v32.so \
     prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libutils-v32.so \
+    prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-sp/libhidlbase.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhidlbase-v32.so \
     prebuilts/vndk/v32/arm64/arch-arm-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib/libstagefright_foundation-v32.so \
     prebuilts/vndk/v32/arm64/arch-arm64-armv8-a/shared/vndk-core/libstagefright_foundation.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefright_foundation-v32.so
 
@@ -480,19 +470,20 @@ PRODUCT_PACKAGES += \
     libcurl.vendor \
     libutilscallstack.vendor \
     libcamera_metadata.vendor \
-	libexif.vendor \
-	libpiex \
-	liblz4.vendor \
-	libpng.vendor \
-	libion.vendor \
-	libui.vendor \
-	libgatekeeper.vendor \
-	libjsoncpp.vendor \
-	libnetutils.vendor \
-	libdumpstateutil.vendor \
-	libpower.vendor \
-	libutilscallstack.vendor \
-	libhidlmemory.vendor \
+    libexif.vendor \
+    libpiex \
+    libcrypto \
+    liblz4.vendor \
+    libpng.vendor \
+    libion.vendor \
+    libui.vendor \
+    libgatekeeper.vendor \
+    libjsoncpp.vendor \
+    libnetutils.vendor \
+    libdumpstateutil.vendor \
+    libpower.vendor \
+    libutilscallstack.vendor \
+    libhidlmemory.vendor \
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -503,9 +494,7 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.3.vendor \
     android.hardware.radio@1.6.vendor \
     libprotobuf-cpp-full.vendor \
-    libprotobuf-cpp-lite.vendor \
-    libprotobuf-cpp-full-3.9.1-vendorcompat \
-    libprotobuf-cpp-lite-3.9.1-vendorcompat
+    libprotobuf-cpp-lite.vendor
 
 #  (IMS)
 PRODUCT_BOOT_JARS += \
