@@ -74,7 +74,6 @@ PRODUCT_PACKAGES += \
 	libopus.vendor \
 	libtinycompress \
 	libaudiofoundation.vendor \
-	libstagefrighthw.vendor \
 	libprocessgroup.vendor \
 	libsqlite.vendor \
 	libaudioroute.vendor \
