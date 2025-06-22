@@ -100,6 +100,9 @@ function blob_fixup() {
             [ "$2" = "" ] && return 0
             sed -i 's|ro.vendor.mtk_thermal_2_0|vendor.thermal.link_ready|g' "${2}"
            ;;
+       vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc)
+            sed -i '/vts/Q' "$2"
+          ;;
     esac
 }
 
