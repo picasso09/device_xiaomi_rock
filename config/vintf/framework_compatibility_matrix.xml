@@ -339,4 +339,12 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.mediatek.hardware.wifi.hostapd_ext</name>
+        <version>1.0</version>
+        <interface>
+            <name>IHostapdVendor</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>
