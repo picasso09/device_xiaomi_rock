@@ -88,7 +88,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
 	android.hardware.bluetooth.audio-impl \
 	libbluetooth_audio_session \
-	android.hardware.bluetooth@1.0.vendor \
 	android.hardware.bluetooth@1.1.vendor
 
 PRODUCT_COPY_FILES += \
@@ -249,9 +248,8 @@ PRODUCT_COPY_FILES += \
 # Wi-Fi
 PRODUCT_PACKAGES += \
     android.hardware.wifi@1.0-service \
-    hostapd \
-    wpa_supplicant \
-    libwifi-hal-wrapper \
+    android.hardware.wifi.hostapd@1.2.vendor \
+    android.hardware.wifi.supplicant@1.4.vendor \
     android.hardware.tetheroffload.control@1.1.vendor \
     android.hardware.tetheroffload.config@1.0.vendor \
 
