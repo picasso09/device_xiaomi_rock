@@ -102,7 +102,10 @@ function blob_fixup() {
            ;;
        vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc)
             sed -i '/vts/Q' "$2"
-          ;;
+           ;;
+       vendor/bin/hw/android.hardware.wifi@1.0-service-lazy)
+            "${PATCHELF}" --replace-needed "libwifi-hal.so" "libwifi-hal-mtk.so" "${2}"
+            ;;
     esac
 }
 
