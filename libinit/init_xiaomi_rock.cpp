@@ -22,7 +22,7 @@ static const variant_info_t rock_info = {
 
 static const variant_info_t stone_info = {
     .hwc_value = "",
-    .sku_value = "stone",
+    .sku_value = "stone_p",
 
     .brand = "POCO",
     .device = "stone",
