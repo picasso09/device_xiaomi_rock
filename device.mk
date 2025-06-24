@@ -161,14 +161,6 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service
 
-# Charger
-PRODUCT_PACKAGES += \
-    android.system.suspend-V1-ndk \
-    android.system.suspend.control-V1-cpp \
-    android.system.suspend.control.internal-cpp \
-    android.system.suspend@1.0 \
-    libsuspend
-
 # Media
 PRODUCT_PACKAGES += \
     libavservices_minijail_vendor \
