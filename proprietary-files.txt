@@ -2068,6 +2068,7 @@ vendor/lib64/libconnfem.so
 vendor/lib64/libifcutils_mtk.so
 vendor/lib64/libforkexecwrap.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
+vendor/lib64/libwifi-hal.so|4d02cc7404fdaa941abc06cecc4568f6818eb482
 vendor/lib64/vendor.mediatek.hardware.wifi.hostapd_ext@1.0.so
 
 # Fingerprint
