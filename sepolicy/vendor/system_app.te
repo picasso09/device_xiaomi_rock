@@ -1,8 +1,4 @@
 # Fast Charging
 allow system_app sysfs_power_supply:dir { search };
 allow system_app sysfs_power_supply:file { getattr open read };
-allow system_app sysfs_batteryinfo:dir { search };
-allow system_app sysfs_batteryinfo:file { getattr open read };
-
 r_dir_file(system_app, sysfs_power_supply)
-r_dir_file(system_app, sysfs_batteryinfo)

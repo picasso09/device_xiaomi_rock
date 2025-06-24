@@ -27,9 +27,9 @@ genfscon sysfs /devices/platform/soc/13040000.mali/dvfs_period                  
 genfscon sysfs /devices/platform/soc/11017000.i2c/i2c-5/5-006a/power_supply/usb             u:object_r:sysfs_power_supply:s0
 genfscon sysfs /devices/platform/soc/11017000.i2c/i2c-5/5-006a/power_supply/xm_charger      u:object_r:sysfs_power_supply:s0
 genfscon sysfs /devices/platform/soc/11017000.i2c/i2c-5/5-006a/power_supply/charger         u:object_r:sysfs_power_supply:s0
-genfscon sysfs /class/power_supply/battery                                                  u:object_r:sysfs_batteryinfo:s0
-genfscon sysfs /class/power_supply/charger                                                  u:object_r:sysfs_batteryinfo:s0
-genfscon sysfs /class/power_supply/usb                                                      u:object_r:sysfs_batteryinfo:s0
+genfscon sysfs /class/power_supply/battery                                                  u:object_r:sysfs_power_supply:s0
+genfscon sysfs /class/power_supply/charger                                                  u:object_r:sysfs_power_supply:s0
+genfscon sysfs /class/power_supply/usb                                                      u:object_r:sysfs_power_supply:s0
 
 # Wakeup nodes
 genfscon sysfs /devices/virtual/input(/.*)?                                                                             u:object_r:sysfs_wakeup:s0
