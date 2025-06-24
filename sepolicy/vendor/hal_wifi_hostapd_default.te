@@ -1,0 +1,1 @@
+allow hal_wifi_hostapd_default vendor_hal_hostapd_ext_hwservice:hwservice_manager { find };
