@@ -1,1 +1,9 @@
+# Allow execution of hostapd binary
+allow hal_wifi_hostapd_default hal_wifi_hostapd_default_exec:file { read open execute getattr map };
 allow hal_wifi_hostapd_default vendor_hal_hostapd_ext_hwservice:hwservice_manager { find };
+
+# Allow hostapd with hwservicemanager
+allow hal_wifi_hostapd_default hwservicemanager:binder call;
+
+# Allow read access to sysfs
+allow hal_wifi_hostapd_default sysfs:file r_file_perms;
