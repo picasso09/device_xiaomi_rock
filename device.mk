@@ -520,5 +520,4 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
     android.hardware.ir@1.0-service \
-    android.hardware.ir-service.example \
     android.hardware.ir-V1-ndk.vendor
