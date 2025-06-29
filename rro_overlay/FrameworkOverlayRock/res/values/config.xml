@@ -22,7 +22,7 @@
      entries do not follow the convention, but all new entries should. -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
-      <bool name="config_is_powerbutton_fps">true</bool>
+     <bool name="config_is_powerbutton_fps">true</bool>
     <bool name="config_powerButtonFingerprint">true</bool>
 <string-array name="config_biometric_sensors">
       <item>0:2:15</item>
@@ -441,4 +441,16 @@
     <string name="config_oemFastChargerStatusPath" translatable="false">/sys/class/power_supply/usb/quick_charge_type</string>
    <!-- Expected value from fast charging status file  -->
     <string name="config_oemFastChargerStatusValue" translatable="false">1</string>
+   <!-- An array of arrays of side fingerprint sensor properties relative to each display.
+         Note: this value is temporary and is expected to be queried directly
+         from the HAL in the future. -->
+    <array name="config_sfps_sensor_props" translatable="false">
+         <item>@array/config_sfps_sensor_props_main</item>
+    </array>
+    <array name="config_sfps_sensor_props_main" translatable="false">
+         <item></item> <!-- Display ID -->
+         <item>1080</item> <!-- Sensor X Location -->
+         <item>920</item> <!-- Sensor Y Location -->
+         <item>145</item> <!-- Sensor Radius -->
+    </array>
 </resources>
