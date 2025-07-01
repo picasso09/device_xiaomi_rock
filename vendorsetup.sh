@@ -1,7 +1,7 @@
 echo -e "\033[1;33mCloning Dependencies\033[0m"
 
 # Kernel
-git clone https://github.com/picasso09/kernel_xiaomi_rock -b fifteen kernel/xiaomi/rock
+git clone https://github.com/picasso09/kernel_xiaomi_rock -b thirteen kernel/xiaomi/rock
 
 # Vendor
 git clone https://github.com/picasso09/proprietary_vendor_xiaomi_rock -b thirteen vendor/xiaomi/rock
