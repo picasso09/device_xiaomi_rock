@@ -1396,6 +1396,7 @@ vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_T-Mobile_US.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml
+vendor/etc/mpe.conf
 vendor/etc/init/android.hardware.gnss-service.mediatek.rc
 vendor/etc/init/mtk_agpsd_p.rc
 vendor/etc/security/cacerts/01419da9.0
