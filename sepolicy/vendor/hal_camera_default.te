@@ -8,4 +8,5 @@ allow mtk_hal_camera vendor_camera_data_file:file { ioctl read write create geta
 
 # Allow persistent camera properties
 get_prop(mtk_hal_camera, vendor_camera_prop)
+get_prop(mtk_hal_camera, vendor_xiaomi_prop)
 set_prop(mtk_hal_camera, vendor_camera_prop)
