@@ -6,6 +6,9 @@
 /dev/block/platform/bootdevice/by-name/preloader_raw_a                                                      u:object_r:preloader_raw_block_device:s0
 /dev/block/platform/bootdevice/by-name/preloader_raw_b                                                      u:object_r:preloader_raw_block_device:s0
 
+# Power
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.xiaomi-libperfmgr                          u:object_r:hal_power_default_exec:s0
+
 # Graphics
 /sys/devices/virtual/mi_display/disp_feature/disp-DSI-+[0-1](/.*)?                                          u:object_r:vendor_sysfs_displayfeature:s0
 /sys/devices/platform/soc/14013000.dsi/14013000.dsi.0/panel_event                                           u:object_r:sysfs_graphics:s0
@@ -15,7 +18,6 @@
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light-service\.xiaomi                                     u:object_r:hal_light_default_exec:s0
 
 # Thermals
-# Thermal
 /(vendor|system/vendor)/bin/mi_thermald						                                                u:object_r:mi_thermald_exec:s0
 
 # Touch panel gesture
