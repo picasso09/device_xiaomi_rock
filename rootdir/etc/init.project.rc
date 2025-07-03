@@ -141,10 +141,6 @@ on property:sys.boot_completed=1
     write /sys/devices/platform/soc/1100a000.spi0/spi_master/spi0/spi0.1/fts_edge_mode 1
     write /proc/nvt_edge_reject_switch 3
 
-# Audio dump
-    mkdir /data/vendor/audiohal 0771 system audio
-    mkdir /data/vendor/audiohal/audio_param 0771 system audio
-
 on init
     insmod /vendor/lib/modules/millet_core.ko
     insmod /vendor/lib/modules/binder_gki.ko
