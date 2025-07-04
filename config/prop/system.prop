@@ -129,15 +129,14 @@ ro.config.thermal_dcs=42
 persist.device_config.activity_manager.use_compaction=true
 
 # Lmk Properties
-ro.lmk.critical=0
-ro.lmk.critical_upgrade=false
+ro.lmk.critical_upgrade=true
 ro.lmk.use_minfree_levels=true
-ro.lmk.upgrade_pressure=30
+ro.lmk.upgrade_pressure=20
 ro.lmk.thrashing_limit_decay=50
-ro.lmk.downgrade_pressure=75
-ro.config.low_ram=false
+ro.lmk.downgrade_pressure=70
 ro.lmk.use_psi=true
 ro.lmk.kill_heaviest_task=true
+ro.lmk.minfree_levels=4096,6144,8192,10240,12288,20480
 
 # Earphone Jacks
 persist.sys.overlay.devinputjack=true
@@ -153,3 +152,4 @@ pm.sleep_mode=1
 ro.config.art_lowmem=true
 ro.mtk_gpu_optimizations=1
 ro.mtk_display_ovl_support=1
+
