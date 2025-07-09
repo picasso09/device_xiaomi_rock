@@ -149,7 +149,6 @@
 
     <!-- If not zero, limits the internal screen recorder's framerate to the set value. -->
     <integer name="config_screenRecorderMaxFramerate">90</integer>
-    <integer name="config_customizedMaxCachedProcesses">1024</integer>
 
     <!-- Whether to enable Lineage Health Service -->
     <bool name="config_lineageHealthSupported">true</bool>
@@ -378,18 +377,6 @@
         <item>356.2</item>
         <item>372.9</item>
     </array>
-
-    <!-- The maximum range of gamma adjustment possible using the screen
-         auto-brightness adjustment setting. -->
-    <fraction name="config_autoBrightnessAdjustmentMaxGamma">100%</fraction>
-
-    <!-- Stability requirements in milliseconds for accepting a new brightness level.  This is used
-         for debouncing the light sensor.  Different constants are used to debounce the light sensor
-         when adapting to brighter or darker environments.  This parameter controls how quickly
-         brightness changes occur in response to an observed change in light level that exceeds the
-         hysteresis threshold. -->
-    <integer name="config_autoBrightnessBrighteningLightDebounce">3000</integer>
-    <integer name="config_autoBrightnessDarkeningLightDebounce">4000</integer>
 
     <!-- Flag indicating whether we should enable the automatic brightness.
          Software implementation will be used if config_hardware_auto_brightness_available is not set -->
