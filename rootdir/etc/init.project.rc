@@ -12,10 +12,11 @@ on init
     mkdir /storage/usbotg 0700 root root
 
 on post-fs-data
-
 # L19A code for HQ-202127 by zhangbing at 2022/04/13 start
     chmod 0666 /dev/sia81xx_tuning_if
     chown system audio /dev/sia81xx_tuning_if
+    mkdir /data/vendor/audiohal 0774 audio audioserver
+    mkdir /data/vendor/audiohal/audio_param 0774 audio audioserver
 # L19A code for HQ-202127 by zhangbing at 2022/04/13 end
 
 #Camera
