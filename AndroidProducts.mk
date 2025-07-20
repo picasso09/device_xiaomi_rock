@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2020 The aosp Project
+# Copyright (C) 2020 The afterlife Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,9 +15,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_rock.mk
+    $(LOCAL_DIR)/afterlife_rock.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_rock-user \
-    aosp_rock-userdebug \
-    aosp_rock-eng
+    afterlife_rock-user \
+    afterlife_rock-userdebug \
+    afterlife_rock-eng

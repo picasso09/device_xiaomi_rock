@@ -11,7 +11,7 @@
      limitations under the License.
 -->
 <resources>
-   <string name="maintainer_git_username">picasso09</string>
+    <string name="maintainer_git_username">picasso09</string>
     <string name="maintainer_tele_username">picasso170606</string>
     <string name="maintainer_ig_username">picasso09_dv</string>
     <string name="maintainer_fb_username">none</string>
