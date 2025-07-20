@@ -65,6 +65,7 @@ PRODUCT_PACKAGES += \
 	android.hardware.audio.service \
 	android.hardware.audio@7.0-impl \
 	android.hardware.audio.effect@7.0-impl \
+	android.hardware.bluetooth.audio@2.1-impl \
 	audioclient-types-aidl-cpp.vendor \
 	audio.bluetooth.default \
 	audio.primary.default \
@@ -88,7 +89,6 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-	android.hardware.bluetooth.audio-impl \
 	libbluetooth_audio_session \
 	android.hardware.bluetooth@1.1.vendor
 
