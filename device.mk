@@ -71,6 +71,8 @@ PRODUCT_PACKAGES += \
 	audio.r_submix.default \
 	audio.usb.default \
 	libalsautils \
+	libldacBT_enc \
+	libldacBT_abr \
 	libopus.vendor \
 	libtinycompress \
 	libaudiofoundation.vendor \
