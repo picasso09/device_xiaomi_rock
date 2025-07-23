@@ -48,7 +48,7 @@ on init
     mkdir /mnt/cd-rom 0000 system system
 
     # add this link for cust mount
-    symlink /dev/block/platform/bootdevice /dev/block/bootdevice
+    symlink /dev/block/platform/soc/11270000.ufshci /dev/block/bootdevice
 
 # change lk_env permission
     chown root system /proc/lk_env
