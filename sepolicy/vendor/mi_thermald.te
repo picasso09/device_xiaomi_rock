@@ -14,6 +14,7 @@ allow mi_thermald thermal_core_data_file:file { create_file_perms rw_file_perms 
 
 allow mi_thermald sysfs_power_supply:dir { search };
 allow mi_thermald sysfs_power_supply:file rw_file_perms;
+allow mi_thermald sysfs_batteryinfo:dir { search };
 
 allow mi_thermald sysfs:dir r_dir_perms;
 
