@@ -66,7 +66,7 @@
     </integer-array>
 
     <integer name="config_shutdownBatteryTemperature">580</integer>
-    <string name="config_mainBuiltInDisplayCutout">M 0,0 H -50 V 76 H 50 V 0 H 0 Z</string>
+    <string name="config_mainBuiltInDisplayCutout">M84,76 C30,76 54,20 0,20 C-54,20 -30,76 -84,76 L-84,0 L84,0 Z</string>
    
     <!-- The device supports freeform window management. Windows have title bars and can be moved
          and resized. If you set this to true, you also need to add
