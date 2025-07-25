@@ -521,5 +521,5 @@ PRODUCT_PACKAGES += \
 # ConsumerIr
 PRODUCT_PACKAGES += \
     android.hardware.ir@1.0-impl \
-    android.hardware.ir@1.0-service \
+    android.hardware.ir@1.0-service.xiaomi \
     android.hardware.ir-V1-ndk.vendor
