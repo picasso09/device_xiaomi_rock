@@ -417,6 +417,12 @@
       "Value": "51"
     },
     {
+      "PowerHint": "EXPENSIVE_RENDERING",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 0,
+      "Value": "2000000"
+    },
+    {
       "PowerHint": "DISPLAY_INACTIVE",
       "Node": "ForegroundCpuset",
       "Duration": 0,
