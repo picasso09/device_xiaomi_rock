@@ -13,4 +13,6 @@ git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-20 har
 # Sepolicy
 git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr -b lineage-20 device/mediatek/sepolicy_vndr
 
+# Dolby
+git clone https://github.com/userariii/vendor_motorola-dolby.git -b v1.3 vendor/motorola-dolby
 echo -e "\033[32mDone go cook\033[0m"
