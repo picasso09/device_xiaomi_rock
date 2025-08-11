@@ -1,4 +1,5 @@
 # Firmware Partition
+/dev/0:0:0:49476                                                                                            u:object_r:teei_rpmb_device:s0
 /dev/block/platform/mtk-\b(msdc|ufs)\b\.0/[0-9]+\.\b(msdc0|ufs0)\b/by-name/logo(_[ab])?                     u:object_r:logo_block_device:s0
 /dev/block/by-name/logo(_[ab])?                                                                             u:object_r:logo_block_device:s0
 /dev/block/by-name/preloader_raw_a                                                                          u:object_r:preloader_raw_block_device:s0
