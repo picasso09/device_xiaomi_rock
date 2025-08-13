@@ -167,6 +167,24 @@ debug.renderengine.backend=skiaglthreaded
 ro.logd.kernel=false
 ro.logd.size=2M
 
+# LMKD
+ro.lmk.psi_complete_stall_ms=35
+ro.lmk.psi_partial_stall_ms=35
+ro.lmk.swap_free_low_percentage=10
+ro.lmk.thrashing_limit=30
+ro.lmk.thrashing_limit_decay=50
+ro.lmk.swap_util_max=90
+ro.lmk.kill_timeout_ms=100
+ro.lmk.medium=800
+ro.lmk.critical=0
+ro.lmk.critical_upgrade=false
+ro.lmk.upgrade_pressure=100
+ro.lmk.downgrade_pressure=100
+ro.lmk.kill_heaviest_task=true
+ro.lmk.use_minfree_levels=true
+ro.lmk.log_stats=true
+ro.lmk.low=1001
+
 # Netflix
 ro.netflix.bsp_rev=MTK6789-35965-1
 ro.netflix.signup=1
