@@ -78,6 +78,7 @@ ro.kernel.zio=38,108,105,16
 # Display
 ro.sf.lcd_density=440
 sys.displayfeature_hidl=true
+dev.pm.dyn_samplingrate=1
 
 # performance
 ro.mtk_perf_simple_start_win=1
