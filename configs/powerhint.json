@@ -441,6 +441,24 @@
       "Value": "0-3"
     },
     {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "CPULittleClusterMinFreq",
+      "Duration": 0,
+      "Value": "500000"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "CPUBigClusterMinFreq",
+      "Duration": 0,
+      "Value": "725000"
+    },
+    {
+      "PowerHint": "DISPLAY_INACTIVE",
+      "Node": "GpuPwrLevel",
+      "Duration": 0,
+      "Value": "15"
+    },
+    {
       "PowerHint": "FIXED_PERFORMANCE",
       "Node": "CPUBigClusterMaxFreq",
       "Duration": 0,
