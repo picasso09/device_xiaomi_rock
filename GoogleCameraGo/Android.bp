@@ -1,0 +1,11 @@
+android_app_import {
+	name: "GoogleCameraGo",
+	owner: "google",
+	apk: "GoogleCameraGo.apk",
+	overrides: ["Aperture", "Camera", "Camera2"],
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+}
