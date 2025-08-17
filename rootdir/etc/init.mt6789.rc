@@ -998,7 +998,6 @@ chmod 0666 /dev/sia81xx_tuning_if
     write /sys/power/pm_freeze_timeout 2000
 
 # L19A code for HQ-192464 by liwen at 2022.04.15 start
-    start mi_thermald
     chown system system /sys/class/thermal/thermal_message/sconfig
 # L19A code for HQ-192464 by liwen at 2022.04.15 end
 # M6 code for HQ-247637 by yingxuezhen at 2022/10/09 start
@@ -1318,12 +1317,7 @@ on property:init.svc.surfaceflinger=restarting
      stop displayfeature
 #L19A code for HQ-194194 by zhouhaitao at 20220516 end
 
-#L19A code for HQ-192464 by liwen at 2022.4.15
-service mi_thermald /system/vendor/bin/mi_thermald
-    class main
-    user root
-    group system
-    seclabel u:r:mi_thermald:s0
+#L19A code for HQ-192464 by liwen at 2022.4.15rm 
 
 service charger /system/bin/charger
     class charger

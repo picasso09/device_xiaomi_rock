@@ -2019,7 +2019,6 @@ vendor/thh/ta/isee_model.json
 
 # Thermal
 vendor/bin/hw/android.hardware.thermal@2.0-service.mtk
-vendor/bin/mi_thermald
 vendor/bin/thermal_core
 vendor/bin/thermal_intf
 vendor/etc/init/android.hardware.thermal@2.0-service.mtk.rc
