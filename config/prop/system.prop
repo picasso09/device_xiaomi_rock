@@ -21,7 +21,6 @@ ro.surface_flinger.supports_background_blur=1
 persist.sys.purgeable_assets=1
 persist.service.pcsync.enable=0
 persist.service.lgospd.enable=0
-debug.sf.enable_gl_backpressure=0
 
 ro.hwui.texture_cache_size=72
 ro.hwui.layer_cache_size=48
