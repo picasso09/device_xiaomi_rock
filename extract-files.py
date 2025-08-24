@@ -74,6 +74,10 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('liblog.so'),
     'vendor/lib64/mt6789/libmnl.so' : blob_fixup()
         .add_needed('libcutils.so'),
+    'vendor/lib/libvcodec_oal.so': blob_fixup()
+        .clear_symbol_version('__aeabi_memcpy')
+        .clear_symbol_version('__aeabi_memset')
+        .clear_symbol_version('__gnu_Unwind_Find_exidx'),
 
     # NVRAM
     ('vendor/lib/libnvram.so', 'vendor/lib64/libnvram.so'): blob_fixup()
