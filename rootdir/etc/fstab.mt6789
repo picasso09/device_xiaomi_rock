@@ -21,7 +21,7 @@ product                             /product                ext4    ro      wait
 
 
 # Cache
-/dev/block/by-name/rescue	    /cache		    ext4	    noatime,nosuid,nodev,noauto_da_alloc,discard wait,check,formattable
+/dev/block/by-name/rescue	        /cache		            ext4	        noatime,nosuid,nodev,noauto_da_alloc,discard wait,check,formattable
 
 # Userdata
 /dev/block/by-name/metadata         /metadata               ext4            noatime,nosuid,nodev,discard                                                                                 wait,check,formattable,first_stage_mount
@@ -55,8 +55,8 @@ product                             /product                ext4    ro      wait
 
 
 # Firmware
-/dev/block/by-name/lk1              /lk1                    emmc            defaults defaults
-/dev/block/by-name/bootloader2      /bootloader2            emmc            defaults defaults
+/dev/block/by-name/lk               /bootloader             emmc            defaults defaults
+/dev/block/by-name/lk2              /bootloader2            emmc            defaults defaults
 /dev/block/by-name/logo_a           /logo                   emmc            defaults defaults
 /dev/block/by-name/expdb            /expdb                  emmc            defaults defaults
 /dev/block/by-name/seccfg           /seccfg                 emmc            defaults defaults
