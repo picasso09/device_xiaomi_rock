@@ -4,12 +4,9 @@ ifeq ($(TARGET_BUILD_VARIANT),eng)
 # Get rid of that by overriding it in /product on eng builds
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.secure=0 \
-    ro.adb.secure=0
-endif
-PRODUCT_PRODUCT_PROPERTIES += \
-    ro.secure=0 \
     ro.adb.secure=0 \
-    ro.force.debuggable=1 \
+    ro.force.debuggable=1
+endif
 # Bluetooth
 # ro.bluetooth.a2dp_offload.supported=false
 # ro.vendor.mtk.bt_bleaudio_enable=false 
