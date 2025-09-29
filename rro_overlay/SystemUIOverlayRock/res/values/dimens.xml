@@ -31,7 +31,7 @@
 
    <!-- Statusbar Height and padding -->
     <dimen name="rounded_corner_content_padding">55px</dimen>
-    <dimen name="status_bar_padding_start">8dp</dimen>
+    <dimen name="status_bar_padding_start">5dp</dimen>
     <dimen name="status_bar_padding_end">3dp</dimen>
     <dimen name="status_bar_padding_top">0dp</dimen>
 </resources>
