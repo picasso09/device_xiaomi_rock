@@ -12,6 +12,9 @@
 # Lights
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light-service\.xiaomi                                     u:object_r:hal_light_default_exec:s0
 
+# Thermal
+/sys/devices/virtual/thermal/thermal_message/sconfig                                                        u:object_r:vendor_sysfs_thermalconfig:s0
+
 # Touch panel gesture
 /sys/devices/virtual/touch/touch_dev/gesture_double_tap_state                                               u:object_r:sysfs_tp_gesture:s0
 /(vendor|system/vendor)/bin/init.panel_info\.sh                                                             u:object_r:meta_tst_exec:s0
