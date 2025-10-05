@@ -1,4 +1,5 @@
 get_prop(hal_audio_default, vendor_audioserver_prop)
+get_prop(hal_audio_default, vendor_xiaomi_prop)
 set_prop(hal_audio_default, vendor_audioserver_prop)
 set_prop(hal_audio_default, vendor_mtk_audiohal_prop)
 allow hal_audio_default vendor_sia_mode:file r_file_perms;
