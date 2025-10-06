@@ -18,8 +18,8 @@ VENDOR_PLATFORM_LINKS := \
 	$(TARGET_OUT_VENDOR)/bin/hw/camerahalserver \
 	$(TARGET_OUT_VENDOR)/lib/arm.graphics-V1-ndk_platform.so \
 	$(TARGET_OUT_VENDOR)/lib/egl/libGLES_mali.so \
-    $(TARGET_OUT_VENDOR)/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
-    $(TARGET_OUT_VENDOR)/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
+	$(TARGET_OUT_VENDOR)/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
+	$(TARGET_OUT_VENDOR)/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
 	$(TARGET_OUT_VENDOR)/lib/hw/gralloc.common.so \
 	$(TARGET_OUT_VENDOR)/lib/hw/vulkan.mali.so \
 	$(TARGET_OUT_VENDOR)/lib/libaalservice.so \
@@ -265,8 +265,8 @@ VENDOR_PLATFORM_LINKS := \
 	$(TARGET_OUT_VENDOR)/lib64/s5kjn1_sunny_main_mipi_raw_india_tuning.so \
 	$(TARGET_OUT_VENDOR)/lib64/s5kjn1_sunny_main_mipi_raw_tuning.so \
 	$(TARGET_OUT_VENDOR)/lib64/sc202cs_ofilm_depth_mipi_raw_IdxMgr.so \
-	$(TARGET_OUT_VENDOR)/lib64/sc202cs_ofilm_depth_mipi_raw_tuning.so 
-	
+	$(TARGET_OUT_VENDOR)/lib64/sc202cs_ofilm_depth_mipi_raw_tuning.so
+
 # Gatekeeper symlinks
 GATEKEEPER_SYMLINKS := \
 	$(TARGET_OUT_VENDOR)/lib64/hw/gatekeeper.default.so
@@ -277,9 +277,11 @@ SENSORS_SYMLINKS := \
 
 # Audio symlinks
 AUDIO_SYMLINKS := \
+	$(TARGET_OUT_VENDOR)/lib/hw/audio.primary.$(TARGET_BOARD_PLATFORM).so \
+	$(TARGET_OUT_VENDOR)/lib/hw/audio.r_submix.$(TARGET_BOARD_PLATFORM).so \
 	$(TARGET_OUT_VENDOR)/lib64/hw/audio.primary.$(TARGET_BOARD_PLATFORM).so \
-	$(TARGET_OUT_VENDOR)/lib64/hw/audio.r_submix.$(TARGET_BOARD_PLATFORM).so 
-	
+	$(TARGET_OUT_VENDOR)/lib64/hw/audio.r_submix.$(TARGET_BOARD_PLATFORM).so
+
 # VPUD symlink
 VPUD_SYMLINKS := \
     $(TARGET_OUT_VENDOR)/bin/v3avpud
