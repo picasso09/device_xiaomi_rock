@@ -58,7 +58,7 @@ AB_OTA_POSTINSTALL_CONFIG += \
     POSTINSTALL_OPTIONAL_vendor=true
 
 # Audio 64bit
-$(call soong_config_set,android_hardware_audio,run_64bit,true)
+#$(call soong_config_set,android_hardware_audio,run_64bit,true)
 
 # Audio
 PRODUCT_PACKAGES += \
