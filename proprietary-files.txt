@@ -28,6 +28,7 @@ vendor/lib/libaudiocompensationfilter_vendor.so
 vendor/lib/libaudiocomponentengine_vendor.so
 vendor/lib/libaudiocustparam_vendor.so
 vendor/lib/libaudiodcrflt_vendor.so
+vendor/lib/libaudioloudc.so
 vendor/lib/libaudiofmtconv.so
 vendor/lib/libaudioprimarydevicehalifclient.so
 vendor/lib/libaudiosmartpamtk.so
@@ -35,6 +36,7 @@ vendor/lib/libaudiotoolkit_vendor.so
 vendor/lib/libaurisysdemo.so
 vendor/lib/libblisrc32_vendor.so
 vendor/lib/libcvsd_mtk.so
+vendor/lib/lib_iir.so
 vendor/lib/libmisound.so
 vendor/lib/libmsbc_mtk.so
 vendor/lib/libmtklimiter_vendor.so
@@ -48,6 +50,7 @@ vendor/lib/libvow_ap_test_ha.so
 vendor/lib/libvow_ap_test_hh.so
 vendor/lib/libvow_ap_test_nn.so
 vendor/lib/libspeech_enh_lib.so
+vendor/lib/lib_speech_enh.so
 vendor/lib/libspeechparser_vendor.so
 vendor/lib/vendor.mediatek.hardware.audio@6.1.so
 vendor/lib/vendor.mediatek.hardware.audio@7.1.so
@@ -82,6 +85,7 @@ vendor/lib64/libvow_ap_test_dd.so
 vendor/lib64/libvow_ap_test_ha.so
 vendor/lib64/libvow_ap_test_hh.so
 vendor/lib64/libvow_ap_test_nn.so
+vendor/lib/libspeech_enh_lib.so
 vendor/lib64/libspeech_enh_lib.so
 vendor/lib64/libspeechparser_vendor.so
 vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
