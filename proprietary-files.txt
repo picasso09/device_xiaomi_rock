@@ -121,7 +121,7 @@ vendor/etc/audio_param/Playback_ParamTreeView.xml
 vendor/etc/audio_param/Playback_ParamUnitDesc.xml
 vendor/etc/audio_param/RecordDMNR_AudioParam.xml
 vendor/etc/audio_param/RecordDMNR_ParamUnitDesc.xml
-vendor/etc/audio_param/RecordFIR_AudioParam.xml
+# vendor/etc/audio_param/RecordFIR_AudioParam.xml
 vendor/etc/audio_param/RecordFIR_ParamUnitDesc.xml
 vendor/etc/audio_param/RecordUI_AudioParam.xml
 vendor/etc/audio_param/RecordUI_ParamUnitDesc.xml
@@ -129,7 +129,7 @@ vendor/etc/audio_param/RecordVolUI_AudioParam.xml
 vendor/etc/audio_param/RecordVolUI_ParamUnitDesc.xml
 vendor/etc/audio_param/RecordVol_AudioParam.xml
 vendor/etc/audio_param/RecordVol_ParamUnitDesc.xml
-vendor/etc/audio_param/Record_AudioParam.xml
+# vendor/etc/audio_param/Record_AudioParam.xml
 vendor/etc/audio_param/Record_ParamTreeView.xml
 vendor/etc/audio_param/Record_ParamUnitDesc.xml
 vendor/etc/audio_param/RingbackVolUI_AudioParam.xml
@@ -154,9 +154,9 @@ vendor/etc/audio_param/SpeechUI_AudioParam.xml
 vendor/etc/audio_param/SpeechUI_ParamUnitDesc.xml
 vendor/etc/audio_param/SpeechVolUI_AudioParam.xml
 vendor/etc/audio_param/SpeechVolUI_ParamUnitDesc.xml
-vendor/etc/audio_param/SpeechVol_AudioParam.xml
+# vendor/etc/audio_param/SpeechVol_AudioParam.xml
 vendor/etc/audio_param/SpeechVol_ParamUnitDesc.xml
-vendor/etc/audio_param/Speech_AudioParam.xml
+# vendor/etc/audio_param/Speech_AudioParam.xml
 vendor/etc/audio_param/Speech_ParamTreeView.xml
 vendor/etc/audio_param/Speech_ParamUnitDesc.xml
 vendor/etc/audio_param/Ultrasound_AudioParam.xml
@@ -207,6 +207,12 @@ vendor/etc/audio_param/VoWVoiceCommand_AudioParam.xml
 vendor/etc/audio_param/VoWVoiceCommand_ParamUnitDesc.xml
 vendor/etc/audio_param/VOW_AudioParam.xml
 vendor/etc/audio_param/VOW_ParamUnitDesc.xml
+
+vendor/etc/audio_param_global/RecordFIR_AudioParam.xml:vendor/etc/audio_param/RecordFIR_AudioParam.xml
+vendor/etc/audio_param_global/Record_AudioParam.xml:vendor/etc/audio_param/Record_AudioParam.xml
+vendor/etc/audio_param_global/SpeechVol_AudioParam.xml:vendor/etc/audio_param/SpeechVol_AudioParam.xml
+vendor/etc/audio_param_global/Speech_AudioParam.xml:vendor/etc/audio_param/Speech_AudioParam.xml
+
 vendor/etc/aurisys_param/sixth_param.txt
 
 # Bluetooth
