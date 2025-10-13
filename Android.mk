@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2023 LineageOS
+# Copyright (C) 2024 Android Open Source Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #

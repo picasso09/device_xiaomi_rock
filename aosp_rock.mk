@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2023 AfterLife Project
+# Copyright (C) 2024 Android Open Source Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -11,7 +11,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from device makefile
 $(call inherit-product, device/xiaomi/rock/device.mk)
 
-# Inherit some common AfterLife stuff
+# Inherit some common AOSP Project
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
 # Bootanimation Res
