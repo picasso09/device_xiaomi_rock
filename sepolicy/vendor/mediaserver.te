@@ -1,0 +1,2 @@
+#Allow mediaserver getprop
+get_prop(mediaserver, vendor_media_prop)

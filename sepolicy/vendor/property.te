@@ -17,5 +17,8 @@ system_public_prop(flags_health_check_prop)
 system_public_prop(vendor_xiaomi_prop)
 vendor_public_prop(vendor_fp_prop)
 
+# Media
+vendor_public_prop(vendor_media_prop)
+
 # Mi Thermal
 vendor_public_prop(vendor_thermal_engine_prop)
