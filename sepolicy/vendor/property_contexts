@@ -22,6 +22,9 @@ persist.vendor.sys.fp.                                  u:object_r:vendor_finger
 # Health Check
 persist.device_config.activity_manager.use_compaction	u:object_r:flags_health_check_prop:s0
 
+# MediaServer
+vendor.sys.media.                                       u:object_r:vendor_media_prop:s0
+
 # MIUI
 ro.miui.                                                u:object_r:vendor_xiaomi_prop:s0
 
