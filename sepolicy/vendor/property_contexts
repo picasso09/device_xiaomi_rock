@@ -4,6 +4,7 @@ vendor.audiomediatek.                                   u:object_r:vendor_audios
 persist.audio.headset.plug.status                       u:object_r:audio_prop:s0
 
 # Camera
+persist.camera.                                         u:object_r:vendor_camera_prop:s0
 persist.vendor.camera.                                  u:object_r:vendor_camera_prop:s0
 persist.vendor.camera.dualcal.state.                    u:object_r:vendor_camera_prop:s0
 vendor.camera.                                          u:object_r:vendor_camera_prop:s0
