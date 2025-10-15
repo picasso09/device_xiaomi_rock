@@ -216,7 +216,7 @@ TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/config/prop/system_ext.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/config/prop/vendor.prop
 
 # Power
-TARGET_TAP_TO_WAKE_NODE := "/sys/devices/platform/soc/1100a000.spi0/spi_master/spi0/spi0.1/fts_gesture_mode"
+TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
 
 # Recovery
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
