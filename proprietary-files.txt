@@ -1536,6 +1536,16 @@ vendor/lib64/libcodec2_vpp_rs_plugin.so
 vendor/lib64/libmp3dec_mtk.so
 vendor/lib64/libformatter.so
 
+# Media OMX
+vendor/etc/mtk_omx_core.cfg
+vendor/lib/libMtkOmxMp3Dec.so
+vendor/lib/libMtkOmxApeDec.so
+vendor/lib/libMtkOmxAdpcmDec.so
+vendor/lib/libMtkOmxAdpcmDec.so
+vendor/lib/libMtkOmxGsmDec.so
+vendor/lib/libMtkOmxAlacDec.so
+vendor/lib64/libMtkOmxCore.so
+
 # Media (VPU)
 vendor/bin/mt6789/v3avpud.mt6789
 vendor/etc/init/v3avpud.rc
