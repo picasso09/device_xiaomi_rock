@@ -5,3 +5,5 @@ set_prop(vendor_init, vendor_displayfeature_prop)
 get_prop(vendor_init, audio_prop)
 get_prop(vendor_init, vts_status_prop)
 rw_dir_file(vendor_init, sysfs_leds)
+rw_dir_file(vendor_init, sysfs_tp_gesture)
+
