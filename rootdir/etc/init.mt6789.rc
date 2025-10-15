@@ -817,6 +817,7 @@ on boot
     chmod 0666 /proc/nvt_pocket_palm_switch
     chown system system /proc/nvt_edge_reject_switch
     chmod 0666 /proc/nvt_edge_reject_switch
+    chmod 0666 /proc/nvt_gesture_mode
     chown system sys/devices/platform/soc/1100a000.spi0/spi_master/spi0/spi0.1/fts_rw_reg
     chmod 0666   sys/devices/platform/soc/1100a000.spi0/spi_master/spi0/spi0.1/fts_rw_reg
     chown system sys/devices/platform/soc/1100a000.spi0/spi_master/spi0/spi0.1/fts_edge_mode
