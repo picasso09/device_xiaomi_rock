@@ -36,8 +36,6 @@ ro.hwui.text_large_cache_height=2048
 
 ro.HOME_APP_ADJ=1
 persist.sys.scrollingcache=3
-ro.min.fling_velocity=160
-ro.max.fling_velocity=2000
 
 # Disable blur on app launch
 persist.sys.sf.disable_blurs=0
