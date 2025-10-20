@@ -9,6 +9,19 @@
 
 #include "vendor_init.h"
 
+static const variant_info_t default_info = {
+    .hwc_value = "",
+    .sku_value = "",
+
+    .board = "rock",
+    .brand = "Redmi",
+    .device = "rock",
+    .marketname = "Redmi 11 Prime",
+    .model = "22071219AI",
+    .name = "rock",
+    .build_fingerprint = "Redmi/rock/rock:13/TP1A.220624.014/V14.0.9.0.TLUMIXM:user/release-keys"
+};
+
 static const variant_info_t rock_info = {
     .hwc_value = "",
     .sku_value = "rock",
@@ -41,5 +54,7 @@ static const std::vector<variant_info_t> variants = {
 };
 
 void vendor_load_properties() {
-    search_variant(variants);
+    if (!search_variant(variants)) {
+        set_variant_props(default_info);
+    }
 }
