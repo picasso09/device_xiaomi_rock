@@ -23,7 +23,7 @@ typedef struct variant_info {
     std::string build_fingerprint;
 } variant_info_t;
 
-void search_variant(const std::vector<variant_info_t> variants);
+bool search_variant(const std::vector<variant_info_t> variants);
 
 void set_variant_props(const variant_info_t variant);
 
