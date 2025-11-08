@@ -173,6 +173,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/gps/gps.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/gps.conf
 
 # Wi-Fi
+$(call soong_config_set,wpa_supplicant_8,board_wlan_mediatek_stability,true)
 PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     hostapd \
@@ -278,14 +279,15 @@ PRODUCT_COPY_FILES += \
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-	$(LOCAL_PATH) \
+    $(LOCAL_PATH) \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/mediatek/libmtkperf_client \
+    hardware/mediatek/wlan/wifi_hal \
     hardware/google/interfaces \
-	hardware/google/pixel \
+    hardware/google/pixel \
     hardware/lineage/compat \
-	hardware/mediatek \
-	hardware/xiaomi
+    hardware/mediatek \
+    hardware/xiaomi
 
 # NFC
 PRODUCT_PACKAGES += \
