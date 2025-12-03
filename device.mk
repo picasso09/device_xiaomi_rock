@@ -138,15 +138,15 @@ PRODUCT_PACKAGES += \
     android.hardware.health@2.1-service
 
 # Media (C2)
+$(call soong_config_set_bool,android_hardware_mediatek_codec2,link_v33_libstagefright_foundation,true)
 PRODUCT_PACKAGES += \
-    libcodec2_hidl_plugin \
+    android.hardware.media.c2-mtk-service \
     libcodec2_soft_common.vendor \
     libeffects \
     libeffectsconfig.vendor
 
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/config/media,$(TARGET_COPY_OUT_VENDOR)/etc) \
-    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/config/seccomp,$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy)
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/config/media,$(TARGET_COPY_OUT_VENDOR)/etc)
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
