@@ -1,4 +1,5 @@
-# Firmware - from rock 13 TP1A.220624.014/V14.0.9.0.TLUMIXM release-keys
+# Firmware - from rock 14 UP1A.231005.007 V816.0.12.0.ULUMIXM release-keys
+
 dpm.img
 gz.img
 lk.img

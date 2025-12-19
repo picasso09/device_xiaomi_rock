@@ -1,4 +1,4 @@
-#blobs from rock 13 TP1A.220624.014/V14.0.9.0.TLUMIXM:user/release-keys
+#blobs from rock 14 UP1A.231005.007 V816.0.12.0.ULUMIXM release-keys
  
 # AEE
 vendor/lib/libaedv.so
@@ -1637,7 +1637,7 @@ vendor/lib64/vendor.mediatek.hardware.neuropilot.agent@1.1.so
 vendor/lib64/vendor.mediatek.hardware.neuropilot.agent@1.2.so
 
 # NFC
-vendor/bin/hw/android.hardware.nfc@1.2-service
+odm/etc/init/stone_p/android.hardware.nfc@1.2-service.rc:vendor/bin/hw/android.hardware.nfc@1.2-service
 vendor/etc/init/init.rock.nfc.rc
 vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp.conf
@@ -1652,7 +1652,6 @@ vendor/lib64/vendor.nxp.nxpese@1.0.so
 vendor/lib64/vendor.nxp.nxpnfc@2.0.so
 vendor/lib64/vendor.nxp.nxpnfclegacy@1.0.so
 vendor/libnfc-nxp_RF.conf
-vendor/odm/etc/init/stone_p/android.hardware.nfc@1.2-service.rc:vendor/etc/init/android.hardware.nfc@1.2-service.rc
 
 # NVRAM
 vendor/bin/fuelgauged
@@ -1808,8 +1807,8 @@ vendor/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
 
 
 # VO+++
-system/system/bin/vtservice:system/bin/vtservice
-system/system/etc/init/init.vtservice.rc:system/etc/init/init.vtservice.rc
+system_ext/bin/vtservice
+system_ext/etc/init/init.vtservice.rc
 system_ext/framework/mediatek-carrier-config-manager.jar:system/framework/mediatek-carrier-config-manager.jar
 system_ext/framework/mediatek-common.jar:system/framework/mediatek-common.jar
 system_ext/framework/mediatek-framework.jar:system/framework/mediatek-framework.jar
@@ -1818,25 +1817,25 @@ system_ext/framework/mediatek-ims-common.jar:system/framework/mediatek-ims-commo
 system_ext/framework/mediatek-telecom-common.jar:system/framework/mediatek-telecom-common.jar
 system_ext/framework/mediatek-telephony-base.jar:system/framework/mediatek-telephony-base.jar
 system_ext/framework/mediatek-telephony-common.jar:system/framework/mediatek-telephony-common.jar
-system/system/lib/libmtk_vt_wrapper.so:system/lib/libmtk_vt_wrapper.so
-system/system/lib/libmtkperf_client.so:system/lib/libmtkperf_client.so
-system/system/lib/libvcodec_cap.so:system/lib/libvcodec_cap.so
-system/system/lib/libvcodec_capenc.so:system/lib/libvcodec_capenc.so
-system/system/lib64/libcomutils.so:system/lib64/libcomutils.so
-system/system/lib64/libimsma.so:system/lib64/libimsma.so
-system/system/lib64/libimsma_adapt.so:system/lib64/libimsma_adapt.so
-system/system/lib64/libimsma_rtp.so:system/lib64/libimsma_rtp.so
-system/system/lib64/libimsma_socketwrapper.so:system/lib64/libimsma_socketwrapper.so
-system/system/lib64/libmtk_vt_service.so:system/lib64/libmtk_vt_service.so:
-system/system/lib64/libmtk_vt_wrapper.so:system/lib64/libmtk_vt_wrapper.so:
-system/system/lib64/libmtkperf_client.so:system/lib64/libmtkperf_client.so
-system/system/lib64/libsignal.so:system/lib64/libsignal.so:
-system/system/lib64/libsink.so:system/lib64/libsink.so|8d69c77e4294f45e7a2d16536c79adc52f134ff9
-system/system/lib64/libsource.so:system/lib64/libsource.so
-system/system/lib64/libvcodec_cap.so:system/lib64/libvcodec_cap.so
-system/system/lib64/libvcodec_capenc.so:system/lib64/libvcodec_capenc.so
-system/system/lib64/libvt_avsync.so:system/lib64/libvt_avsync.so
-system/system/priv-app/ImsService/ImsService.apk:system_ext/priv-app/ImsService/ImsService.apk
+system_ext/lib/libmtk_vt_wrapper.so
+system_ext/lib/libmtkperf_client.so
+system_ext/lib/libvcodec_cap.so
+system_ext/lib/libvcodec_capenc.so
+system_ext/lib64/libcomutils.so
+system_ext/lib64/libimsma.so
+system_ext/lib64/libimsma_adapt.so
+system_ext/lib64/libimsma_rtp.so
+system_ext/lib64/libimsma_socketwrapper.so
+system_ext/lib64/libmtk_vt_service.so
+system_ext/lib64/libmtk_vt_wrapper.so
+system_ext/lib64/libmtkperf_client.so
+system_ext/lib64/libsignal.so
+system_ext/lib64/libsink.so
+system_ext/lib64/libsource.so
+system_ext/lib64/libvcodec_cap.so
+system_ext/lib64/libvcodec_capenc.so
+system_ext/lib64/libvt_avsync.so
+system_ext/priv-app/ImsService/ImsService.apk
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
@@ -1884,7 +1883,7 @@ vendor/lib64/sensors.touch.detect.so
 
 # Secure Element
 vendor/bin/hw/android.hardware.secure_element@1.2-service-mediatek
-vendor/odm/etc/init/stone_p/android.hardware.secure_element@1.2-service-mediatek.rc:vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
+odm/etc/init/stone_p/android.hardware.secure_element@1.2-service-mediatek.rc:vendor/etc/init/android.hardware.secure_element@1.2-service-mediatek.rc
 
 # TEE
 vendor/bin/teei_daemon
