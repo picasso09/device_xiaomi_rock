@@ -85,7 +85,6 @@ vendor/lib64/libvow_ap_test_dd.so
 vendor/lib64/libvow_ap_test_ha.so
 vendor/lib64/libvow_ap_test_hh.so
 vendor/lib64/libvow_ap_test_nn.so
-vendor/lib/libspeech_enh_lib.so
 vendor/lib64/libspeech_enh_lib.so
 vendor/lib64/libspeechparser_vendor.so
 vendor/lib64/vendor.mediatek.hardware.audio@6.1.so
@@ -1508,7 +1507,6 @@ vendor/lib64/AVCSecureVdecCA.so
 vendor/lib64/HEVCSecureVdecCA.so
 vendor/lib64/VP9SecureVdecCA.so
 vendor/lib64/libAVCSecureVencCA.so
-vendor/lib64/libadpcmdec_mtk.so
 vendor/lib64/libbwc.so
 vendor/lib64/libmp3dec_mtk.so
 vendor/lib64/libstagefrighthw.so
@@ -1533,14 +1531,12 @@ vendor/lib64/libcodec2_soft_mtk_mp3dec.so
 vendor/lib64/libcodec2_soft_mtk_msadpcmdec.so
 vendor/lib64/libcodec2_vpp_qt_plugin.so
 vendor/lib64/libcodec2_vpp_rs_plugin.so
-vendor/lib64/libmp3dec_mtk.so
 vendor/lib64/libformatter.so
 
 # Media OMX
 vendor/etc/mtk_omx_core.cfg
 vendor/lib/libMtkOmxMp3Dec.so
 vendor/lib/libMtkOmxApeDec.so
-vendor/lib/libMtkOmxAdpcmDec.so
 vendor/lib/libMtkOmxAdpcmDec.so
 vendor/lib/libMtkOmxGsmDec.so
 vendor/lib/libMtkOmxAlacDec.so
@@ -1839,7 +1835,6 @@ system_ext/priv-app/ImsService/ImsService.apk
 system_ext/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
-vendor/lib/vendor.mediatek.hardware.rcs@2.0.so
 vendor/lib/vendor.mediatek.hardware.videotelephony@1.0.so
 vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
@@ -1967,7 +1962,7 @@ vendor/lib64/libconnfem.so
 vendor/lib64/libifcutils_mtk.so
 vendor/lib64/libforkexecwrap.so
 vendor/lib64/vendor.mediatek.hardware.netdagent@1.0.so
-vendor/lib64/libwifi-hal.so|4d02cc7404fdaa941abc06cecc4568f6818eb482
+vendor/lib64/libwifi-hal.so
 vendor/lib64/vendor.mediatek.hardware.wifi.hostapd_ext@1.0.so
 
 # Fingerprint
@@ -1992,8 +1987,6 @@ vendor/etc/init/vibrator-mtk-default.rc
 vendor/etc/vintf/manifest/vibrator-mtk-default.xml
 vendor/lib/libvibrator.so
 vendor/lib64/libvibrator.so
-vendor/lib64/vendor.xiaomi.hardware.fingerprintextension@1.0.so
-
 
 # USB
 vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
