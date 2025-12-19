@@ -19,7 +19,7 @@ static const variant_info_t default_info = {
     .marketname = "Redmi 11 Prime",
     .model = "22071219AI",
     .name = "rock",
-    .build_fingerprint = "Redmi/rock/rock:13/TP1A.220624.014/V14.0.9.0.TLUMIXM:user/release-keys"
+    .build_fingerprint = "Redmi/rock/rock:14/UP1A.231005.007/V816.0.12.0.ULUMIXM:user/release-keys"
 };
 
 static const variant_info_t rock_info = {
@@ -32,7 +32,7 @@ static const variant_info_t rock_info = {
     .marketname = "Redmi 11 Prime",
     .model = "22071219AI",
     .name = "rock",
-    .build_fingerprint = "Redmi/rock/rock:13/TP1A.220624.014/V14.0.9.0.TLUMIXM:user/release-keys"
+    .build_fingerprint = "Redmi/rock/rock:14/UP1A.231005.007/V816.0.12.0.ULUMIXM:user/release-keys"
 };
 
 static const variant_info_t stone_info = {
@@ -45,7 +45,7 @@ static const variant_info_t stone_info = {
     .marketname = "POCO M5",
     .model = "22071219CG",
     .name = "stone",
-    .build_fingerprint = "POCO/stone_p_global/stone:13/TP1A.220624.014/V14.0.9.0.TLUMIXM:user/release-keys"
+    .build_fingerprint = "POCO/stone_p_global/stone:14/UP1A.231005.007/V816.0.12.0.ULUMIXM:user/release-keys"
 };
 
 static const std::vector<variant_info_t> variants = {

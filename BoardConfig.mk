@@ -1,9 +1,7 @@
 #
-# Copyright (C) 2020 The PixelStar Project
+# Copyright (C) 2025 The LineageOS Project
 #
-# Licensed under the Apache License, Version 2.0 (the "License");
-# you may not use this file except in compliance with the License.
-# You may obtain a copy of the License at
+# SPDX-License-Identifier: Apache-2.0
 #
 # http://www.apache.org/licenses/LICENSE-2.0
 #
@@ -187,7 +185,7 @@ BOARD_SUPER_PARTITION_SIZE := 9126805504
 BOARD_SUPER_PARTITION_GROUPS := mtk_dynamic_partitions
 
 # Reserved Partition
-ifneq ($(AFTERLIFE_GAPPS),true)
+ifneq ($(WITH_GAPPS),true)
   BOARD_SYSTEMIMAGE_EXTFS_INODE_COUNT ?= -1
   BOARD_SYSTEM_EXTIMAGE_EXTFS_INODE_COUNT ?= -1
   BOARD_PRODUCTIMAGE_EXTFS_INODE_COUNT ?= -1
