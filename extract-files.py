@@ -13,6 +13,12 @@ from extract_utils.main import (
     ExtractUtilsModule,
 )
 
+namespace_imports = [
+     'hardware/mediatek',
+     'hardware/xiaomi',
+     'vendor/xiaomi/rock'
+ ]
+
 blob_fixups: blob_fixups_user_type = {
     'system_ext/lib64/libsource.so': blob_fixup()
     .add_needed('libui_shim.so'),
@@ -45,6 +51,7 @@ module = ExtractUtilsModule(
     'rock',
     'xiaomi',
     blob_fixups=blob_fixups,
+    namespace_imports=namespace_imports,
 )
 
 if __name__ == '__main__':
