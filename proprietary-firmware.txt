@@ -1,14 +1,14 @@
 # Firmware - from rock 14 UP1A.231005.007 V816.0.12.0.ULUMIXM release-keys
 
-dpm.img
-gz.img
-lk.img
-logo.img
-mcupm.img
-md1img.img
-pi_img.img
-preloader_raw.img
-scp.img
-spmfw.img
-sspm.img
-tee.img
+dpm.img;AB
+gz.img;AB
+lk.img;AB
+logo.img;AB
+mcupm.img;AB
+md1img.img;AB
+pi_img.img;AB
+preloader_raw.img;AB
+scp.img;AB
+spmfw.img;AB
+sspm.img;AB
+tee.img;AB
