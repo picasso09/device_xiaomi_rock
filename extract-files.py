@@ -33,6 +33,11 @@ blob_fixups: blob_fixups_user_type = {
     .replace_needed('android.hardware.vibrator-V2-ndk_platform.so', 'android.hardware.vibrator-V2-ndk.so'),
     'vendor/bin/hw/android.hardware.lights-service.mediatek': blob_fixup()
     .replace_needed('android.hardware.light-V1-ndk_platform.so', 'android.hardware.light-V1-ndk.so'),
+    'vendor/bin/hw/android.hardware.security.keymint@1.0-service.beanpod': blob_fixup()
+	.replace_needed('android.hardware.security.keymint-V1-ndk_platform.so', 'android.hardware.security.keymint-V1-ndk.so')
+	.replace_needed('android.hardware.security.sharedsecret-V1-ndk_platform.so', 'android.hardware.security.sharedsecret-V1-ndk.so')
+	.replace_needed('android.hardware.security.secureclock-V1-ndk_platform.so', 'android.hardware.security.secureclock-V1-ndk.so')
+	.add_needed('android.hardware.security.rkp-V3-ndk.so'),
     'vendor/etc/init/android.hardware.graphics.allocator@4.0-service-mediatek.rc': blob_fixup()
     .regex_replace('android.hardware.graphics.allocator@4.0-service-mediatek', 'mt6789/android.hardware.graphics.allocator@4.0-service-mediatek.mt6789'),
     'vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc': blob_fixup()
