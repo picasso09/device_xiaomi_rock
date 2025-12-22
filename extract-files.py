@@ -72,6 +72,10 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/lib64/libteei_daemon_vfs.so', 'vendor/lib64/mt6789/libaaa_ltm.so', 'vendor/lib64/mt6789/lib3a.flash.so', 'vendor/lib64/mt6789/lib3a.ae.stat.so', 'vendor/lib64/mt6789/lib3a.sensors.color.so', 'vendor/lib64/mt6789/lib3a.sensors.flicker.so', 'vendor/lib64/libSQLiteModule_VER_ALL.so'): blob_fixup()
         .add_needed('liblog.so'),
 
+    # NVRAM
+    ('vendor/lib/libnvram.so', 'vendor/lib64/libnvram.so'): blob_fixup()
+	.add_needed('libbase_shim.so'),
+
     # GNSS
     ('vendor/bin/hw/android.hardware.gnss-service.mediatek', 'vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so'): blob_fixup()
     .replace_needed('android.hardware.gnss-V1-ndk_platform.so', 'android.hardware.gnss-V1-ndk.so')
