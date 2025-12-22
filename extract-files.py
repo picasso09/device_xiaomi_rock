@@ -73,6 +73,8 @@ blob_fixups: blob_fixups_user_type = {
 	.clear_symbol_version('AHardwareBuffer_unlock'),
     ('vendor/lib64/libteei_daemon_vfs.so', 'vendor/lib64/mt6789/libaaa_ltm.so', 'vendor/lib64/mt6789/lib3a.flash.so', 'vendor/lib64/mt6789/lib3a.ae.stat.so', 'vendor/lib64/mt6789/lib3a.sensors.color.so', 'vendor/lib64/mt6789/lib3a.sensors.flicker.so', 'vendor/lib64/libSQLiteModule_VER_ALL.so'): blob_fixup()
         .add_needed('liblog.so'),
+    'vendor/lib64/mt6789/libmnl.so' : blob_fixup()
+        .add_needed('libcutils.so'),
 
     # NVRAM
     ('vendor/lib/libnvram.so', 'vendor/lib64/libnvram.so'): blob_fixup()
