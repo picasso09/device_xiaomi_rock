@@ -58,6 +58,8 @@ blob_fixups: blob_fixups_user_type = {
     .regex_replace('1.2-mediatek', '1.2-mediatek-64b'),
     'vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc': blob_fixup()
     .regex_replace('on property:vts(.|\n)*', ''),
+    'vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so': blob_fixup()
+	.replace_needed('libhidltransport.so', 'libhidlbase-v32.so'),
     ('vendor/lib64/libmtkcam_stdutils.so', 'vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so', 'vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so'): blob_fixup()
     .replace_needed('libutils.so', 'libutils-v32.so'),
      'vendor/lib64/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so': blob_fixup()
