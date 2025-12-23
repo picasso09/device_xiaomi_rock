@@ -100,9 +100,8 @@ PRODUCT_COPY_FILES += \
 
 # Boot control HAL
 PRODUCT_PACKAGES += \
-    android.hardware.boot@1.2-impl \
-    android.hardware.boot@1.2-impl.recovery \
-    android.hardware.boot@1.2-service
+    com.android.hardware.boot \
+    android.hardware.boot-service.default_recovery
 
 PRODUCT_PACKAGES += \
     create_pl_dev \
