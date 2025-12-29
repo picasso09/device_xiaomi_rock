@@ -356,7 +356,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    NfcNci \
     android.hardware.nfc@1.2-service \
     com.android.nfc_extras \
     Tag \
