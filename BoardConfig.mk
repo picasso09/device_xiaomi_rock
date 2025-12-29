@@ -102,7 +102,7 @@ TARGET_SCREEN_DENSITY := 440
 VENDOR_SECURITY_PATCH := 2023-12-01
 
 # Init
-TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):init_xiaomi_rock
+$(call soong_config_set,libinit,vendor_init_lib,init_xiaomi_rock)
 TARGET_RECOVERY_DEVICE_MODULES ?= init_xiaomi_rock
 
 # Kernel Offset
