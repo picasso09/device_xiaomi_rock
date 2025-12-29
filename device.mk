@@ -233,11 +233,10 @@ PRODUCT_COPY_FILES += \
 
 # Wi-Fi
 PRODUCT_PACKAGES += \
-    android.hardware.wifi@1.0-service \
+    android.hardware.wifi-service \
     hostapd \
     wpa_supplicant \
-    android.hardware.tetheroffload.control@1.1.vendor \
-    android.hardware.tetheroffload.config@1.0.vendor \
+    libwifi-hal-wrapper
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/txpowerctrl.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl.cfg
