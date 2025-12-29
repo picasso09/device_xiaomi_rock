@@ -69,13 +69,10 @@ PRODUCT_PACKAGES += \
 	audio.primary.default \
 	audio.r_submix.default \
 	audio.usb.default \
-	libalsautils \
 	libldacBT_enc \
 	libldacBT_abr \
 	libopus.vendor \
 	libtinycompress \
-	libaudiofoundation.vendor \
-	libprocessgroup.vendor \
 	libsqlite.vendor \
 	libaudioroute.vendor \
 	audio_policy.stub
@@ -86,8 +83,8 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-	libbluetooth_audio_session \
-	android.hardware.bluetooth@1.1.vendor
+	audio.bluetooth.default \
+	android.hardware.bluetooth.audio-impl
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/config/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
@@ -120,34 +117,19 @@ PRODUCT_PACKAGES += \
 
 # HIDL
 PRODUCT_PACKAGES += \
-    android.hidl.base@1.0 \
-    android.hidl.allocator@1.0 \
-    android.hidl.base@1.0.vendor \
-    android.hidl.allocator@1.0.vendor \
-    libhidltransport \
-    libhidltransport.vendor \
-    libhwbinder \
-    libhwbinder.vendor
+    android.hidl.base@1.0
 
 # Graphics
     PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.1 \
-    android.hardware.graphics.composer@2.2 \
     android.hardware.graphics.composer@2.3 \
     android.hardware.graphics.composer@2.3-service
 
 PRODUCT_PACKAGES += \
-    android.hardware.memtrack-service.mediatek-mali \
-    android.hardware.graphics.allocator@4.0.vendor \
-    android.hardware.graphics.mapper@4.0.vendor
+    android.hardware.memtrack-service.mediatek-mali
 
 # DRM
 PRODUCT_PACKAGES += \
-    android.hardware.drm-service.clearkey \
-    android.hardware.drm@1.4.vendor
-
-PRODUCT_PACKAGES += \
-    libdrm.vendor
+    android.hardware.drm-service.clearkey
 
 # Fingerprint
 PRODUCT_PACKAGES += \
@@ -157,17 +139,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     android.hardware.health@2.1-impl \
     android.hardware.health@2.1-service
-
-# Media
-PRODUCT_PACKAGES += \
-    libavservices_minijail_vendor \
-    libcodec2_hidl@1.2.vendor \
-    libcodec2_soft_common.vendor \
-    libsfplugin_ccodec_utils.vendor \
-    libstagefright_softomx_plugin.vendor
-
-PRODUCT_PACKAGES += \
-    libchrome.vendor
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/config/media,$(TARGET_COPY_OUT_VENDOR)/etc) \
@@ -183,21 +154,6 @@ PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0-impl \
     android.hardware.gatekeeper@1.0-service
 
-# Keymaster / Keymint
-PRODUCT_PACKAGES += \
-	libkeymaster_messages.vendor \
-	libkeymaster_portable.vendor \
-	libkeymint.vendor \
-	libpuresoftkeymasterdevice.vendor
-
-# GNSS
-PRODUCT_PACKAGES += \
-    android.hardware.gnss@1.1.vendor \
-    android.hardware.gnss@2.1.vendor \
-    android.hardware.gnss.measurement_corrections@1.1.vendor \
-    android.hardware.gnss-V1-ndk.vendor \
-    android.hardware.gnss.visibility_control@1.0.vendor
-
 # Shim
 PRODUCT_PACKAGES += \
     libui_shim \
@@ -207,21 +163,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml
 
-# keymint
-PRODUCT_PACKAGES += \
-    libcppbor_external.vendor
-
-# Secure Element
-PRODUCT_PACKAGES += \
-    android.hardware.secure_element@1.2.vendor \
-
 # Sensors
 PRODUCT_PACKAGES += \
-    android.frameworks.sensorservice@1.0.vendor \
-    android.hardware.sensors-service.multihal \
-    android.hardware.sensors@1.0.vendor \
-    android.hardware.sensors@2.0.vendor \
-    android.hardware.sensors@2.0-ScopedWakelock.vendor
+    android.hardware.sensors-service.multihal
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
@@ -318,19 +262,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/permissions/privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-mediatek.xml \
     $(LOCAL_PATH)/config/permissions/systemext-privapp-permissions-mediatek.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/systemext-privapp-permissions-mediatek.xml \
     $(LOCAL_PATH)/config/permissions/privapp-permissions-whitelist-system_ext.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-whitelist-system_ext.xml
-
-# Cam
-PRODUCT_PACKAGES += \
-	android.hardware.camera.common@1.0.vendor \
-	android.hardware.camera.device@1.0.vendor \
-	android.hardware.camera.device@3.2.vendor \
-	android.hardware.camera.device@3.3.vendor \
-	android.hardware.camera.device@3.4.vendor \
-	android.hardware.camera.device@3.5.vendor \
-	android.hardware.camera.device@3.6.vendor \
-	android.hardware.camera.provider@2.4.vendor \
-	android.hardware.camera.provider@2.5.vendor \
-	android.hardware.camera.provider@2.6.vendor
 
 # Keylayout
 PRODUCT_COPY_FILES += \
@@ -436,24 +367,10 @@ PRODUCT_PACKAGES += \
 
 
 PRODUCT_PACKAGES += \
-    libexpat.vendor \
-    libunwindstack.vendor \
-    libcurl.vendor \
-    libutilscallstack.vendor \
-    libcamera_metadata.vendor \
-    libexif.vendor \
     libpiex \
     liblz4.vendor \
-    libpng.vendor \
-    libion.vendor \
-    libui.vendor \
-    libgatekeeper.vendor \
     libjsoncpp.vendor \
-    libnetutils.vendor \
-    libdumpstateutil.vendor \
-    libpower.vendor \
-    libutilscallstack.vendor \
-    libhidlmemory.vendor \
+    libdumpstateutil.vendor
 
 # Lights
 PRODUCT_PACKAGES += \
@@ -461,8 +378,6 @@ PRODUCT_PACKAGES += \
 
 # Radio
 PRODUCT_PACKAGES += \
-    android.hardware.radio.config@1.3.vendor \
-    android.hardware.radio@1.6.vendor \
     libprotobuf-cpp-full.vendor \
     libprotobuf-cpp-lite.vendor
 
