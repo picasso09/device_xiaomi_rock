@@ -209,9 +209,6 @@ PRODUCT_COPY_FILES += \
 
 # keymint
 PRODUCT_PACKAGES += \
-    android.hardware.security.keymint-V1-ndk_platform.vendor \
-    android.hardware.security.secureclock-V1-ndk_platform.vendor \
-    android.hardware.security.sharedsecret-V1-ndk_platform.vendor \
     libcppbor_external.vendor
 
 # Secure Element
