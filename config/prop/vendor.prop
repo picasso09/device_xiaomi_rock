@@ -14,6 +14,10 @@ aaudio.mmap_policy=2
 ro.vendor.audio.voice.change.version=2
 ro.vendor.audio_para_version=L19A-T-Audiopara-V03-20221212
 
+# Call
+ro.config.vc_call_vol_default=4
+ro.config.vc_call_vol_steps=8
+
 # Camera
 camera.disable_zsl_mode=1
 vendor.camera.mdp.dre.enable=0
