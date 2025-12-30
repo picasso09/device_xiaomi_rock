@@ -70,12 +70,6 @@ ro.sys.usb.storage.type=mtp
 ro.sys.usb.bicr=no
 ro.sys.usb.charging.only=yes
 
-# VoLTE
-persist.dbg.allow_ims_off=1
-persist.dbg.volte_avail_ovr=1
-persist.dbg.vt_avail_ovr=1
-persist.dbg.wfc_avail_ovr=1
-
 # MTK vendor
 ro.vendor.mtk_omacp_support=1
 ro.vendor.mtk_flv_playback_support=1

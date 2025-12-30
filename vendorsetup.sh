@@ -13,4 +13,7 @@ git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-23.0 h
 # Sepolicy
 git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr -b lineage-23.0 device/mediatek/sepolicy_vndr
 
+# Common IMS
+git clone https://github.com/MillenniumOSS/android_vendor_mediatek_ims.git -b sixteen vendor/mediatek/ims
+
 echo -e "\033[32mDone go cook\033[0m"
