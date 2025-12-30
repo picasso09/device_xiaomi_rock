@@ -3,5 +3,5 @@ allow meta_tst version_info:file r_file_perms;
 allow init meta_tst_exec:file { read getattr map execute open };
 allow init meta_tst:process { transition };
 allow meta_tst meta_tst_exec:file { read getattr map execute open };
-allow meta_tst vendor_shell_exec:file { map entrypoint };
+allow meta_tst vendor_shell_exec:file { read open getattr map entrypoint };
 set_prop(meta_tst, vendor_fp_prop)
