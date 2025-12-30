@@ -6,5 +6,6 @@ allow hal_audio_default vendor_sia_mode:file r_file_perms;
 allow hal_audio_default ccci_aud_device:chr_file rw_file_perms;
 allow hal_audio_default vow_device:chr_file rw_file_perms;
 allow hal_audio_default sysfs_boot_info:file { read open getattr };
-allow hal_audio_default mtk_audiohal_data_file:dir { open read write search };
+allow hal_audio_default mtk_audiohal_data_file:dir { open read write search getattr watch watch_reads };
+allow hal_audio_default ebc_device:chr_file rw_file_perms;
 
