@@ -14,7 +14,7 @@ type touchfeature_device, dev_type;
 type version_info, fs_type, sysfs_type;
 
 # NFC
-type lirc_device, dev_type;
+# type lirc_device, dev_type;
 
 #TP
 type sysfs_tp_virtual_prox, fs_type, sysfs_type;

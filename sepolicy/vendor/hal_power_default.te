@@ -25,8 +25,8 @@ allow hal_power_default touchfeature_device:chr_file rw_file_perms;
 allow hal_power_default cgroup:file rw_file_perms;
 
 # Allow libpermgr to read write power prop
-set_prop(hal_power_default, vendor_mtk_powerhal_prop)
-get_prop(hal_power_default, vendor_mtk_powerhal_prop)
+# set_prop(hal_power_default, vendor_mtk_powerhal_prop)
+# get_prop(hal_power_default, vendor_mtk_powerhal_prop)
 get_prop(hal_power_default, vendor_mtk_powerhal_gpu_prop)
 set_prop(hal_power_default, vendor_mtk_powerhal_gpu_prop)
 

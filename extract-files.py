@@ -78,6 +78,10 @@ blob_fixups: blob_fixups_user_type = {
         .clear_symbol_version('__aeabi_memcpy')
         .clear_symbol_version('__aeabi_memset')
         .clear_symbol_version('__gnu_Unwind_Find_exidx'),
+    ('vendor/lib64/libnvram.so', 'vendor/lib64/libsysenv.so'): blob_fixup()
+        .add_needed('libbase_shim.so'),
+    'vendor/lib64/ese_spi_nxp.so': blob_fixup()
+        .add_needed('libbase_shim.so'),
 
     # NVRAM
     ('vendor/lib/libnvram.so', 'vendor/lib64/libnvram.so'): blob_fixup()
