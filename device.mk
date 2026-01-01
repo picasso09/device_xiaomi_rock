@@ -86,7 +86,7 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-	android.hardware.bluetooth@1.1-mtk-service \
+	audio.bluetooth.default \
 	android.hardware.bluetooth.audio-impl
 
 PRODUCT_COPY_FILES += \
