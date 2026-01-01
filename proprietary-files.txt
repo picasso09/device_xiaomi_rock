@@ -1846,7 +1846,7 @@ vendor/etc/init/microtrust.rc
 vendor/lib/libTEECommon.so
 vendor/lib/libgz_gp_client.so
 vendor/lib/libgz_uree.so
-vendor/lib/libthha.so
+vendor/lib/libthha.so;DISABLE_CHECKELF
 vendor/lib64/libTEECommon.so
 vendor/lib64/libgz_gp_client.so
 vendor/lib64/libgz_uree.so
