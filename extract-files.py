@@ -60,7 +60,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so': blob_fixup()
 	.replace_needed('libhidltransport.so', 'libhidlbase-v32.so'),
     ('vendor/lib64/libmtkcam_stdutils.so', 'vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so', 'vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so'): blob_fixup()
-    .replace_needed('libutils.so', 'libutils-v32.so'),
+    .replace_needed('libutils.so', 'libutils-v32.so')
+    .add_needed('libprocessgroup_shim.so'),
      'vendor/lib64/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so': blob_fixup()
 	.clear_symbol_version('AHardwareBuffer_allocate')
 	.clear_symbol_version('AHardwareBuffer_describe')
@@ -89,7 +90,11 @@ blob_fixups: blob_fixups_user_type = {
 
     # GNSS
     ('vendor/bin/hw/android.hardware.gnss-service.mediatek', 'vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so'): blob_fixup()
-    .replace_needed('android.hardware.gnss-V1-ndk_platform.so', 'android.hardware.gnss-V1-ndk.so')
+    .replace_needed('android.hardware.gnss-V1-ndk_platform.so', 'android.hardware.gnss-V1-ndk.so'),
+
+   # MTK HWCOMPOSER
+    ('vendor/lib64/hw/hwcomposer.mtk_common.so', 'vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service') : blob_fixup()
+        .add_needed('libprocessgroup_shim.so')
 
 }  # fmt: skip
 
