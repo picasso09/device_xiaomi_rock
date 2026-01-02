@@ -8,6 +8,7 @@ type vendor_sysfs_graphics, fs_type, sysfs_type;
 
 # Touch gestures
 type sysfs_tp_gesture, fs_type, sysfs_type;
+type proc_tp_gesture, fs_type, proc_type;
 type touchfeature_device, dev_type;
 
 # Version Info
