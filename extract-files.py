@@ -85,7 +85,7 @@ blob_fixups: blob_fixups_user_type = {
         .add_needed('libbase_shim.so'),
 
     # NVRAM
-    ('vendor/lib/libnvram.so', 'vendor/lib64/libnvram.so'): blob_fixup()
+    ('vendor/lib/libnvram.so', 'vendor/lib64/libnvram.so', 'vendor/lib/libsysenv.so', 'vendor/lib64/libsysenv.so'): blob_fixup()
 	.add_needed('libbase_shim.so'),
 
     # GNSS
