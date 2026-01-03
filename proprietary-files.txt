@@ -1761,7 +1761,7 @@ vendor/lib/libmtkrillog.so
 vendor/lib/libmtkspparser.so
 vendor/lib/libmtksysutils.so
 vendor/lib/librcs_interface.so
-vendor/lib/libsysenv.so
+vendor/lib/libsysenv.so;FIX_SONAME
 vendor/lib64/libMtkSpeechEnh.so
 vendor/lib64/libcapctrl.so
 vendor/lib64/libcares_naptr.so
@@ -1789,7 +1789,7 @@ vendor/lib64/libmtkutils.so
 vendor/lib64/libratconfig.so
 vendor/lib64/librilfusion.so
 vendor/lib64/libstorage_otp.so
-vendor/lib64/libsysenv.so
+vendor/lib64/libsysenv.so;FIX_SONAME
 vendor/lib64/libtrm.so
 vendor/lib64/libvia-ril.so
 vendor/lib64/libviamipc-ril.so
