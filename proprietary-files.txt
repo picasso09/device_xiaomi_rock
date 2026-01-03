@@ -1497,7 +1497,6 @@ vendor/lib/libladder.so
 vendor/lib/libmp3dec_mtk.so;DISABLE_CHECKELF
 vendor/lib/libmp4enc_sa.ca7.so;DISABLE_CHECKELF
 vendor/lib/libmp4enc_xa.ca7.so;DISABLE_CHECKELF
-vendor/lib/libstagefrighthw.so
 vendor/lib/libvcodec_oal.so;DISABLE_CHECKELF
 vendor/lib/libvcodec_utility_plat.mt6789.so
 vendor/lib/libvcodecdrv_header_stub.so
@@ -1511,7 +1510,6 @@ vendor/lib64/VP9SecureVdecCA.so
 vendor/lib64/libAVCSecureVencCA.so
 vendor/lib64/libbwc.so
 vendor/lib64/libmp3dec_mtk.so;DISABLE_CHECKELF
-vendor/lib64/libstagefrighthw.so
 vendor/lib64/libvcodec_oal.so;DISABLE_CHECKELF
 vendor/lib64/libvcodecdrv_header_stub.so
 
