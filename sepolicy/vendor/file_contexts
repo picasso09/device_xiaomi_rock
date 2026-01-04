@@ -2,7 +2,7 @@
 /dev/0:0:0:49476                                                                                            u:object_r:teei_rpmb_device:s0
 
 # Power
-/(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.pixel-libperfmgr                          u:object_r:hal_power_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.pixel-libperfmgr                           u:object_r:hal_power_default_exec:s0
 
 # Graphics
 /sys/devices/virtual/mi_display/disp_feature/disp-DSI-+[0-1](/.*)?                                          u:object_r:vendor_sysfs_displayfeature:s0
@@ -40,6 +40,9 @@
 
 # Charger
 /(vendor|system/vendor)/bin/hw/vendor.xiaomi.hardware.micharge@1.0-service                                  u:object_r:hal_micharge_default_exec:s0
+
+# Sensors
+/(vendor|system/vendor)/bin/hw/android\.hardware\.sensors-service\.xiaomi-multihal                          u:object_r:hal_sensors_default_exec:s0
 
 # NFC
 /dev/nq-nci                                                                                                 u:object_r:nfc_device:s0
