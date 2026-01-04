@@ -1938,6 +1938,11 @@ vendor/lib64/libgoodixhwfingerprint.so
 vendor/lib64/libmifpext.so
 vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so
 
+# USB
+vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2
+vendor/etc/init/android.hardware.usb@1.2-service-mediatekv2.rc
+vendor/etc/vintf/manifest/android.hardware.usb@1.2-service-mediatekv2.xml
+
 # Vibrator
 vendor/bin/hw/android.hardware.vibrator-service.mediatek
 vendor/etc/init/vibrator-mtk-default.rc
