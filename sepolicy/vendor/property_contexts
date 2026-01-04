@@ -1,10 +1,10 @@
 # Audio
 vendor.audiohal.telephonytx.                            u:object_r:vendor_mtk_audiohal_prop:s0
 vendor.audiomediatek.                                   u:object_r:vendor_audioserver_prop:s0
-# persist.audio.headset.plug.status                       u:object_r:audio_prop:s0
+persist.audio.headset.plug.status                       u:object_r:audio_prop:s0
 
 # Camera
-# persist.camera.                                         u:object_r:vendor_camera_prop:s0
+persist.camera.                                         u:object_r:vendor_camera_prop:s0
 persist.vendor.camera.                                  u:object_r:vendor_camera_prop:s0
 persist.vendor.camera.dualcal.state.                    u:object_r:vendor_camera_prop:s0
 vendor.camera.                                          u:object_r:vendor_camera_prop:s0
@@ -22,17 +22,17 @@ gf.debug.                                               u:object_r:vendor_finger
 persist.vendor.sys.fp.                                  u:object_r:vendor_fingerprint_persist_prop:s0
 
 # Health Check
-# persist.device_config.activity_manager.use_compaction	u:object_r:flags_health_check_prop:s0
+persist.device_config.activity_manager.use_compaction	u:object_r:flags_health_check_prop:s0
 
 # MediaServer
 vendor.sys.media.                                       u:object_r:vendor_media_prop:s0
 
 # MIUI
 
-# ro.miui.                                                u:object_r:vendor_xiaomi_prop:s0
+ro.miui.                                                u:object_r:vendor_xiaomi_prop:s0
 
 # Mi thermald properties
-vendor.sys.thermal.		                                u:object_r:vendor_thermal_engine_prop:s0
+vendor.sys.thermal.	                                u:object_r:vendor_thermal_engine_prop:s0
 vendor.sys.thermal.data.path	                        u:object_r:vendor_thermal_engine_prop:s0
 
 # Sensors
@@ -47,10 +47,10 @@ vendor.panel.display                                    u:object_r:vendor_fp_pro
 vendor.panel.touch_vendor                               u:object_r:vendor_fp_prop:s0
 vendor.panel.vendor                                     u:object_r:vendor_fp_prop:s0
 
-#sys.fp.                                                 u:object_r:vendor_fp_prop:s0
+sys.fp.                                                 u:object_r:vendor_fp_prop:s0
  
 # VT
-# vendor.ims.vt.signalstrength.                           u:object_r:system_mtk_ims_vt_signalstrength_prop:s0
+vendor.ims.vt.signalstrength.                           u:object_r:system_mtk_ims_vt_signalstrength_prop:s0
 
 # VTS
-# vts.native_server.on                                    u:object_r:vts_status_prop:s0
+vts.native_server.on                                    u:object_r:vts_status_prop:s0
