@@ -98,7 +98,11 @@ blob_fixups: blob_fixups_user_type = {
 
    # RIL
     'vendor/bin/hw/mtkfusionrild': blob_fixup()
-        .add_needed('libutils-v32.so')
+        .add_needed('libutils-v32.so'),
+
+   # SENSORS
+    ('vendor/bin/mnld', 'vendor/lib64/mt6789/libaalservice.so', 'vendor/lib64/mt6789/libcam.utils.sensorprovider.so', 'vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so'): blob_fixup()
+        .replace_needed('libsensorndkbridge.so', 'android.hardware.sensors@1.0-convert-shared.so')
 
 }  # fmt: skip
 
