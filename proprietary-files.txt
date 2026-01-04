@@ -1633,7 +1633,7 @@ vendor/lib64/vendor.mediatek.hardware.neuropilot.agent@1.1.so
 vendor/lib64/vendor.mediatek.hardware.neuropilot.agent@1.2.so
 
 # NFC
-odm/etc/init/stone_p/android.hardware.nfc@1.2-service.rc:vendor/bin/hw/android.hardware.nfc@1.2-service
+vendor/bin/hw/android.hardware.nfc@1.2-service
 vendor/etc/init/init.rock.nfc.rc
 vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp.conf
@@ -1646,6 +1646,7 @@ vendor/lib64/nfc_nci_nxp.so
 vendor/lib64/vendor.nxp.eventprocessor@1.0.so
 vendor/lib64/vendor.nxp.nxpnfclegacy@1.0.so
 vendor/libnfc-nxp_RF.conf
+odm/etc/init/stone_p/android.hardware.nfc@1.2-service.rc:vendor/etc/init/android.hardware.nfc@1.2-service.rc
 
 # NVRAM
 vendor/bin/hw/vendor.mediatek.hardware.nvram@1.1-service
