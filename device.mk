@@ -86,7 +86,6 @@ PRODUCT_COPY_FILES += \
 
 # Bluetooth
 PRODUCT_PACKAGES += \
-        android.hardware.bluetooth-service.mediatek \
 	audio.bluetooth.default \
 	android.hardware.bluetooth.audio-impl
 
