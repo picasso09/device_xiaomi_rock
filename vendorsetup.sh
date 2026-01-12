@@ -9,6 +9,7 @@ git clone https://github.com/picasso09/proprietary_vendor_xiaomi_rock -b thirtee
 # Hardware
 git clone https://github.com/LineageOS/android_hardware_mediatek -b lineage-20 hardware/mediatek
 git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-20 hardware/xiaomi
+git clone https://github.com/picasso09/vendor_xiaomi_camera-rock -b thirteen vendor/xiaomi/camera
 
 # Sepolicy
 git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr -b lineage-20 device/mediatek/sepolicy_vndr
