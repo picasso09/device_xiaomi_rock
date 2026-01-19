@@ -1,0 +1,3 @@
+allow radio system_mtk_vodata_prop:file { read getattr open map };
+get_prop(radio, system_mtk_vodata_prop)
+

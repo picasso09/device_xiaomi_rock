@@ -2,3 +2,6 @@ type system_mtk_ims_vt_signalstrength_prop, property_type, extended_core_propert
 
 allow radio system_mtk_ims_vt_signalstrength_prop:property_service { set };
 allow radio system_mtk_ims_vt_signalstrength_prop:file { read getattr open map };
+get_prop(radio, vendor_xiaomi_prop)
+get_prop(radio, vendor_fp_prop)
+
