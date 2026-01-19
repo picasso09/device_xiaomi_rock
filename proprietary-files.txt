@@ -1819,7 +1819,7 @@ system/system/lib64/libmtk_vt_service.so:system/lib64/libmtk_vt_service.so:
 system/system/lib64/libmtk_vt_wrapper.so:system/lib64/libmtk_vt_wrapper.so:
 system/system/lib64/libmtkperf_client.so:system/lib64/libmtkperf_client.so
 system/system/lib64/libsignal.so:system/lib64/libsignal.so:
-system/system/lib64/libsink.so:system/lib64/libsink.so|8d69c77e4294f45e7a2d16536c79adc52f134ff9
+system/system/lib64/libsink.so:system/lib64/libsink.so
 system/system/lib64/libsource.so:system/lib64/libsource.so
 system/system/lib64/libvcodec_cap.so:system/lib64/libvcodec_cap.so
 system/system/lib64/libvcodec_capenc.so:system/lib64/libvcodec_capenc.so

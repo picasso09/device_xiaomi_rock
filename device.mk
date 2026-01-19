@@ -129,9 +129,6 @@ PRODUCT_PACKAGES += \
 
 # Graphics
     PRODUCT_PACKAGES += \
-    android.hardware.graphics.composer@2.1 \
-    android.hardware.graphics.composer@2.2 \
-    android.hardware.graphics.composer@2.3 \
     android.hardware.graphics.composer@2.3-service
 
 PRODUCT_PACKAGES += \
@@ -198,8 +195,7 @@ PRODUCT_PACKAGES += \
 
 # Shim
 PRODUCT_PACKAGES += \
-    libui_shim \
-    libshim_sink
+    libui_shim
 
 # Keymaster
 PRODUCT_COPY_FILES += \

@@ -93,9 +93,6 @@ function blob_fixup() {
         vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so)
             "$PATCHELF" --replace-needed "android.hardware.gnss-V1-ndk_platform.so" "android.hardware.gnss-V1-ndk.so" "$2"
             ;;
-	system/lib64/libsink.so)
-            "${PATCHELF}" --add-needed "libshim_sink.so" "$2"
-            ;;
 	vendor/etc/init/init.thermal_core.rc)
             [ "$2" = "" ] && return 0
             sed -i 's|ro.vendor.mtk_thermal_2_0|vendor.thermal.link_ready|g' "${2}"
