@@ -48,6 +48,7 @@ vendor.panel.vendor                                     u:object_r:vendor_fp_pro
 sys.fp.                                                 u:object_r:vendor_fp_prop:s0
  
 # VT
+persist.vendor.vt_hevc_support                          u:object_r:vendor_mtk_vendor_vt_prop:s0
 vendor.ims.vt.signalstrength.                           u:object_r:system_mtk_ims_vt_signalstrength_prop:s0
 
 # VTS
