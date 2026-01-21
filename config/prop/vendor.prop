@@ -125,7 +125,7 @@ vendor.debug.sf.cpupolicy=0
 # Display
 debug.sf.hw=1
 debug.sf.enable_hwc_vds=0
-debug.hwui.renderer=skiagl
+debug.hwui.renderer=skiavk
 debug.hwui.skia_atrace_enabled=false
 debug.renderengine.backend=skiaglthreaded
 debug.sf.recomputecrop=0
