@@ -1695,6 +1695,7 @@ vendor/lib64/vendor.mediatek.hardware.pq@2.9.so
 
 # Power
 vendor/etc/task_profiles.json
+vendor/etc/init/vendor.mediatek.hardware.mtkpower@1.0-init.rc
 vendor/lib/libmtkperf_client_vendor.so
 vendor/lib/libpower_timer.so
 vendor/lib/libpowerhal.so
