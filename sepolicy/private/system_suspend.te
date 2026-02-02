@@ -1,0 +1,1 @@
+allow system_suspend system_suspend_control_service:service_manager find;
