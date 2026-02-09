@@ -178,8 +178,7 @@ PRODUCT_PACKAGES += \
     android.hardware.wifi-service \
     hostapd \
     wpa_supplicant \
-    libwifi-hal-wrapper \
-    lib_driver_cmd_mt66xx
+    libwifi-hal-wrapper
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/txpowerctrl.cfg:$(TARGET_COPY_OUT_VENDOR)/firmware/txpowerctrl.cfg
