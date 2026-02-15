@@ -24,6 +24,9 @@ type sysfs_tp_virtual_prox, fs_type, sysfs_type;
 type camera_persist_file, file_type;
 type vendor_camera_data_file, file_type, data_file_type;
 
+# Serial
+type proc_serial, proc_type;
+
 # Audio
 type vendor_audio_prop, file_type;
 type vendor_sia_mode, fs_type, sysfs_type;

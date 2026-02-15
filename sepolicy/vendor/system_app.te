@@ -1,4 +1,5 @@
 # Fast Charging
 allow system_app sysfs_power_supply:dir { search };
 allow system_app sysfs_power_supply:file { getattr open read };
+allow system_app proc_serial:file { read open getattr};
 r_dir_file(system_app, sysfs_power_supply)
