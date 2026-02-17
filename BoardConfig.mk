@@ -99,7 +99,7 @@ TARGET_NO_BOOTLOADER := true
 TARGET_SCREEN_DENSITY := 440
 
 # Security Patch
-VENDOR_SECURITY_PATCH := 2023-12-01
+VENDOR_SECURITY_PATCH := $(PLATFORM_SECURITY_PATCH)
 
 # Init
 $(call soong_config_set,libinit,vendor_init_lib,init_xiaomi_rock)
