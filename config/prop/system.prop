@@ -103,6 +103,9 @@ ro.mtk_perf_response_time=1
 #logd buffer size
 ro.logd.size=2M
 
+# FileSystem UserSpace
+persist.sys.fuse.passthrough.enable=true
+
 #disable mtk aggressive_dex2oat
 pm.dexopt.aggressive_dex2oat.enable=false
 
