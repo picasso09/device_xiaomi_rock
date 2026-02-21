@@ -273,8 +273,9 @@ PRODUCT_SOONG_NAMESPACES += \
 	$(LOCAL_PATH) \
     hardware/lineage/interfaces/power-libperfmgr \
     hardware/mediatek/libmtkperf_client \
-	hardware/google/interfaces \
+    hardware/google/interfaces \
 	hardware/google/pixel \
+    hardware/lineage/compat \
 	hardware/mediatek \
 	hardware/xiaomi
 
