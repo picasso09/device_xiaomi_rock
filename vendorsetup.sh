@@ -18,4 +18,7 @@ git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr -b 
 # Common IMS
 git clone https://github.com/MillenniumOSS/android_vendor_mediatek_ims.git -b sixteen-qpr2 vendor/mediatek/ims
 
+# MIcam
+git clone https://github.com/picasso09/vendor_xiaomi_camera-rock -b thirteen vendor/xiaomi/camera
+
 echo -e "\033[32mDone go cook\033[0m"
