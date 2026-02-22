@@ -218,9 +218,6 @@ vendor/etc/audio_param_global/Speech_AudioParam.xml:vendor/etc/audio_param/Speec
 vendor/etc/aurisys_param/sixth_param.txt
 
 # Bluetooth
-vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek
-vendor/etc/init/android.hardware.bluetooth@1.1-service-mediatek.rc
-vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so
 vendor/lib64/libbluetooth_mtk.so
 vendor/lib64/libbluetooth_mtk_pure.so
 vendor/lib64/libbt-vendor.so

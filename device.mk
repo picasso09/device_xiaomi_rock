@@ -87,7 +87,8 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 PRODUCT_PACKAGES += \
 	audio.bluetooth.default \
-	android.hardware.bluetooth.audio-impl
+	android.hardware.bluetooth.audio-impl \
+    android.hardware.bluetooth-service.mediatek
 
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/config/audio/,$(TARGET_COPY_OUT_VENDOR)/etc)
