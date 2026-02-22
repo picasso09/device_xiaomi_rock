@@ -83,6 +83,10 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/ese_spi_nxp.so': blob_fixup()
         .add_needed('libbase_shim.so'),
 
+    # AUDIO
+    ('vendor/lib/hw/audio.primary.mediatek.so', 'vendor/lib64/hw/audio.primary.mediatek.so') : blob_fixup()
+    .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so'),
+
     # NVRAM
     ('vendor/lib/libnvram.so', 'vendor/lib64/libnvram.so', 'vendor/lib/libsysenv.so', 'vendor/lib64/libsysenv.so'): blob_fixup()
 	.add_needed('libbase_shim.so'),
