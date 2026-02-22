@@ -16,6 +16,6 @@ git clone https://github.com/picasso09/android_hardware_lineage_compat -b lineag
 git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr -b lineage-23.2 device/mediatek/sepolicy_vndr
 
 # Common IMS
-git clone https://github.com/MillenniumOSS/android_vendor_mediatek_ims.git -b sixteen vendor/mediatek/ims
+git clone https://github.com/MillenniumOSS/android_vendor_mediatek_ims.git -b sixteen-qpr2 vendor/mediatek/ims
 
 echo -e "\033[32mDone go cook\033[0m"
