@@ -94,6 +94,9 @@ blob_fixups: blob_fixups_user_type = {
     .add_line_if_missing('    interface android.hardware.media.c2@1.1::IComponentStore default')
     .add_line_if_missing('    interface android.hardware.media.c2@1.2::IComponentStore default'),
 
+    'vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml' : blob_fixup()
+    .regex_replace('1.1', '1.2'),
+
     # NVRAM
     ('vendor/lib/libnvram.so', 'vendor/lib64/libnvram.so', 'vendor/lib/libsysenv.so', 'vendor/lib64/libsysenv.so'): blob_fixup()
 	.add_needed('libbase_shim.so'),
