@@ -186,8 +186,15 @@ ro.soc.model=MT6789V/CD
 ro.soc.manufacturer=Mediatek
 
 # Media
+debug.stagefright.c2inputsurface=-1
+debug.mediatek.appgamepq_compress=1
+debug.mediatek.disp_decompress=1
 media.c2.dmabuf.padding=3072
-persist.vendor.video.dfps.level=0
+media.stagefright.thumbnail.prefer_hw_codecs=true
+persist.vendor.md_c2k_cap_dep_check=0
+ro.vendor.mtk.c2.vdec.fmt.support.level=1
+ro.vendor.mtk_sec_video_path_support=1
+ro.vendor.mtk_video_hevc_enc_support=1
 ro.vendor.jpeg_decode_sw_opt=1
 vendor.mtk.vdec.waitkeyframeforplay=9
 
