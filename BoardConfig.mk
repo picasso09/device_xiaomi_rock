@@ -207,9 +207,6 @@ TARGET_SYSTEM_PROP += $(DEVICE_PATH)/config/prop/system.prop
 TARGET_SYSTEM_EXT_PROP += $(DEVICE_PATH)/config/prop/system_ext.prop
 TARGET_VENDOR_PROP += $(DEVICE_PATH)/config/prop/vendor.prop
 
-# Power
-TARGET_POWERHAL_MODE_EXT := $(DEVICE_PATH)/power/power-mode.cpp
-
 # Recovery
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 TARGET_NO_RECOVERY := true
