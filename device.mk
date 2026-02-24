@@ -505,6 +505,7 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # Speed profile services and wifi-service to reduce RAM and storage
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
+PRODUCT_SYSTEM_SERVER_DEBUG_INFO := false
 
 # MediaCas
 PRODUCT_PACKAGES += \
