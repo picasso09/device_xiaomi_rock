@@ -338,10 +338,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GooglePDFViewer
 
-# Power Off Alarm
-PRODUCT_PACKAGES += \
-    PowerOffAlarm
-
 # Properties
 include $(LOCAL_PATH)/config/prop/default.mk
 include $(LOCAL_PATH)/config/prop/vendor_logtag.mk
