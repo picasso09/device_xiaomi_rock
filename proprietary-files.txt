@@ -41,7 +41,6 @@ vendor/lib/libaudiotoolkit_vendor.so
 vendor/lib/libaurisysdemo.so
 vendor/lib/libblisrc32_vendor.so
 vendor/lib/libcvsd_mtk.so
-vendor/lib/libmisound.so
 vendor/lib/libmsbc_mtk.so
 vendor/lib/libmtklimiter_vendor.so
 vendor/lib/libmtkshifter_vendor.so
@@ -77,7 +76,6 @@ vendor/lib64/libaurisysdemo.so
 vendor/lib64/libbessound_hd_mtk_vendor.so
 vendor/lib64/libblisrc32_vendor.so
 vendor/lib64/libcvsd_mtk.so
-vendor/lib64/libmisound.so
 vendor/lib64/libmsbc_mtk.so
 vendor/lib64/libmtklimiter_vendor.so
 vendor/lib64/libmtkshifter_vendor.so
