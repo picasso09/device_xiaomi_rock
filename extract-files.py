@@ -80,6 +80,7 @@ blob_fixups: blob_fixups_user_type = {
 
     # AUDIO
     ('vendor/lib/hw/audio.primary.mediatek.so', 'vendor/lib64/hw/audio.primary.mediatek.so') : blob_fixup()
+    .add_needed('libstagefright_foundation-v33.so')
     .replace_needed('libtinyxml2.so', 'libtinyxml2-v34.so')
     .replace_needed('libalsautils.so', 'libalsautils-v31.so'),
 
