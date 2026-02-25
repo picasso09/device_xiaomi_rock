@@ -237,6 +237,8 @@ ro.lmk.kill_heaviest_task=true
 ro.lmk.use_minfree_levels=true
 ro.lmk.log_stats=true
 ro.lmk.low=1001
+ro.lmk.psi_complete_stall_ms=700
+ro.lmk.psi_partial_stall_ms=500
 vendor.sys.vm.watermarkscalefactor=1
 
 persist.sys.minfree_def=73728,92160,110592,340000,510000,645120
