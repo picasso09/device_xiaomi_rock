@@ -239,6 +239,7 @@ ro.lmk.log_stats=true
 ro.lmk.low=1001
 ro.lmk.psi_complete_stall_ms=700
 ro.lmk.psi_partial_stall_ms=500
+ro.lmk.filecache_min_kb=300000
 vendor.sys.vm.watermarkscalefactor=1
 
 # Dalvik
