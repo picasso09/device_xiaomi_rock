@@ -19,9 +19,6 @@ ro.surface_flinger.supports_background_blur=1
 
 # HWUI
 persist.sys.purgeable_assets=1
-persist.service.pcsync.enable=0
-persist.service.lgospd.enable=0
-
 ro.hwui.texture_cache_size=90
 ro.hwui.layer_cache_size=58
 ro.hwui.r_buffer_cache_size=12
@@ -33,7 +30,6 @@ ro.hwui.text_small_cache_width=1024
 ro.hwui.text_small_cache_height=1024
 ro.hwui.text_large_cache_width=2048
 ro.hwui.text_large_cache_height=2048
-
 ro.HOME_APP_ADJ=1
 
 # Disable blur on app launch
