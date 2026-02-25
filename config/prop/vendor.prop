@@ -227,6 +227,8 @@ ro.lmk.thrashing_limit_decay=15
 ro.lmk.downgrade_pressure=70
 ro.lmk.swap_free_low_percentage=20
 ro.lmk.swap_util_max=90
+ro.lmk.psi_complete_stall_ms=700
+ro.lmk.psi_partial_stall_ms=500
 
 persist.sys.minfree_def=73728,92160,110592,340000,510000,645120
 persist.sys.minfree_6g=73728,92160,110592,340000,1282868,1677312
