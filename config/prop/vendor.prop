@@ -129,7 +129,6 @@ debug.hwui.renderer=skiavk
 debug.hwui.skia_atrace_enabled=false
 debug.hwui.use_buffer_age=false
 debug.renderengine.backend=skiaglthreaded
-debug.sf.recomputecrop=0
 debug.sf.latch_unsignaled=0
 debug.sf.auto_latch_unsignaled=0
 debug.sf.disable_backpressure=0
