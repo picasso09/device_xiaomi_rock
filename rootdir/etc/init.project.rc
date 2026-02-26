@@ -142,6 +142,11 @@ on property:sys.boot_completed=1
     write /sys/devices/platform/soc/1100a000.spi0/spi_master/spi0/spi0.1/fts_edge_mode 1
     write /proc/nvt_edge_reject_switch 3
 
+# Console Uart
+on property:sys.boot_completed=1
+    stop console
+    setprop ctl.stop console
+
 on init
     insmod /vendor/lib/modules/millet_core.ko
     insmod /vendor/lib/modules/binder_gki.ko
