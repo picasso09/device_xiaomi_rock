@@ -143,7 +143,7 @@ ro.vendor.cidle_fps=30
 
 # HWUI
 debug.cpurend.vsync=false
-debug.hwui.target_cpu_time_percent=80
+debug.hwui.target_cpu_time_percent=30
 debug.hwui.use_hint_manager=true
 
 # Surface
