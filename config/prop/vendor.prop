@@ -96,9 +96,6 @@ ro.vendor.bt.platform=connac1x
 # Display
 debug.sf.hw=1
 debug.sf.enable_hwc_vds=0
-debug.hwui.renderer=vulkan
-debug.hwui.skia_atrace_enabled=false
-debug.hwui.use_buffer_age=false
 debug.sf.latch_unsignaled=0
 debug.sf.auto_latch_unsignaled=0
 debug.sf.disable_backpressure=0
