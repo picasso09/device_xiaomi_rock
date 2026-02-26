@@ -213,7 +213,6 @@ ro.lmk.swap_free_low_percentage=10
 ro.lmk.swap_util_max=100
 ro.lmk.psi_complete_stall_ms=700
 ro.lmk.psi_partial_stall_ms=200
-ro.lmk.filecache_min_kb=100000
 ro.lmk.log_stats=false
 vendor.sys.vm.watermarkscalefactor=1
 
