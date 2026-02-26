@@ -100,28 +100,6 @@ ro.vendor.builtin_fm_antenna_support=1
 #Bluetooth
 ro.vendor.bt.platform=connac1x
 
-# CPU SurfaceFlinger
-vendor.debug.sf.cpupolicy.upbound_uclamp_min=350
-vendor.debug.sf.cpupolicy.max_correct_offset=150
-vendor.debug.sf.cpupolicy.rt_bl_min=300
-vendor.debug.sf.cpupolicy.base_min_bl=310
-vendor.debug.sf.cpupolicy.sf_cpu_thres=290
-vendor.debug.sf.cpupolicy.upbound_uclamp_max_ll=262
-vendor.debug.sf.cpupolicy.hw_comp_suspend=1
-vendor.debug.sf.cpupolicy.hw_hfr_suspend=1
-vendor.debug.sf.cpupolicy.xgf_min=25
-vendor.debug.sf.cpupolicy.min_60_mml=165
-vendor.debug.sf.cpupolicy.min_30_mml=165
-vendor.debug.sf.cpupolicy.lowbound_uclamp_min=165
-vendor.debug.sf.cpupolicy.upbound_uclamp_ret_sys=210
-vendor.debug.sf.cpupolicy.min_60=130
-vendor.debug.sf.cpupolicy.min_90=165
-vendor.debug.sf.cpupolicy.min_boost=165
-vendor.debug.sf.cpupolicy.power_up_120=-300000
-vendor.debug.sf.cpupolicy.power_down_120=300000
-vendor.debug.sf.cpupolicy.re_hfr=0
-vendor.debug.sf.cpupolicy=0
-
 # Display
 debug.sf.hw=1
 debug.sf.enable_hwc_vds=0
