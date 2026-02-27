@@ -33,8 +33,9 @@ PRODUCT_MODEL := 22071219AI
 PRODUCT_MANUFACTURER := Xiaomi
 
 BUILD_HOSTNAME := picasso09
-BUILD_FINGERPRINT :=Redmi/rock/rock:14/UP1A.231005.007/V816.0.12.0.ULUMIXM:user/release-keys
-PRIVATE_BUILD_DESC="rock-user 14 UP1A.231005.007 V816.0.12.0.ULUMIXM release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildDesc="missi_phone_global_ext4-user 14 UP1A.231005.007 V816.0.12.0.ULUMIXM release-keys" \
+    BuildFingerprint=Redmi/rock/rock:14/UP1A.231005.007/V816.0.12.0.ULUMIXM:user/release-keys \
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
