@@ -456,7 +456,7 @@
       "PowerHint": "DISPLAY_INACTIVE",
       "Node": "RestrictedCpuset",
       "Duration": 0,
-      "Value": "0-3"
+      "Value": "0-5"
     },
     {
       "PowerHint": "DISPLAY_INACTIVE",
@@ -492,7 +492,7 @@
       "PowerHint": "FIXED_PERFORMANCE",
       "Node": "GpuPwrLevel",
       "Duration": 0,
-      "Value": "101"
+      "Value": "0"
     },
     {
       "PowerHint": "FIXED_PERFORMANCE",
