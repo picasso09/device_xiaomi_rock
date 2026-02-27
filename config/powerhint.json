@@ -126,7 +126,7 @@
         "[41*] freq: 467000, volt: 58750, vsram: 75000, posdiv: 2, vaging: 625, power: 0",
         "[42*] freq: 441000, volt: 58750, vsram: 75000, posdiv: 2, vaging: 625, power: 0",
         "[43*] freq: 415000, volt: 58125, vsram: 75000, posdiv: 2, vaging: 625, power: 0",
-        "[44*] freq: 390000, volt: 57500, vsram: 75000, posdiv: 2, vaging: 625, power: 0",
+        "[44*] freq: 390000, volt: 57500, vsram: 75000, posdiv: 2, vaging: 625, power: 0"
       ]
     },
     {
@@ -188,7 +188,7 @@
         "750000",
         "700000",
         "650000",
-        "500000",
+        "500000"
       ],
       "ResetOnInit": true
     },
