@@ -30,8 +30,8 @@
    <dimen name="physical_fingerprint_sensor_center_screen_location_y">920px</dimen>
 
    <!-- Statusbar Height and padding -->
-    <dimen name="rounded_corner_content_padding">55px</dimen>
-    <dimen name="status_bar_padding_start">5dp</dimen>
-    <dimen name="status_bar_padding_end">3dp</dimen>
-    <dimen name="status_bar_padding_top">0dp</dimen>
+    <dimen name="rounded_corner_content_padding">50px</dimen>
+    <dimen name="status_bar_padding_start">0dp</dimen>
+    <dimen name="status_bar_padding_end">0dp</dimen>
+    <dimen name="status_bar_padding_top">5dp</dimen>
 </resources>
