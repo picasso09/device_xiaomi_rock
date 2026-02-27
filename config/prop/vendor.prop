@@ -190,8 +190,8 @@ ro.lmk.use_psi=true
 ro.lmk.use_minfree_levels=false
 ro.lmk.swap_free_low_percentage=10
 ro.lmk.swap_util_max=100
-ro.lmk.psi_complete_stall_ms=700
-ro.lmk.psi_partial_stall_ms=200
+ro.lmk.psi_complete_stall_ms=35
+ro.lmk.psi_partial_stall_ms=35
 ro.lmk.log_stats=false
 
 # Dalvik
