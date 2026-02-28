@@ -19,7 +19,7 @@ static const variant_info_t default_info = {
     .marketname = "Redmi 11 Prime",
     .model = "22071219AI",
     .name = "rock",
-    .build_fingerprint = "Redmi/rock/rock:14/UP1A.231005.007/V816.0.12.0.ULUMIXM:user/release-keys"
+    .build_fingerprint = "Redmi/rock_in/rock:14/UP1A.231005.007/V816.0.12.0.ULUMIXM:user/release-keys"
 };
 
 static const variant_info_t rock_info = {
@@ -32,7 +32,7 @@ static const variant_info_t rock_info = {
     .marketname = "Redmi 11 Prime",
     .model = "22071219AI",
     .name = "rock",
-    .build_fingerprint = "Redmi/rock/rock:14/UP1A.231005.007/V816.0.12.0.ULUMIXM:user/release-keys"
+    .build_fingerprint = "Redmi/rock_in/rock:14/UP1A.231005.007/V816.0.12.0.ULUMIXM:user/release-keys"
 };
 
 static const variant_info_t stone_info = {
