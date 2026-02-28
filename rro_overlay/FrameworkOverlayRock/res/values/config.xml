@@ -75,6 +75,10 @@
          available to the system.-->
     <bool name="config_freeformWindowManagement">true</bool>
 
+    <!-- Maximum number of active tasks on a given Desktop Windowing session. Set to 0 for unlimited. -->
+    <integer name="config_maxDesktopWindowingActiveTasks">4</integer>
+
+
     <!-- Whether WiFi display is supported by this device.
               There are many prerequisites for this feature to work correctly.
               Here are a few of them:
