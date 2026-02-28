@@ -193,14 +193,6 @@ ro.lmk.swap_util_max=90
 ro.lmk.kill_timeout_ms=100
 ro.lmk.log_stats=false
 
-# Dalvik
-dalvik.vm.heapstartsize=8m
-dalvik.vm.heapmaxfree=8m
-dalvik.vm.heapminfree=512k
-dalvik.vm.heaptargetutilization=0.75
-dalvik.vm.heapgrowthlimit=256m
-dalvik.vm.heapsize=512m
-
 # Netflix
 ro.netflix.bsp_rev=MTK6789-35965-1
 ro.netflix.signup=1
