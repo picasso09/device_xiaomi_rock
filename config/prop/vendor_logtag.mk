@@ -227,5 +227,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.log.tag.FrameTracker=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.C2MtkBufferManager=$(VENDOR_LOG_LEVEL) \
     persist.log.tag.libperfmgr=$(VENDOR_LOG_LEVEL) \
-    persist.log.tag.android.hardware.graphics.composer@2.3-service=$(VENDOR_LOG_LEVEL)
+    persist.log.tag.android.hardware.graphics.composer@2.3-service=$(VENDOR_LOG_LEVEL) \
+    persist.log.tag.BLASTBufferQueue=$(VENDOR_LOG_LEVEL)
 
