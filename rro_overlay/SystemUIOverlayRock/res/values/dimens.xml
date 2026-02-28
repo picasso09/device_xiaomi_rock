@@ -34,4 +34,11 @@
     <dimen name="status_bar_padding_start">0dp</dimen>
     <dimen name="status_bar_padding_end">0dp</dimen>
     <dimen name="status_bar_padding_top">5dp</dimen>
+
+    <!--  Blur radius on status bar window and power menu  -->
+    <dimen name="min_window_blur_radius">1px</dimen>
+    <dimen name="max_window_blur_radius">11px</dimen>
+
+    <!-- Blur radius behind Notification Shade -->
+    <dimen name="max_shade_window_blur_radius">15dp</dimen>
 </resources>
