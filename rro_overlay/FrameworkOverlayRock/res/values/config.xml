@@ -342,9 +342,7 @@
     <integer name="config_screenBrightnessDim">2</integer>
 
    <!-- Path to fast charging status file to detect whether an oem fast charger is active -->
-    <string name="config_oemFastChargerStatusPath" translatable="false">/sys/devices/platform/charger/chr_type</string>
-   <!-- Expected value from fast charging status file  -->
-    <string name="config_oemFastChargerStatusValue" translatable="false">9</string>
+    <string name="config_oemFastChargerStatusPath" translatable="false">/sys/devices/platform/charger/chr_type;9</string>
    <!-- An array of arrays of side fingerprint sensor properties relative to each display.
          Note: this value is temporary and is expected to be queried directly
          from the HAL in the future. -->
