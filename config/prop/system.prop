@@ -12,7 +12,7 @@ ro.vendor.cabc.enable=true
 ro.charger.enable_suspend=true
 
 # Saturation
-persist.sys.sf.color_saturation=1.40
+persist.sys.sf.color_saturation=1.0
 
 # Blur
 ro.surface_flinger.supports_background_blur=1
@@ -21,7 +21,6 @@ ro.sf.blurs_are_expensive=1
 # HWUI
 persist.sys.purgeable_assets=1
 ro.HOME_APP_ADJ=1
-
 
 # Hardware Description
 ro.device.chipset=HelioG99 | MT6789V/CD
