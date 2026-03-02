@@ -1265,16 +1265,9 @@ on property:init.svc.surfaceflinger=restarting
 #L19A code for HQ-194194 by zhouhaitao at 20220516 end
 
 # vendor-ril-shutdown.rc
-on property:sys.powerctl=shutdown
+on property:sys.powerctl=*
     exec /system/bin/input keyevent 26
-    write /sys/class/leds/lcd-backlight/brightness 0
-    exec /system/bin/sleep 1.5
-    stop vendor.ril-daemon-mtk
-
-on property:sys.powerctl=reboot*
-    exec /system/bin/input keyevent 26
-    write /sys/class/leds/lcd-backlight/brightness 0
-    exec /system/bin/sleep 1.5
+    exec /system/bin/sleep 1
     stop vendor.ril-daemon-mtk
 
 #L19A code for HQ-192464 by liwen at 2022.4.15rm 
