@@ -1269,6 +1269,7 @@ on property:sys.powerctl=*
     exec /system/bin/input keyevent 26
     exec /system/bin/sleep 1
     stop vendor.ril-daemon-mtk
+    start power_key_off
 
 #L19A code for HQ-192464 by liwen at 2022.4.15rm 
 service charger /system/bin/charger

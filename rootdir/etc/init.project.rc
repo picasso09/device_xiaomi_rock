@@ -108,6 +108,15 @@ service panel-info-sh /system/vendor/bin/sh /vendor/bin/init.panel_info.sh
     group root system
     seclabel u:r:meta_tst:s0
 
+# Key Power down
+service power_key_off /system/vendor/bin/sh /vendor/bin/power_key.sh
+    class core
+    user root
+    group root input
+    disabled
+    oneshot
+    seclabel u:r:power_key_off:s0
+
 # start mmstat
 on property:sys.boot_completed=1
     mkdir /sys/kernel/tracing/instances/mmstat 711
