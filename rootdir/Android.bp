@@ -107,6 +107,12 @@ sh_binary {
     vendor: true
 }
 
+sh_binary {
+    name: "power_key.sh",
+    src: "bin/power_key.sh",
+    vendor: true
+}
+
 prebuilt_etc {
     name: "init.insmod.mt6789.cfg",
     src: "etc/init.insmod.mt6789.cfg",
