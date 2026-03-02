@@ -1,0 +1,9 @@
+type power_key_off, domain;
+type power_key_off_exec, exec_type, vendor_file_type, file_type;
+
+init_daemon_domain(power_key_off)
+allow power_key_off vendor_shell_exec:file rx_file_perms;
+allow power_key_off vendor_toolbox_exec:file rx_file_perms;
+allow power_key_off input_device:dir search;
+allow power_key_off input_device:chr_file rw_file_perms;
+

@@ -319,6 +319,7 @@ PRODUCT_PACKAGES += \
     init.insmod.sh \
     init.panel_info.sh \
     ueventd.mtk.rc \
+    power_key.sh \
     init.recovery.mt6789.rc \
     init.recovery.usb.rc \
     init.mt6789.rc \
