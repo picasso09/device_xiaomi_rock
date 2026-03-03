@@ -70,10 +70,6 @@ PRODUCT_PACKAGES += \
 	android.hardware.audio.service \
 	android.hardware.audio@7.0-impl \
 	android.hardware.audio.effect@7.0-impl \
-	android.hardware.bluetooth.audio@2.1-impl \
-	audioclient-types-aidl-cpp.vendor \
-	audio.bluetooth.default \
-	audio.primary.default \
 	audio.r_submix.default \
 	audio.usb.default \
 	libldacBT_enc \
