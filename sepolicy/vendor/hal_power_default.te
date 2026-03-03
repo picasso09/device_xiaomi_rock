@@ -6,6 +6,8 @@ allow hal_power_default sysfs_gpu:file rw_file_perms;
 allow hal_power_default sysfs_devices_system_cpu:file rw_file_perms;
 
 # Allow libperfmgr to control Thermal
+allow hal_power_default sysfs_therm:dir { open read search };
+allow hal_power_default sysfs_therm:file { open read };
 allow hal_power_default vendor_sysfs_thermalconfig:file rw_file_perms;
 
 # Allow libperfmgr to control FPSGO boost
