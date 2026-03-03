@@ -699,16 +699,12 @@
             <kctl name="HW_GAIN1_IN_CH2 CONNSYS_I2S_CH2" value="1" />
             <kctl name="ADDA_DL_CH1 GAIN1_OUT_CH1" value="1" />
             <kctl name="ADDA_DL_CH2 GAIN1_OUT_CH2" value="1" />
-            <kctl name="UL2_CH1 GAIN1_OUT_CH1" value="1" />
-            <kctl name="UL2_CH2 GAIN1_OUT_CH2" value="1" />
         </path>
         <path name="CONNSYS_TO_ADDA_DL" value="turnoff">
             <kctl name="HW_GAIN1_IN_CH1 CONNSYS_I2S_CH1" value="0" />
             <kctl name="HW_GAIN1_IN_CH2 CONNSYS_I2S_CH2" value="0" />
             <kctl name="ADDA_DL_CH1 GAIN1_OUT_CH1" value="0" />
             <kctl name="ADDA_DL_CH2 GAIN1_OUT_CH2" value="0" />
-            <kctl name="UL2_CH1 GAIN1_OUT_CH1" value="0" />
-            <kctl name="UL2_CH2 GAIN1_OUT_CH2" value="0" />
         </path>
         <path name="CONNSYS_TO_I2S1" value="turnon">
             <kctl name="HW_GAIN1_IN_CH1 CONNSYS_I2S_CH1" value="1" />
@@ -979,6 +975,8 @@
             <kctl name="HW_SRC_1_IN_CH2 DL3_CH2" value="1" />
             <kctl name="HW_SRC_1_IN_CH1 DL6_CH1" value="1" />
             <kctl name="HW_SRC_1_IN_CH2 DL6_CH2" value="1" />
+            <kctl name="HW_SRC_1_IN_CH1 HW_GAIN1_OUT_CH1" value="1" />
+            <kctl name="HW_SRC_1_IN_CH2 HW_GAIN1_OUT_CH2" value="1" />
             <kctl name="UL2_CH1 SRC_1_OUT_CH1" value="1" />
             <kctl name="UL2_CH2 SRC_1_OUT_CH2" value="1" />
         </path>
@@ -991,6 +989,8 @@
             <kctl name="HW_SRC_1_IN_CH2 DL3_CH2" value="0" />
             <kctl name="HW_SRC_1_IN_CH1 DL6_CH1" value="0" />
             <kctl name="HW_SRC_1_IN_CH2 DL6_CH2" value="0" />
+            <kctl name="HW_SRC_1_IN_CH1 HW_GAIN1_OUT_CH1" value="0" />
+            <kctl name="HW_SRC_1_IN_CH2 HW_GAIN1_OUT_CH2" value="0" />
             <kctl name="UL2_CH1 SRC_1_OUT_CH1" value="0" />
             <kctl name="UL2_CH2 SRC_1_OUT_CH2" value="0" />
         </path>
