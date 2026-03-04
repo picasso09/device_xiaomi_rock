@@ -1,14 +1,25 @@
+# Audiohal
 set_prop(vendor_init, vendor_mtk_audiohal_prop)
 set_prop(vendor_init, vendor_mtk_audio_prop)
-set_prop(vendor_init, vendor_mtk_pq_prop)
-set_prop(vendor_init, vendor_displayfeature_prop)
 get_prop(vendor_init, audio_prop)
-get_prop(vendor_init, vts_status_prop)
-rw_dir_file(vendor_init, sysfs_leds)
-rw_dir_file(vendor_init, sysfs_tp_gesture)
-rw_dir_file(vendor_init, proc_tp_gesture)
-rw_dir_file(vendor_init, proc)
 
 # Camera properties
 set_prop(vendor_init, vendor_camera_prop)
 get_prop(vendor_init, vendor_camera_prop)
+
+# Display
+set_prop(vendor_init, vendor_mtk_pq_prop)
+set_prop(vendor_init, vendor_displayfeature_prop)
+get_prop(vendor_init, vts_status_prop)
+rw_dir_file(vendor_init, sysfs_leds)
+
+# Powerctl
+get_prop(vendor_init, powerctl_prop)
+
+# Touch gesture
+rw_dir_file(vendor_init, sysfs_tp_gesture)
+rw_dir_file(vendor_init, proc_tp_gesture)
+rw_dir_file(vendor_init, proc)
+
+
+
