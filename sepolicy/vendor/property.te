@@ -19,6 +19,7 @@ vendor_public_prop(vendor_fp_prop)
 
 # Media
 vendor_public_prop(vendor_media_prop)
+vendor_public_prop(vendor_netflix_prop)
 
 # Mi Thermal
 vendor_public_prop(vendor_thermal_engine_prop)

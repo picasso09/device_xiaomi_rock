@@ -17,6 +17,9 @@ rw_dir_file(vendor_init, sysfs_leds)
 set_prop(vendor_init, vendor_mtk_manager_prop)
 get_prop(vendor_init, vendor_mtk_manager_prop)
 
+# Netflix
+set_prop(vendor_init, vendor_netflix_prop)
+
 # Powerctl
 get_prop(vendor_init, powerctl_prop)
 
