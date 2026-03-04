@@ -22,3 +22,6 @@ vendor_public_prop(vendor_media_prop)
 
 # Mi Thermal
 vendor_public_prop(vendor_thermal_engine_prop)
+
+# MediaTek
+vendor_public_prop(vendor_mtk_manager_prop)
