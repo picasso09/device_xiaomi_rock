@@ -368,4 +368,8 @@
 
     <!-- If AOD can show an ambient version of the wallpaper -->
     <bool name="config_dozeSupportsAodWallpaper">true</bool>
+
+    <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
+        in hardware. Required for "Night Light" support-->
+    <bool name="config_setColorTransformAccelerated">true</bool>
 </resources>
