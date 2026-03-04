@@ -9,3 +9,6 @@ rw_dir_file(vendor_init, sysfs_tp_gesture)
 rw_dir_file(vendor_init, proc_tp_gesture)
 rw_dir_file(vendor_init, proc)
 
+# Camera properties
+set_prop(vendor_init, vendor_camera_prop)
+get_prop(vendor_init, vendor_camera_prop)
