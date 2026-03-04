@@ -13,6 +13,10 @@ set_prop(vendor_init, vendor_displayfeature_prop)
 get_prop(vendor_init, vts_status_prop)
 rw_dir_file(vendor_init, sysfs_leds)
 
+# MediaTek
+set_prop(vendor_init, vendor_mtk_manager_prop)
+get_prop(vendor_init, vendor_mtk_manager_prop)
+
 # Powerctl
 get_prop(vendor_init, powerctl_prop)
 
