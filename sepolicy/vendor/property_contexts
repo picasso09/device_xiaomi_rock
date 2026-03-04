@@ -31,8 +31,11 @@ vendor.sys.media.                                       u:object_r:vendor_media_
 ro.miui.                                                u:object_r:vendor_xiaomi_prop:s0
 
 # Mi thermald properties
-vendor.sys.thermal.		                                u:object_r:vendor_thermal_engine_prop:s0
+vendor.sys.thermal.	                                    u:object_r:vendor_thermal_engine_prop:s0
 vendor.sys.thermal.data.path	                        u:object_r:vendor_thermal_engine_prop:s0
+
+# MediaTek
+ro.mtk_key_manager_support                              u:object_r:vendor_mtk_manager_prop:s0
 
 # Sensors
 persist.vendor.sensor.                                  u:object_r:vendor_mtk_sensor_prop:s0
