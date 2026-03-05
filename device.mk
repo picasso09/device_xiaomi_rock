@@ -31,6 +31,9 @@ $(call inherit-product-if-exists, vendor/lineage/signed/keys/keys.mk)
 # Call proprietary blob setup
 $(call inherit-product, vendor/xiaomi/rock/rock-vendor.mk)
 
+# Dolby
+$(call inherit-product, vendor/sony/dolby/setup.mk)
+
 # Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 PRODUCT_BUILD_SUPER_PARTITION := false
@@ -59,7 +62,7 @@ AB_OTA_POSTINSTALL_CONFIG += \
     POSTINSTALL_OPTIONAL_vendor=true
 
 # Audio 64bit
-#$(call soong_config_set,android_hardware_audio,run_64bit,true)
+$(call soong_config_set,android_hardware_audio,run_64bit,true)
 $(call soong_config_set_bool,android_hardware_audio,skip_speaker_layout_channel_mask_field,true)
 
 # Audio
