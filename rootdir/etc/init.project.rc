@@ -149,8 +149,6 @@ on property:vendor.service_nv_protect=start
 #Touch
 on property:sys.boot_completed=1
     write /sys/devices/platform/soc/1100a000.spi0/spi_master/spi0/spi0.1/fts_edge_mode 1
-    write /proc/nvt_edge_reject_switch 3
-    exec - root root -- /system/vendor/bin/sh -c "sleep 5; echo 3 > /proc/nvt_edge_reject_switch"
 
 # Console Uart
 on property:sys.boot_completed=1
