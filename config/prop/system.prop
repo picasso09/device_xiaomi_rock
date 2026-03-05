@@ -2,6 +2,9 @@
 #
 # For special ro override property
 
+ro.infinity.soc=Mediatek Helio G99
+ro.infinity.camera=50MP + 8MP + 2MP
+
 #support dual wifi feature
 ro.vendor.net.enable_dual_wifi=1
 
@@ -23,7 +26,7 @@ persist.sys.purgeable_assets=1
 ro.HOME_APP_ADJ=1
 
 # Hardware Description
-ro.device.chipset=HelioG99 | MT6789V/CD
+ro.device.chipset=Helio G99 | MT6789V/CD
 ro.device.display_resolution=2408x1080
 
 #RIL

@@ -12,7 +12,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/rock/device.mk)
 
 # Inherit some common
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Bootanimation Res
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -22,13 +22,16 @@ TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
 USE_PIXEL_CHARGER := true
 PERF_ANIM_OVERRIDE := true
-
+# Maintainer Name
+INFINITY_MAINTAINER := "picasso09"
+# Whether Including Google Apps
+WITH_GAPPS := false
 # Blur
 TARGET_SUPPORTS_BLUR := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rock
-PRODUCT_NAME := lineage_rock
+PRODUCT_NAME := infinity_rock
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := 22071219AI
 PRODUCT_MANUFACTURER := Xiaomi
