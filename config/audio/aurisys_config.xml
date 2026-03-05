@@ -6,6 +6,22 @@
      * =========================================================================
     -->
     <aurisys_scenarios>
+         <!-- for aurisys_scene playback normal -->
+        <aurisys_scenario aurisys_scenario="AURISYS_SCENARIO_PLAYBACK_NORMAL">
+            <downlink_library_name_list digital_gain_lib_name="">
+                <!--L19A code for HQ-194710 by dailei at 2022.05.06 mtkbessound start-->
+                <library name="mtk_bessound"/>
+                <!--L19A code for HQ-194710 by dailei at 2022.05.06 mtkbessound end-->
+            </downlink_library_name_list>
+        </aurisys_scenario>
+        <!-- for aurisys_scene playback fast -->
+        <aurisys_scenario aurisys_scenario="AURISYS_SCENARIO_PLAYBACK_LOW_LATENCY">
+            <downlink_library_name_list digital_gain_lib_name="">
+                <!--L19A code for HQ-194710 by dailei at 2022.05.06 mtkbessound start-->
+                <library name="mtk_bessound"/>
+                <!--L19A code for HQ-194710 by dailei at 2022.05.06 mtkbessound end-->
+            </downlink_library_name_list>
+        </aurisys_scenario>
         <!-- for aurisys_scene low latency record -->
         <aurisys_scenario aurisys_scenario="AURISYS_SCENARIO_RECORD_LOW_LATENCY">
             <uplink_library_name_list digital_gain_lib_name="mtk_speech_enh">
