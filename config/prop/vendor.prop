@@ -186,6 +186,7 @@ ro.lmk.kill_timeout_ms=200
 ro.lmk.filecache_min_kb=300000
 ro.lmk.use_minfree_levels=false
 ro.config.low_ram=false
+ro.lmk.log_stats=false
 
 # Netflix
 ro.netflix.bsp_rev=MTK6789-35965-1
