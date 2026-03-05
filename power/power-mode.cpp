@@ -44,6 +44,8 @@ bool setDeviceSpecificMode(Mode type, bool enabled) {
                                                "/sys/devices/platform/soc/1100a000.spi0/spi_master/spi0/spi0.1/fts_gesture_mode");
             ::android::base::WriteStringToFile(enabled ? "5" : "0",
                                                "/proc/nvt_gesture_mode");
+            ::android::base::WriteStringToFile(enabled ? "3" : "3",
+                                               "/proc/nvt_edge_reject_switch");
             return true;
         default:
             return false;
