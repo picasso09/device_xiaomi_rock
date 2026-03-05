@@ -23,7 +23,7 @@ TARGET_FACE_UNLOCK_SUPPORTED := true
 USE_PIXEL_CHARGER := true
 PERF_ANIM_OVERRIDE := true
 # Maintainer Name
-INFINITY_MAINTAINER := "picasso09"
+INFINITY_MAINTAINER := Asmodeus7999
 # Whether Including Google Apps
 WITH_GAPPS := false
 # Blur
