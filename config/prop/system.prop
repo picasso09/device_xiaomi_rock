@@ -23,7 +23,6 @@ ro.sf.blurs_are_expensive=1
 
 # HWUI
 persist.sys.purgeable_assets=1
-ro.HOME_APP_ADJ=1
 
 # Hardware Description
 ro.device.chipset=Helio G99 | MT6789V/CD
