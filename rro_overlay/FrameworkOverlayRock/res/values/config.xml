@@ -370,8 +370,12 @@
     <bool name="config_dozeSupportsAodWallpaper">true</bool>
 
     <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
-        in hardware. Required for "Night Light" support-->
-    <bool name="config_setColorTransformAccelerated">true</bool>
+         in hardware. -->
+    <bool name="config_setColorTransformAccelerated">false</bool>
+    
+    <!-- Boolean indicating whether the HWC setColorTransform function can be performed efficiently
+         in hardware for individual layers. -->
+    <bool name="config_setColorTransformAcceleratedPerLayer">false</bool>
 
     <integer-array name="config_availableColorModes">
         <item>0</item> <!-- COLOR_MODE_NATURAL -->
