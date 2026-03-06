@@ -15,4 +15,11 @@
     <string name="maintainer_tele_username">picasso170606</string>
     <string name="maintainer_ig_username">picasso09_dv</string>
     <string name="maintainer_fb_username">none</string>
+    <string name="color_mode_title">Colors</string>
+
+     <!-- Display settings screen, Color mode -->
+    <string name="color_mode_option_natural">Natural</string>
+    <string name="color_mode_option_boosted">Boosted</string>
+    <string name="color_mode_option_saturated">Saturated</string>
+    <string name="color_mode_option_automatic">Adaptive</string>
 </resources>
