@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2025 The LineageOS Project
+# Copyright (C) 2025 The AfterLife Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
@@ -12,23 +12,30 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 $(call inherit-product, device/xiaomi/rock/device.mk)
 
 # Inherit some common
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/afterlife/config/common_full_phone.mk)
 
 # Bootanimation Res
 TARGET_BOOT_ANIMATION_RES := 1080
 
-# Flags
-TARGET_SUPPORTS_QUICK_TAP := true
+# AfterLify
+AFTERLIFE_MAINTAINER := picasso09
+TARGET_ENABLE_BLUR := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
+SYSTEM_OPTIMIZE_JAVA := true
+SYSTEMUI_OPTIMIZE_JAVA := true
+TARGET_SUPPORTS_QUICK_TAP := true
 USE_PIXEL_CHARGER := true
 PERF_ANIM_OVERRIDE := true
+
+# GAPPS
+#AFTERLIFE_GAPPS := true
 
 # Blur
 TARGET_SUPPORTS_BLUR := true
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := rock
-PRODUCT_NAME := lineage_rock
+PRODUCT_NAME := afterlife_rock
 PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := 22071219AI
 PRODUCT_MANUFACTURER := Xiaomi
@@ -40,5 +47,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
-LINEAGE_VERSION_APPEND_TIME_OF_DAY := true
+AFTERLIFE_VERSION_APPEND_TIME_OF_DAY := true
 
