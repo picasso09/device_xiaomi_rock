@@ -205,7 +205,7 @@
     <bool name="config_allowAllRotations">true</bool>
 
     <!-- Whether or not wcg mode should be enabled on this device -->
-    <bool name="config_enableWcgMode">true</bool>
+    <bool name="config_enableWcgMode">false</bool>
 
    <!-- Brightness -->
    <!-- Array of hysteresis constraint values for brightening, represented as tenths of a
