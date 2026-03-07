@@ -92,9 +92,6 @@ vendor.hbm.enable=true
 #system prop for dc backlight
 persist.vendor.dc_backlight.enable=false
 
-#property for display fps switch
-persist.vendor.power.dfps.level=0
-
 #support night charge property
 persist.vendor.night.charge=true
 
