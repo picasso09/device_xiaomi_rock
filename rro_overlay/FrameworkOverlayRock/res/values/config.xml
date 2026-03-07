@@ -68,6 +68,9 @@
     <integer name="config_shutdownBatteryTemperature">580</integer>
     <string name="config_mainBuiltInDisplayCutout">M84,76 C30,76 54,20 0,20 C-54,20 -30,76 -84,76 L-84,0 L84,0 Z</string>
    
+     <!-- Default value set for battery percentage in status bar false = disabled, true = enabled -->
+    <bool name="config_defaultBatteryPercentageSetting">true</bool>
+
     <!-- The device supports freeform window management. Windows have title bars and can be moved
          and resized. If you set this to true, you also need to add
          PackageManager.FEATURE_FREEFORM_WINDOW_MANAGEMENT feature to your device specification.
