@@ -121,3 +121,6 @@ ro.config.art_lowmem=true
 ro.mtk_gpu_optimizations=1
 ro.mtk_display_ovl_support=1
 
+# Zygote
+zygote.critical_window.minute=10
+
