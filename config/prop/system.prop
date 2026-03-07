@@ -73,9 +73,6 @@ ro.mtk_perf_simple_start_win=1
 ro.mtk_perf_fast_start_win=1
 ro.mtk_perf_response_time=1
 
-#logd buffer size
-ro.logd.size=2M
-
 # FileSystem UserSpace
 persist.sys.fuse.passthrough.enable=true
 ro.iorapd.enable=false
@@ -100,10 +97,6 @@ persist.vendor.power.dfps.level=0
 
 #support night charge property
 persist.vendor.night.charge=true
-
-#For Test Factory Whether Calibrated
-#ACC/GYRO/ALS/PS/ALS_DARK/LUX_B/SAR/SAR_SECONDARY/...MAX_NUM=15
-persist.vendor.sensor.cali_sensor=111001100000000
 
 # Memory Optimization
 ro.config.dha_cached_min=16
