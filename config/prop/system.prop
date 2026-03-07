@@ -84,9 +84,6 @@ ro.mtk_perf_response_time=1
 persist.sys.fuse.passthrough.enable=true
 ro.iorapd.enable=false
 
-#disable mtk aggressive_dex2oat
-pm.dexopt.aggressive_dex2oat.enable=false
-
 #sysprop for thermal
 vendor.sys.thermal.data.path=/data/vendor/thermal/
 
