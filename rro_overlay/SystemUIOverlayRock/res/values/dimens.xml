@@ -34,6 +34,7 @@
     <dimen name="status_bar_padding_start">0dp</dimen>
     <dimen name="status_bar_padding_end">0dp</dimen>
     <dimen name="status_bar_padding_top">5dp</dimen>
+    <dimen name="qs_panel_padding_top">45dp</dimen>
 
     <!--  Blur radius on status bar window and power menu  -->
     <dimen name="min_window_blur_radius">1px</dimen>
