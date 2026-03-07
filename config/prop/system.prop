@@ -105,10 +105,6 @@ persist.vendor.power.dfps.level=0
 #support night charge property
 persist.vendor.night.charge=true
 
-# Memory Optimization
-ro.config.dha_cached_min=16
-ro.config.dha_cached_max=32
-
 # Thermal Management
 ro.mtk_thermal_monitor.enabled=true
 persist.thermal_config.mitigation=1
@@ -116,9 +112,6 @@ persist.thermal_config.mitigation=1
 # Thermal Configuration
 ro.config.thermal_limit=75
 ro.config.thermal_dcs=42
-
-# Cached app compaction
-persist.device_config.activity_manager.use_compaction=true
 
 # Earphone Jacks
 persist.sys.overlay.devinputjack=true
