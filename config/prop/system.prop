@@ -101,9 +101,6 @@ ro.config.thermal_dcs=42
 # Earphone Jacks
 persist.sys.overlay.devinputjack=true
 
-# Brightness gamma
-persist.sys.brightness.low.gamma=true
-
 # Battery Saving & Performance
 ro.vold.umsdirtyratio=20 
 ro.ril.disable.power.collapse=0 
