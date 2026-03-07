@@ -18,10 +18,6 @@ persist.sys.sf.color_saturation=1.0
 ro.surface_flinger.supports_background_blur=1
 ro.sf.blurs_are_expensive=1
 
-# HWUI
-persist.sys.purgeable_assets=1
-ro.HOME_APP_ADJ=1
-
 # Hardware Description
 ro.device.chipset=HelioG99 | MT6789V/CD
 ro.device.display_resolution=2408x1080
@@ -74,6 +70,7 @@ ro.sf.lcd_density=440
 sys.displayfeature_hidl=true
 dev.pm.dyn_samplingrate=1
 persist.hwc.mdpcomp.enable=true
+persist.sys.purgeable_assets=1
 
 # performance
 ro.mtk_perf_simple_start_win=1
