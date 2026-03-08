@@ -90,4 +90,4 @@ product                             /product                ext4    ro      wait
 
 
 # ZRAM
-/dev/block/zram0                    none                    swap            defaults zramsize=4294967296
+/dev/block/zram0                    none                    swap            defaults zramsize=95%
