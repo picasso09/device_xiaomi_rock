@@ -88,7 +88,7 @@ ro.vendor.md_prop_ver=1
 ro.telephony.default_network=10,10,10,10
 telephony.active_modems.max_count=2
 
-#Wifi
+# WiFi
 ro.vendor.wifi.sap.concurrent.iface=ap1
 ro.vendor.wifi.sap.interface=ap0
 ro.vendor.wlan.chrdev=wmt_chrdev_wifi
@@ -97,7 +97,7 @@ ro.vendor.fm.platform=mt6631_6635
 vendor.connsys.driver.ready=no
 ro.vendor.builtin_fm_antenna_support=1
 
-#Bluetooth
+# Bluetooth
 ro.vendor.bt.platform=connac1x
 
 # Display
@@ -248,6 +248,12 @@ ro.vendor.pq.mtk_scltm_support=0
 ro.vendor.pq.mtk_ultra_dimming_support=0
 ro.vendor.pq.mtk_ultra_resolution_support=0
 ro.vendor.pq.mtk_video_transition=0
+ro.vendor.pq.mtk_blulight_def_support=1
+
+# displayfeature PQ effect
+vendor.displayfeature.entry.enable=true
+persist.vendor.dc_backlight.enable=false
+vendor.hbm.enable=true
 ro.vendor.sdr2hdr.by.layer.support=false
 ro.vendor.smvr.p2batch.hd=4
 ro.vendor.smvr.p2batch.vga=8
@@ -264,3 +270,6 @@ dalvik.vm.dex2oat64.enabled=true
 
 # ConsumerIr
 ro.hardware.consumerir=common
+
+# thermal
+vendor.sys.thermal.data.path=/data/vendor/thermal/
