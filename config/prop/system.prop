@@ -78,29 +78,6 @@ ro.mtk_perf_response_time=1
 persist.sys.fuse.passthrough.enable=true
 ro.iorapd.enable=false
 
-#sysprop for thermal
-vendor.sys.thermal.data.path=/data/vendor/thermal/
-
-# displayfeature and displayfeatureservice use it to debug pq effect
-vendor.displayfeature.entry.enable=true
-
-#system property for HBM mode
-vendor.hbm.enable=true
-
-#system prop for dc backlight
-persist.vendor.dc_backlight.enable=false
-
-#support night charge property
-persist.vendor.night.charge=true
-
-# Thermal Management
-ro.mtk_thermal_monitor.enabled=true
-persist.thermal_config.mitigation=1
-
-# Thermal Configuration
-ro.config.thermal_limit=75
-ro.config.thermal_dcs=42
-
 # Earphone Jacks
 persist.sys.overlay.devinputjack=true
 
