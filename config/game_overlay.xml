@@ -1,0 +1,31 @@
+<game-overlays>
+
+    <game package="com.levelinfinite.sgameGlobal">
+        <mode id="2" fps="90" downscaleFactor="1.0"/>
+    </game>
+
+    <game package="com.mobile.legends">
+        <mode id="2" fps="90" downscaleFactor="1.0"/>
+    </game>
+
+    <game package="com.tencent.ig">
+        <mode id="2" fps="90" downscaleFactor="1.0"/>
+    </game>
+
+    <game package="com.dts.freefireth">
+        <mode id="2" fps="90" downscaleFactor="1.0"/>
+    </game>
+
+    <game package="com.dts.freefiremax">
+        <mode id="2" fps="90" downscaleFactor="1.0"/>
+    </game>
+
+    <game package="com.miHoYo.GenshinImpact">
+        <mode id="2" fps="60" downscaleFactor="1.0"/>
+    </game>
+
+    <game package="com.ubisoft.rainbowsixmobile.r6.fps.pvp.shooter">
+        <mode id="2" fps="90" downscaleFactor="1.0"/>
+    </game>
+
+</game-overlays>

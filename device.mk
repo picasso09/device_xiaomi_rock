@@ -203,6 +203,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/config/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
+# Game Manager
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/config/game_overlay.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/game_overlay.xml
+
 # Soundtrigger
 PRODUCT_PACKAGES += \
 	android.hardware.soundtrigger@2.3-impl
