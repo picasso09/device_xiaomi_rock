@@ -7,7 +7,8 @@ git clone https://github.com/picasso09/kernel_xiaomi_rock -b lineage-23.2 kernel
 git clone https://github.com/picasso09/proprietary_vendor_xiaomi_rock -b lineage-23.2 vendor/xiaomi/rock
 
 # Hardware
-git clone https://github.com/LineageOS/android_hardware_mediatek -b lineage-23.2 hardware/mediatek
+rm -rf hardware/mediatek
+git clone https://github.com/picasso09/android_hardware_mediatek -b lineage-23.2 hardware/mediatek
 git clone https://github.com/LineageOS/android_hardware_xiaomi -b lineage-23.2 hardware/xiaomi
 rm -rf hardware/lineage/compat
 git clone https://github.com/picasso09/android_hardware_lineage_compat -b lineage-23.2 hardware/lineage/compat
