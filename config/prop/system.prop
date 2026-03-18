@@ -42,6 +42,7 @@ persist.dbg.wfc_avail_ovr=1
 ro.vendor.mtk_omacp_support=1
 ro.vendor.mtk_flv_playback_support=1
 ro.vendor.mtk_telephony_add_on_policy=0
+vendor.mtk_thumbnail_optimization=true
 
 # audio
 ro.camera.sound.forced=0
