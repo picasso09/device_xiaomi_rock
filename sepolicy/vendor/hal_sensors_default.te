@@ -41,3 +41,5 @@ binder_call(hal_sensors_default, cameraserver)
 
 get_prop(hal_sensors_default, camera_config_prop)
 get_prop(hal_sensors_default, vendor_camera_prop)
+get_prop(hal_sensors_default, vendor_mtk_emcamera_prop)
+
