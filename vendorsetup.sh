@@ -14,7 +14,7 @@ rm -rf hardware/lineage/compat
 git clone https://github.com/picasso09/android_hardware_lineage_compat -b lineage-23.2 hardware/lineage/compat
 
 # Sepolicy
-git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr -b lineage-23.2 device/mediatek/sepolicy_vndr
+git clone https://github.com/picasso09/android_device_mediatek_sepolicy_vndr -b lineage-23.2 device/mediatek/sepolicy_vndr
 
 # Common IMS
 git clone https://github.com/MillenniumOSS/android_vendor_mediatek_ims.git -b sixteen-qpr2 vendor/mediatek/ims
