@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_rock.mk
+    $(LOCAL_DIR)/custom_rock.mk
