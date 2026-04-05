@@ -109,6 +109,7 @@ ro.vendor.cidle_fps=30
 debug.cpurend.vsync=false
 debug.hwui.target_cpu_time_percent=30
 debug.hwui.use_hint_manager=true
+debug.sf.enable_adpf_cpu_hint=true
 
 # Surface
 debug.sf.treat_170m_as_sRGB=1
@@ -271,3 +272,11 @@ ro.hardware.consumerir=common
 
 # thermal
 vendor.sys.thermal.data.path=/data/vendor/thermal/
+
+# Perf
+ro.vendor.perf.framepacing.enable=1
+
+# PowerHAL
+vendor.powerhal.interaction.offset=0
+vendor.powerhal.interaction.min=50
+vendor.powerhal.interaction.max=150
