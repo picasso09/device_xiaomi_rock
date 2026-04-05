@@ -19,4 +19,5 @@
 <resources>
     <!-- Default for Settings.Global.DEVICE_NAME $1=MODEL-->
     <string name="def_device_name_simple">Redmi 11 Prime</string>
+    <integer name="def_stay_on_while_plugged_in">0</integer>
 </resources>

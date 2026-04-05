@@ -9,8 +9,6 @@
     <application android:hasCode="false" />
     <overlay
           android:targetPackage="com.android.providers.settings"
-          android:requiredSystemPropertyName="ro.product.model"
-          android:requiredSystemPropertyValue="22071219AI"
           android:isStatic="true"
-          android:priority="1" />
+          android:priority="2" />
 </manifest>
