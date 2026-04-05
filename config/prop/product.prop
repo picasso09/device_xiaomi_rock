@@ -1,14 +1,6 @@
 # LMKD
-ro.lmk.use_psi=true
 ro.lmk.kill_heaviest_task=true
-ro.lmk.kill_timeout_ms=100
-ro.lmk.psi_complete_stall_ms=300
-ro.lmk.psi_partial_stall_ms=200
-ro.lmk.swap_free_low_percentage=10
-ro.lmk.swap_util_max=90
-ro.lmk.thrashing_limit=100
-ro.lmk.thrashing_limit_decay=30
-ro.lmk.filecache_min_kb=300000
+ro.lmk.use_psi=true
 ro.lmk.use_minfree_levels=false
-ro.config.low_ram=false
-ro.lmk.log_stats=false
+ro.lmk.thrashing_limit_decay=50
+ro.lmk.downgrade_pressure=30

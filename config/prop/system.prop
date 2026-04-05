@@ -2,24 +2,9 @@
 ro.infinity.soc=Mediatek Helio G99
 ro.infinity.camera=50MP + 8MP + 2MP
 
-# Charger
-ro.charger.enable_suspend=true
-
-# Blur
-ro.surface_flinger.supports_background_blur=1
-ro.sf.blurs_are_expensive=1
-
 # Hardware Description
 ro.device.chipset=Helio G99 | MT6789V/CD
 ro.device.display_resolution=2408x1080
-
-#RIL
-ro.vendor.radio.features_common=2
-vendor.rild.libpath=mtk-ril.so
-vendor.rild.libargs=-d /dev/ttyC0
-
-# Media
-media.stagefright.thumbnail.prefer_hw_codecs=true
 
 # WiFi
 wifi.interface=wlan0
@@ -41,13 +26,6 @@ ro.vendor.mtk_flv_playback_support=1
 ro.vendor.mtk_telephony_add_on_policy=0
 vendor.mtk_thumbnail_optimization=true
 
-# audio
-ro.camera.sound.forced=0
-ro.audio.silent=0
-
-# Kernel
-ro.kernel.zio=38,108,105,16
-
 # performance
 ro.mtk_perf_simple_start_win=1
 ro.mtk_perf_fast_start_win=1
@@ -55,16 +33,6 @@ ro.mtk_perf_response_time=1
 
 # FileSystem UserSpace
 persist.sys.fuse.passthrough.enable=true
-
-# SurfaceFlinger
-debug.sf.use_phase_offsets_as_durations=1
-debug.sf.late.sf.duration=16500000
-debug.sf.late.app.duration=16500000
-debug.sf.early.sf.duration=15000000
-debug.sf.early.app.duration=15000000
-debug.sf.earlyGl.sf.duration=16250000
-debug.sf.earlyGl.app.duration=16250000
-debug.sf.hwc.min.duration=18000000
 
 # Zygote
 zygote.critical_window.minute=10
