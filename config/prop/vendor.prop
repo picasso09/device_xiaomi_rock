@@ -138,6 +138,7 @@ ro.soc.model=MT6789V/CD
 ro.soc.manufacturer=Mediatek
 
 # Media
+media.c2.hal.selection=aidl
 debug.stagefright.c2inputsurface=-1
 debug.mediatek.appgamepq_compress=1
 debug.mediatek.disp_decompress=1
