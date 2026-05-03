@@ -48,6 +48,7 @@ persist.vendor.sensor.                                  u:object_r:vendor_mtk_se
 # FP
 persist.vendor.sys.fp.uid                               u:object_r:vendor_fp_prop:s0
 persist.vendor.sys.fp.vendor                            u:object_r:vendor_fp_prop:s0
+vendor.fps_hal.restartimes                              u:object_r:vendor_fp_prop:s0
 vendor.sys.fp.vendor                                    u:object_r:vendor_fp_prop:s0
 vendor.panel.color                                      u:object_r:vendor_fp_prop:s0
 vendor.panel.display                                    u:object_r:vendor_fp_prop:s0
