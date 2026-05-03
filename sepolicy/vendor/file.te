@@ -11,6 +11,9 @@ type sysfs_tp_gesture, fs_type, sysfs_type;
 type proc_tp_gesture, fs_type, proc_type;
 type touchfeature_device, dev_type;
 
+# Fingerprint
+type sysfs_fingerprint_file, sysfs_type, fs_type;
+
 # Version Info
 type version_info, fs_type, sysfs_type;
 
