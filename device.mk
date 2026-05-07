@@ -343,6 +343,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     GooglePDFViewer
 
+# Gallery
+PRODUCT_PACKAGES += \
+    GalleryGo
+
 # Properties
 include $(LOCAL_PATH)/config/prop/default.mk
 include $(LOCAL_PATH)/config/prop/vendor_logtag.mk

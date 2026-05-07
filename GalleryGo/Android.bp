@@ -1,0 +1,18 @@
+//
+// Copyright (C) 2025 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+android_app_import {
+        name: "GalleryGo",
+        apk: "GalleryGo.apk",
+        overrides: ["Gallery2", "SnapdragonGallery", "DotGallery", "Glimpse"],
+        preprocessed: true,
+        presigned: true,
+        skip_preprocessed_apk_checks: true,
+        dex_preopt: {
+                enabled: false,
+        },
+        product_specific: true,
+}
