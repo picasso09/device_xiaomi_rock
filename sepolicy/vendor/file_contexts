@@ -9,9 +9,6 @@
 # Lights
 /(vendor|system/vendor)/bin/hw/android\.hardware\.light-service\.xiaomi                                     u:object_r:hal_light_default_exec:s0
 
-# Codec2
-/(vendor|system/vendor)/bin/hw/android\.hardware\.media\.c2-mtk-service                                     u:object_r:mtk_hal_c2_exec:s0
-
 # Thermal
 /sys/devices/virtual/thermal/thermal_message/sconfig                                                        u:object_r:vendor_sysfs_thermalconfig:s0
 
