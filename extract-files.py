@@ -51,6 +51,20 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libvendor.goodix.hardware.biometrics.fingerprint@2.1.so': blob_fixup()
 	    .replace_needed('libhidltransport.so', 'libhidlbase-v32.so'),
 
+    # Media (C2)
+    'vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b': blob_fixup()
+        .replace_needed('libavservices_minijail_vendor.so', 'libavservices_minijail.so')
+        .add_needed('libstagefright_foundation-v33.so'),
+
+    'vendor/etc/init/android.hardware.media.c2@1.2-mediatek.rc': blob_fixup()
+        .regex_replace('1.2-mediatek', '1.2-mediatek-64b')
+        .add_line_if_missing('    interface android.hardware.media.c2@1.0::IComponentStore default')
+        .add_line_if_missing('    interface android.hardware.media.c2@1.1::IComponentStore default')
+        .add_line_if_missing('    interface android.hardware.media.c2@1.2::IComponentStore default'),
+
+    'vendor/etc/vintf/manifest/manifest_media_c2_V1_2_default.xml' : blob_fixup()
+        .regex_replace('1.1', '1.2'),
+
     # MTK HWCOMPOSER
     ('vendor/lib64/hw/hwcomposer.mtk_common.so', 'vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service') : blob_fixup()
         .add_needed('libprocessgroup_shim.so'),
