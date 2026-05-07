@@ -32,7 +32,7 @@ $(call inherit-product-if-exists, vendor/lineage/signed/keys/keys.mk)
 $(call inherit-product, vendor/xiaomi/rock/rock-vendor.mk)
 
 # Dolby
-$(call inherit-product, vendor/sony/dolby/setup.mk)
+$(call inherit-product, hardware/dolby/dolby.mk)
 
 # Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true

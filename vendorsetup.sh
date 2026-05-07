@@ -19,7 +19,7 @@ git clone https://github.com/LineageOS/android_device_mediatek_sepolicy_vndr -b 
 # Common IMS
 git clone https://github.com/MillenniumOSS/android_vendor_mediatek_ims.git -b sixteen-qpr2 vendor/mediatek/ims
 
-# Sony Dolby
-git clone https://github.com/picasso09/vendor_sony_dolby -b sixteen-expressive-v2  vendor/sony/dolby
+# Lunaris Dolby
+git clone https://github.com/Pong-Development/hardware_dolby.git -b 16  hardware/dolby
 
 echo -e "\033[32mDone go cook\033[0m"
