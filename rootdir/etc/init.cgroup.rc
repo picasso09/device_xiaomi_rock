@@ -11,9 +11,9 @@ on charger
     write /sys/class/devfreq/mtk-dvfsrc-devfreq/userspace/set_freq 0
 
 
-on post-fs-data
-    write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor schedhorizon
-    write /sys/devices/system/cpu/cpufreq/policy6/scaling_governor schedhorizon
+#on post-fs-data
+#    write /sys/devices/system/cpu/cpufreq/policy0/scaling_governor schedhorizon
+#    write /sys/devices/system/cpu/cpufreq/policy6/scaling_governor schedhorizon
 
 on init
     write /sys/devices/platform/soc/11270000.ufshci/clkgate_enable 0
