@@ -1127,7 +1127,17 @@ on property:persist.vendor.mediatek.fast_charging.support=*
 
 # FPSGO FBT Game
 on boot
-    insmod /vendor/lib/modules/fpsgo.ko
+    # GPU freq v2 (AxBurstEngine)
+    chown system system /proc/gpufreqv2/fix_target_opp_index
+    chmod 0664 /proc/gpufreqv2/fix_target_opp_index
+    chown system system /proc/gpufreqv2/gpu_working_opp_table
+    chmod 0664 /proc/gpufreqv2/gpu_working_opp_table
+    chown system system /proc/gpufreqv2/gpufreq_status
+    chmod 0664 /proc/gpufreqv2/gpufreq_status
+
+    # DRAM dvfsrc userspace governor (AxBurstEngine)
+    chown system system /sys/devices/platform/soc/10012000.dvfsrc/mtk-dvfsrc-devfreq/devfreq/mtk-dvfsrc-devfreq/userspace/set_freq
+    chmod 0664 /sys/devices/platform/soc/10012000.dvfsrc/mtk-dvfsrc-devfreq/devfreq/mtk-dvfsrc-devfreq/userspace/set_freq    insmod /vendor/lib/modules/fpsgo.ko
 
 # VSIM service (vendor OSI)
 service osi /system/bin/osi

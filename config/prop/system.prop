@@ -1,6 +1,6 @@
-# Infinity Stuff
-ro.infinity.soc=Mediatek Helio G99
-ro.infinity.camera=50MP + 8MP + 2MP
+# Axion Stuff
+persist.sys.perf.scroll_opt = true
+persist.sys.perf.scroll_opt.heavy_app = 1
 
 # Hardware Description
 ro.device.chipset=Helio G99 | MT6789V/CD

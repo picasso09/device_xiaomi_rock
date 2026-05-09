@@ -411,3 +411,6 @@ PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
 # ConsumerIr
 PRODUCT_PACKAGES += \
     android.hardware.ir-service.example
+# Axion Stuff
+PRODUCT_COPY_FILES += \
+    device/xiaomi/rock/config/ax_perf_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_config.xml
