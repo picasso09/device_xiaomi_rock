@@ -1,6 +1,6 @@
 {
   "Nodes": [
-     {
+    {
       "Name": "MemFreq",
       "Path": "/sys/devices/platform/soc/10012000.dvfsrc/mtk-dvfsrc-devfreq/devfreq/mtk-dvfsrc-devfreq/userspace/set_freq",
       "Values": [
@@ -79,7 +79,7 @@
         "44"
       ],
       "ResetOnInit": true,
-      "DefaultIndex": 0,
+      "DefaultIndex": -1,
       "Comments": [
         "[-1] normal",
         "[00*] freq: 1100000, volt: 80000, vsram: 80000, posdiv: 1, vaging: 1875, power: 0",
@@ -252,7 +252,12 @@
     {
       "Name": "GPUBlockBoost",
       "Path": "/sys/kernel/ged/hal/gpu_boost_level",
-      "Values": ["101", "50", "0", "-1"],
+      "Values": [
+        "101",
+        "50",
+        "0",
+        "-1"
+      ],
       "ResetOnInit": true,
       "DefaultIndex": 2
     },
@@ -278,7 +283,7 @@
       "DefaultIndex": 0,
       "ResetOnInit": true
     },
-        {
+    {
       "Name": "TopAppCpuset",
       "Path": "/dev/cpuset/top-app/cpus",
       "Values": [
@@ -414,7 +419,7 @@
       "PowerHint": "EXPENSIVE_RENDERING",
       "Node": "GpuPwrLevel",
       "Duration": 0,
-      "Value": "0"
+      "Value": "-1"
     },
     {
       "PowerHint": "EXPENSIVE_RENDERING",
@@ -452,7 +457,7 @@
       "Duration": 0,
       "Value": "0-3"
     },
-        {
+    {
       "PowerHint": "DISPLAY_INACTIVE",
       "Node": "RestrictedCpuset",
       "Duration": 0,
@@ -474,7 +479,7 @@
       "PowerHint": "DISPLAY_INACTIVE",
       "Node": "GpuPwrLevel",
       "Duration": 0,
-      "Value": "0"
+      "Value": "-1"
     },
     {
       "PowerHint": "FIXED_PERFORMANCE",
@@ -492,7 +497,7 @@
       "PowerHint": "FIXED_PERFORMANCE",
       "Node": "GpuPwrLevel",
       "Duration": 0,
-      "Value": "0"
+      "Value": "-1"
     },
     {
       "PowerHint": "FIXED_PERFORMANCE",
@@ -533,7 +538,7 @@
       "PowerHint": "GAME",
       "Node": "GpuPwrLevel",
       "Duration": 0,
-      "Value": "0"
+      "Value": "-1"
     },
     {
       "PowerHint": "GAME",
