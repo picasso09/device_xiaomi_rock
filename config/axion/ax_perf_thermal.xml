@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<perf-config>
+    <atmc>
+        <cpu_levels>
+            <level id="1" little="0,2000" big="0,2200"/>
+            <level id="2" little="0,1900" big="0,2100"/>
+            <level id="3" little="0,1800" big="0,2000"/>
+            <level id="4" little="0,1700" big="0,1900"/>
+            <level id="5" little="0,1600" big="0,1800"/>
+            <level id="6" little="0,1500" big="0,1700"/>
+            <level id="7" little="0,1450" big="0,1600"/>
+            <level id="8" little="0,1400" big="0,1500"/>
+            <level id="9" little="0,1350" big="0,1400"/>
+            <level id="10" little="0,1300" big="0,1300"/>
+            <level id="11" little="0,1200" big="0,1200"/>
+            <level id="12" little="0,1100" big="0,1100"/>
+            <level id="13" little="0,900" big="0,1000"/>
+            <level id="14" little="0,700" big="0,900"/>
+            <level id="15" little="0,600" big="0,800"/>
+            <level id="16" little="0,500" big="0,725"/>
+        </cpu_levels>
+        <gpu_levels>
+            <level id="1" min="1100" max="1100"/>
+            <level id="2" min="1003" max="1003"/>
+            <level id="3" min="948" max="948"/>
+            <level id="4" min="846" max="846"/>
+            <level id="5" min="756" max="756"/>
+            <level id="6" min="674" max="674"/>
+            <level id="7" min="519" max="519"/>
+            <level id="8" min="390" max="390"/>
+        </gpu_levels>
+        <scenes>
+            <scene name="default_scene">
+                <level id="5">
+                    <action unit="cpu" status="6"/>
+                </level>
+                <level id="8">
+                    <action unit="cpu" status="7"/>
+                </level>
+                <level id="9">
+                    <action unit="cpu" status="8"/>
+                    <action unit="dexopt" status="1"/>
+                </level>
+                <level id="10">
+                    <action unit="cpu" status="9"/>
+                    <action unit="bg_killer" status="3"/>
+                </level>
+                <level id="11">
+                    <action unit="cpu" status="12"/>
+                    <action unit="bg_killer" status="4"/>
+                </level>
+            </scene>
+            <scene name="game">
+                <level id="5">
+                    <action unit="cpu" status="0"/>
+                </level>
+                <level id="9">
+                    <action unit="cpu" status="3"/>
+                </level>
+                <level id="10">
+                    <action unit="cpu" status="6"/>
+                </level>
+                <level id="11">
+                    <action unit="gpu" status="5"/>
+                    <action unit="cpu" status="16"/>
+                </level>
+                <level id="12">
+                    <action unit="gpu" status="7"/>
+                </level>
+            </scene>
+            <scene name="heating_fgs">
+                <level id="5">
+                    <action unit="cpu" status="14"/>
+                </level>
+                <level id="7">
+                    <action unit="cpu" status="15"/>
+                </level>
+                <level id="10">
+                    <action unit="cpu" status="16"/>
+                </level>
+            </scene>
+            <scene name="axcamera_photo_preview">
+                <level id="9">
+                    <action unit="cpu" status="7"/>
+                </level>
+                <level id="10">
+                    <action unit="cpu" status="9"/>
+                </level>
+                <level id="11">
+                    <action unit="cpu" status="13"/>
+                </level>
+            </scene>
+        </scenes>
+        <apps>
+            <app pkgs="com.antutu.ABenchMark,com.andromeda.androbench2,com.primatelabs.geekbench5,com.primatelabs.geekbench6,net.kishonti.gfxbench.v50000.corporate">
+                <level id="5">
+                    <action unit="cpu" status="0"/>
+                </level>
+                <level id="13">
+                    <action unit="cpu" status="13"/>
+                </level>
+                <level id="14">
+                    <action unit="cpu" status="16"/>
+                </level>
+            </app>
+            <app pkgs="com.futuremark.dmandroid.application">
+                <level id="5">
+                    <action unit="cpu" status="0"/>
+                </level>
+                <level id="12">
+                    <action unit="gpu" status="6"/>
+                </level>
+                <level id="14">
+                    <action unit="gpu" status="7"/>
+                </level>
+            </app>
+            <app pkgs="com.instagram.android,com.whatsApp,com.snapchat.android,us.zoom.videomeetings,com.microsoft.teams">
+                <level id="4">
+                    <action unit="cpu" status="8"/>
+                </level>
+                <level id="6">
+                    <action unit="cpu" status="9"/>
+                </level>
+                <level id="7">
+                    <action unit="cpu" status="12"/>
+                </level>
+            </app>
+            <app pkgs="com.google.android.apps.maps,com.waze">
+                <level id="7">
+                    <action unit="cpu" status="8"/>
+                </level>
+                <level id="9">
+                    <action unit="cpu" status="13"/>
+                </level>
+                <level id="10">
+                    <action unit="cpu" status="14"/>
+                </level>
+            </app>
+            <app pkgs="com.HoYoverse.hkrpgoversea,com.miHoYo.Yuanshen,com.miHoYo.GenshinImpact">
+                <level id="5">
+                    <action unit="cpu" status="0"/>
+                </level>
+                <level id="9">
+                    <action unit="cpu" status="4"/>
+                </level>
+                <level id="11">
+                    <action unit="cpu" status="8"/>
+                </level>
+            </app>
+        </apps>
+    </atmc>
+</perf-config>

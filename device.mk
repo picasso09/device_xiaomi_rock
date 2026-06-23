@@ -32,7 +32,7 @@ $(call inherit-product-if-exists, vendor/lineage/signed/keys/keys.mk)
 $(call inherit-product, vendor/xiaomi/rock/rock-vendor.mk)
 
 # Dolby
-$(call inherit-product, hardware/dolby/dolby.mk)
+#$(call inherit-product, hardware/dolby/dolby.mk)
 
 # Dynamic Partition
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
@@ -413,4 +413,9 @@ PRODUCT_PACKAGES += \
     android.hardware.ir-service.example
 # Axion Stuff
 PRODUCT_COPY_FILES += \
-    device/xiaomi/rock/config/ax_perf_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_config.xml
+    device/xiaomi/rock/config/axion/ax_perf_resources.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_resources.xml \
+    device/xiaomi/rock/config/axion/ax_perf_boosts.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_boosts.xml \
+    device/xiaomi/rock/config/axion/ax_perf_thermal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_thermal.xml \
+    device/xiaomi/rock/config/axion/ax_perf_threads.xml:$(TARGET_COPY_OUT_VENDOR)/etc/ax_perf_threads.xml
+
+TARGET_DISABLES_LIBPERF := true

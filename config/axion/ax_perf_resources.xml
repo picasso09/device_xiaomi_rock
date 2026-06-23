@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <resource id="0x0010" name="uclamp_fg_lat" path="/dev/cpuctl/foreground/cpu.uclamp.latency_sensitive" default="0" />
+    <resource id="0x0011" name="uclamp_fg_max" path="/dev/cpuctl/foreground/cpu.uclamp.max" default="100" />
+    <resource id="0x0012" name="uclamp_fg_min" path="/dev/cpuctl/foreground/cpu.uclamp.min" default="0" />
+    <resource id="0x0013" name="uclamp_top_lat" path="/dev/cpuctl/top-app/cpu.uclamp.latency_sensitive" default="0" />
+    <resource id="0x0014" name="uclamp_top_max" path="/dev/cpuctl/top-app/cpu.uclamp.max" default="max" />
+    <resource id="0x0015" name="uclamp_top_min" path="/dev/cpuctl/top-app/cpu.uclamp.min" default="0" />
+
+    <resource id="0x0099" name="cpuset_h_bg_cpus" path="/dev/cpuset/background/cpus" default="0-2" /> 
+    <resource id="0x009a" name="cpuset_ax_fg_cpus" path="/dev/cpuset/foreground/cpus" default="0-6" /> 
+    <resource id="0x009b" name="cpuset_dex2oat_cpus" path="/dev/cpuset/system-background/cpus" default="0-2" /> 
+
+    <resource id="0x0100" name="cpu_little_max" path="/sys/devices/system/cpu/cpufreq/policy0/scaling_max_freq" default="2000000" />
+    <resource id="0x0101" name="cpu_big_max" path="/sys/devices/system/cpu/cpufreq/policy6/scaling_max_freq" default="2200000" />
+
+    <resource id="0x0110" name="cpu_little_min" path="/sys/devices/system/cpu/cpufreq/policy0/scaling_min_freq" default="500000" />
+    <resource id="0x0111" name="cpu_big_min" path="/sys/devices/system/cpu/cpufreq/policy6/scaling_min_freq" default="725000" />
+    
+    <resource id="0x0300" name="gpu_max_freq" path="/sys/class/devfreq/13000000.mali/max_freq" default="1100000000" />
+    <resource id="0x0301" name="gpu_min_freq" path="/sys/class/kgsl/kgsl-3d0/devfreq/min_freq" default="390000000" />
+</resources>
