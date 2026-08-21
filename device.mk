@@ -319,6 +319,7 @@ PRODUCT_PACKAGES += \
     init.connectivity.rc \
     init.modem.rc \
     init.mt6789.usb.rc \
+    init.mt6789.uvc.rc \
     init.sensor_2_0.rc \
     init.project.rc \
     init.insmod.sh \
@@ -400,6 +401,10 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PACKAGES_DEBUG += \
     update_engine_client
+
+# Enable UVC support / WebCam
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.usb.uvc.enabled=true
 
 # Speed profile services and wifi-service to reduce RAM and storage
 PRODUCT_SYSTEM_SERVER_COMPILER_FILTER := speed-profile
