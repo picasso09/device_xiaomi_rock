@@ -1,0 +1,9 @@
+# zram writeback backing file (/data/per_boot/zram_swap)
+type zram_wb_file, file_type, data_file_type, core_data_file_type;
+
+# let init create the file with its own label
+type_transition init system_data_file:file zram_wb_file "zram_swap";
+allow init zram_wb_file:file { create_file_perms ioctl };
+
+# let the loop kernel thread write to it
+allow kernel zram_wb_file:file { read write };

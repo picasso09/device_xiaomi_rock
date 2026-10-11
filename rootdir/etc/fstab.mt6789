@@ -90,6 +90,3 @@ product                             /product                ext4    ro      wait
 /devices/platform/soc/11240000.mmc* auto                    auto            defaults voldmanaged=sdcard1:auto,encryptable=userdata
 /devices/platform/soc/mt_usb*       auto                    vfat            defaults voldmanaged=usbotg:auto
 
-
-# ZRAM
-/dev/block/zram0                    none                    swap            defaults zramsize=95%

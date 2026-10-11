@@ -36,3 +36,6 @@ type vendor_sia_mode, fs_type, sysfs_type;
 
 # Thermal
 type vendor_sysfs_thermalconfig, sysfs_type, fs_type;
+
+# Zram
+type zram_fstab_file, file_type;

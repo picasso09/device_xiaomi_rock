@@ -11,3 +11,8 @@ ro.lmk.critical=0
 ro.lmk.critical_upgrade=false
 ro.lmk.upgrade_pressure=100
 ro.lmk.downgrade_pressure=100
+# Zram writeback
+ro.zram.mark_idle_delay_mins=60
+ro.zram.first_wb_delay_mins=180
+ro.zram.periodic_wb_delay_hours=24
+persist.vendor.zram.bd_size=2048M

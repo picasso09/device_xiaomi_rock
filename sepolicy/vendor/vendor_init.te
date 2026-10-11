@@ -28,5 +28,7 @@ rw_dir_file(vendor_init, sysfs_tp_gesture)
 rw_dir_file(vendor_init, proc_tp_gesture)
 rw_dir_file(vendor_init, proc)
 
-
-
+# Zram
+allow vendor_init device:dir { search write add_name };
+allow vendor_init zram_fstab_file:file create_file_perms;
+type_transition vendor_init device:file zram_fstab_file "fstab.enableswap";

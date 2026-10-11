@@ -46,3 +46,6 @@
 
 # NFC
 /dev/ttyACM1                                                                                                u:object_r:nfc_device:s0
+
+# Zram
+/dev/fstab\.enableswap    u:object_r:zram_fstab_file:s0
