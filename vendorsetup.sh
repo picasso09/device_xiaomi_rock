@@ -5,6 +5,11 @@ git clone https://github.com/picasso09/kernel_xiaomi_rock -b lineage-23.2 kernel
 
 # Vendor
 git clone https://github.com/picasso09/proprietary_vendor_xiaomi_rock -b lineage-23.2 vendor/xiaomi/rock
+# Widevine blobs need protobuf 3.9.1 compat. Infinity excludes the original from bp scanning,
+# so ship a copy inside the vendor tree (safe to run repeatedly)
+if [ -d prebuilts/misc/protobuf_vendorcompat ] && [ ! -d vendor/xiaomi/rock/protobuf_vendorcompat ]; then
+    cp -r prebuilts/misc/protobuf_vendorcompat vendor/xiaomi/rock/protobuf_vendorcompat
+fi
 
 # Hardware
 rm -rf hardware/mediatek
