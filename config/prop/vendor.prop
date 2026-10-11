@@ -36,6 +36,29 @@ ro.vendor.camera.isp.support.colorspace=0
 ro.vendor.camera3.zsl.default=260
 vendor.mtk.camera.app.fd.video=1
 
+# Cpu
+vendor.debug.sf.cpupolicy.base_min_bl=310
+vendor.debug.sf.cpupolicy.hw_comp_suspend=1
+vendor.debug.sf.cpupolicy.hw_hfr_suspend=1
+vendor.debug.sf.cpupolicy.lowbound_uclamp_min=165
+vendor.debug.sf.cpupolicy.max_correct_offset=150
+vendor.debug.sf.cpupolicy.min_120=165
+vendor.debug.sf.cpupolicy.min_30_mml=165
+vendor.debug.sf.cpupolicy.min_60=130
+vendor.debug.sf.cpupolicy.min_60_mml=165
+vendor.debug.sf.cpupolicy.min_90=165
+vendor.debug.sf.cpupolicy.min_boost=165
+vendor.debug.sf.cpupolicy.power_down_120=300000
+vendor.debug.sf.cpupolicy.power_up_120=-300000
+vendor.debug.sf.cpupolicy.re_hfr=0
+vendor.debug.sf.cpupolicy.rt_bl_min=300
+vendor.debug.sf.cpupolicy.sf_cpu_thres=290
+vendor.debug.sf.cpupolicy.upbound_uclamp_max_ll=262
+vendor.debug.sf.cpupolicy.upbound_uclamp_min=350
+vendor.debug.sf.cpupolicy.upbound_uclamp_ret_sys=210
+vendor.debug.sf.cpupolicy.xgf_min=25
+vendor.debug.sf.cpupolicy=0
+
 # IMS
 persist.vendor.mtk.volte.enable=1
 persist.vendor.mtk_ct_volte_support=3
@@ -107,12 +130,6 @@ debug.sf.predict_hwc_composition_strategy=0
 debug.sf.enable_transaction_tracing=false
 debug.sf.use_phase_offsets_as_durations=1
 
-# HWUI
-debug.cpurend.vsync=false
-debug.hwui.target_cpu_time_percent=60
-debug.hwui.use_hint_manager=true
-debug.sf.enable_adpf_cpu_hint=true
-
 # Surface
 debug.sf.treat_170m_as_sRGB=1
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3
@@ -125,6 +142,13 @@ ro.surface_flinger.set_idle_timer_ms=1000
 ro.surface_flinger.uclamp.min=150
 ro.surface_flinger.has_HDR_display=false
 ro.surface_flinger.game_default_frame_rate_override=90
+debug.sf.high_fps.early.app.duration=11111110
+debug.sf.high_fps.early.sf.duration=16666665
+debug.sf.high_fps.earlyGl.app.duration=11111110
+debug.sf.high_fps.earlyGl.sf.duration=16666665
+debug.sf.high_fps.hwc.min.duration=17000000
+debug.sf.high_fps.late.app.duration=11111110
+debug.sf.high_fps.late.sf.duration=16666665
 
 # DRM
 drm.service.enabled=true
