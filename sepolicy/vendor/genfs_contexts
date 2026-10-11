@@ -14,7 +14,6 @@ genfscon sysfs /kernel/clk_buf/                                                 
 
 # USB
 genfscon sysfs /devices/platform/extcon_usb1                                                                                u:object_r:sysfs_extcon:s0
-genfscon sysfs /devices/platform/extcon_usb                                                                                 u:object_r:sysfs_extcon:s0
 
 # Touch Gesture
 genfscon sysfs /devices/platform/soc/1100a000.spi0/spi_master/spi0/spi0.1/fts_gesture_mode                                  u:object_r:sysfs_tp_gesture:s0
