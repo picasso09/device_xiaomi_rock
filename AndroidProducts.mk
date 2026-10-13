@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/infinity_rock.mk
+    $(LOCAL_DIR)/voltage_rock.mk

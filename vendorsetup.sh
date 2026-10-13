@@ -27,4 +27,8 @@ git clone https://github.com/MillenniumOSS/android_vendor_mediatek_ims.git -b si
 # Lunaris Dolby
 git clone https://github.com/Pong-Development/hardware_dolby.git -b 16  hardware/dolby
 
+# Fix lineage paths in mediatek sepolicy (idempotent)
+f="$ANDROID_BUILD_TOP/device/mediatek/sepolicy_vndr/SEPolicy.mk"
+[ -f "$f" ] && sed -i 's|device/lineage/sepolicy|device/voltage/sepolicy|g' "$f"
+
 echo -e "\033[32mDone go cook\033[0m"

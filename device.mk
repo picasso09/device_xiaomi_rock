@@ -282,7 +282,7 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
-    hardware/lineage/interfaces/power-libperfmgr \
+    hardware/voltage/interfaces/power-libperfmgr \
     hardware/mediatek/libmtkperf_client \
     hardware/mediatek/wlan/wifi_hal \
     hardware/google/interfaces \
