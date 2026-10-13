@@ -18,5 +18,5 @@
     <resource id="0x0111" name="cpu_big_min" path="/sys/devices/system/cpu/cpufreq/policy6/scaling_min_freq" default="725000" />
     
     <resource id="0x0300" name="gpu_max_freq" path="/sys/class/devfreq/13000000.mali/max_freq" default="1100000000" />
-    <resource id="0x0301" name="gpu_min_freq" path="/sys/class/kgsl/kgsl-3d0/devfreq/min_freq" default="390000000" />
+    <resource id="0x0301" name="gpu_min_freq" path="/sys/class/devfreq/13000000.mali/min_freq" default="390000000" />
 </resources>

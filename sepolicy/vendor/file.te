@@ -1,3 +1,6 @@
+# AxionOS custom sysfs types
+type vendor_sysfs_devfreq, fs_type, sysfs_type;
+
 # Firmware
 type preloader_raw_block_device, dev_type;
 

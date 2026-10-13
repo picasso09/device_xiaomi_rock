@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kernel-manager>
+    <!-- CPU clusters -->
+    <cpu
+        id="little"
+        group="Little Cluster"
+        minId="axion_min_freq"
+        maxId="axion_max_freq"
+        governorId="little_cpu_governor"
+        node="/sys/devices/system/cpu/cpufreq/policy0" />
+
+    <cpu
+        id="big"
+        group="Big Cluster"
+        minId="axion_min_freq_big"
+        maxId="axion_max_freq_big"
+        governorId="big_cpu_governor"
+        node="/sys/devices/system/cpu/cpufreq/policy6" />
+
+<!-- GPU (ARM Mali devfreq MT6789) -->
+<gpu
+  node="/sys/class/devfreq/13000000.mali"
+  currentNode="/sys/class/devfreq/13000000.mali/cur_freq"
+  usageNode="/sys/kernel/ged/hal/gpu_utilization"
+  frequencyMultiplier="1000"
+  values="390000,415000,441000,467000,493000,519000,545000,570000,596000,622000,648000,674000,700000,711000,722000,733000,745000,756000,767000,778000,790000,801000,812000,823000,835000,846000,857000,868000,880000,893000,907000,921000,935000,948000,962000,976000,990000,1003000,1017000,1031000,1045000,1058000,1072000,1086000,1100000" />
+</kernel-manager>
