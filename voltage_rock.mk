@@ -16,7 +16,8 @@ $(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
 # Bootanimation Res
 TARGET_BOOT_ANIMATION_RES := 1080
-
+# Whether Including Google Apps
+WITH_GAPPS := true
 # Flags
 TARGET_SUPPORTS_QUICK_TAP := true
 TARGET_FACE_UNLOCK_SUPPORTED := true
