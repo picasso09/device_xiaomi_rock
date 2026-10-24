@@ -46,3 +46,6 @@ persist.sys.fuse.passthrough.enable=true
 # Zygote
 zygote.critical_window.minute=10
 
+# Audio
+ro.config.vc_call_vol_steps=11
+ro.config.vc_call_vol_default=8
