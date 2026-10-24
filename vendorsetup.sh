@@ -4,7 +4,7 @@ echo -e "\033[1;33mCloning Dependencies\033[0m"
 git clone https://github.com/Asmodeus7999/kernel_xiaomi_rock -b lineage-23.2 kernel/xiaomi/rock
 
 # Vendor
-git clone https://github.com/picasso09/proprietary_vendor_xiaomi_rock -b lineage-23.2 vendor/xiaomi/rock
+git clone https://github.com/Asmodeus7999/proprietary_vendor_xiaomi_rock -b lineage-23.2 vendor/xiaomi/rock
 # Widevine blobs need protobuf 3.9.1 compat. Infinity excludes the original from bp scanning,
 # so ship a copy inside the vendor tree (safe to run repeatedly)
 if [ -d prebuilts/misc/protobuf_vendorcompat ] && [ ! -d vendor/xiaomi/rock/protobuf_vendorcompat ]; then
