@@ -97,4 +97,12 @@
     <integer translatable="false" name="config_wifi_framework_wifi_score_bad_rssi_threshold_5GHz">-90</integer>
     <!-- Integer threshold, do not connect to APs with RSSI lower than the entry threshold -->
     <integer translatable="false" name="config_wifi_framework_wifi_score_entry_rssi_threshold_5GHz">-85</integer>
+
+    <!-- Background scan interval while connected. Default AOSP is 20s which causes
+         off-channel radio excursions and latency spikes. 300s suppresses these while
+         still refreshing the neighbor list every 5 minutes.
+         Note: LLM 0x810 also sets scan=1 (suppress scans) when active. -->
+    <integer-array name="config_wifiConnectedScanIntervalScheduleSec" translatable="false">
+        <item>300</item>
+    </integer-array>
 </resources>

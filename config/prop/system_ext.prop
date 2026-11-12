@@ -1,6 +1,6 @@
 # Bluetooth
-ro.bluetooth.a2dp_offload.supported=false
-persist.bluetooth.a2dp_offload.disabled=true
+ro.bluetooth.a2dp_offload.supported=true
+persist.bluetooth.a2dp_offload.disabled=false
 persist.sys.bt.unsupport.features=00000000
 persist.sys.bt.unsupport.states=00000000
 persist.sys.bt.unsupport.stdfeatures=000001
