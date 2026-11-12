@@ -1,5 +1,5 @@
 # Power
-/(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.pixel-libperfmgr                           u:object_r:hal_power_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.power-service\.(lineage|pixel)-libperfmgr                 u:object_r:hal_power_default_exec:s0
 
 # Graphics
 /sys/devices/virtual/mi_display/disp_feature/disp-DSI-+[0-1](/.*)?                                          u:object_r:vendor_sysfs_displayfeature:s0
@@ -7,7 +7,7 @@
 /sys/devices/platform/soc/14013000.dsi/14013000.dsi.1/panel_event                                           u:object_r:sysfs_graphics:s0
 
 # Lights
-/(vendor|system/vendor)/bin/hw/android\.hardware\.light-service\.xiaomi                                     u:object_r:hal_light_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.light-service\.(lineage|xiaomi)                           u:object_r:hal_light_default_exec:s0
 
 # Thermal
 /sys/devices/virtual/thermal/thermal_message/sconfig                                                        u:object_r:vendor_sysfs_thermalconfig:s0
