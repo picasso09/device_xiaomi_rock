@@ -39,6 +39,7 @@ debug.sf.hwc.min.duration=18000000
 ro.mtk_perf_simple_start_win=1
 ro.mtk_perf_fast_start_win=1
 ro.mtk_perf_response_time=1
+ro.sys.fw.bg_apps_limit=32
 
 # FileSystem UserSpace
 persist.sys.fuse.passthrough.enable=true
