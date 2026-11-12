@@ -31,5 +31,48 @@ git clone https://github.com/Pong-Development/hardware_dolby.git -b 16  hardware
 top="$(gettop)"
 f="$top/device/mediatek/sepolicy_vndr/SEPolicy.mk"
 [ -f "$f" ] && sed -i 's|device/lineage/sepolicy|device/voltage/sepolicy|g' "$f"
+# Apply patches
+echo -e "\033[1;33mApplying patches\033[0m"
+
+# Always resolve paths relative to the AOSP root, not wherever the shell is.
+# $ANDROID_BUILD_TOP is set by envsetup.sh; fall back to the script's own location
+# (device/xiaomi/rock) going up 3 levels if the var isn't set yet.
+_AOSP_ROOT="${ANDROID_BUILD_TOP:-$(cd "$(dirname "${BASH_SOURCE[0]}")/../../.." && pwd)}"
+PATCHES_DIR="$_AOSP_ROOT/device/xiaomi/rock/patches"
+echo -e "  \033[1;34mAOSP root resolved to:\033[0m $_AOSP_ROOT"
+apply_patch() {
+    local repo_rel="$1"          # e.g. frameworks/av  (relative to AOSP root)
+    local patch="$2"             # absolute path to .patch file
+    local repo="$_AOSP_ROOT/$repo_rel"
+
+    if [ ! -d "$repo" ]; then
+        echo -e "  \033[31mMissing repo:\033[0m $repo_rel — skipping $(basename "$patch")"
+        return
+    fi
+    if [ ! -f "$patch" ]; then
+        echo -e "  \033[31mMissing patch file:\033[0m $patch"
+        return
+    fi
+
+    # --check with --reverse tells us if the patch is already applied
+    if git -C "$repo" apply --check --reverse "$patch" &>/dev/null; then
+        echo -e "  \033[33mAlready applied:\033[0m $(basename "$patch")"
+        return
+    fi
+
+    if git -C "$repo" apply --check "$patch" &>/dev/null; then
+        git -C "$repo" apply "$patch"
+        echo -e "  \033[32mApplied:\033[0m $(basename "$patch")"
+    else
+        echo -e "  \033[31mFailed (conflicts?):\033[0m $(basename "$patch")"
+        git -C "$repo" apply "$patch" 2>&1 | sed 's/^/    /'
+    fi
+}
+
+apply_patch frameworks/av \
+    "$PATCHES_DIR/0001-APM-Remove-A2DP-audio-ports-from-the-primary-HAL.patch"
+
+apply_patch packages/modules/Bluetooth \
+    "$PATCHES_DIR/0002-Don-t-abort-when-failing-to-get-real-time-priority.patch"
 
 echo -e "\033[32mDone go cook\033[0m"
