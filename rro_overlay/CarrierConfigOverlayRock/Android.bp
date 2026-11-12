@@ -6,6 +6,7 @@
 
 runtime_resource_overlay {
     name: "CarrierConfigOverlayRock",
+    aaptflags: ["--keep-raw-values"],
     certificate: "platform",
     vendor: true,
 }
