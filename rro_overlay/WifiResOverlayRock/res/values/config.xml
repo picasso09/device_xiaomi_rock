@@ -7,18 +7,6 @@
     <!-- Boolean indicating performing a partial initial scan is enabled -->
     <bool name="config_wifiEnablePartialInitialScan" translatable="false">true</bool>
 
-    <!-- Wifi driver supports IEEE80211AX for softap -->
-    <bool name="config_wifiSoftapIeee80211axSupported" translatable="false">true</bool>
-
-    <!-- Wifi driver supports IEEE80211AX single user beamformer for softap -->
-    <bool name="config_wifiSoftapHeSuBeamformerSupported" translatable="false">true</bool>
-
-    <!-- Wifi driver supports IEEE80211AX single user beamformee for softap -->
-    <bool name="config_wifiSoftapHeSuBeamformeeSupported" translatable="false">true</bool>
-
-    <!-- Wifi driver supports IEEE80211AX multiple user beamformer for softap -->
-    <bool name="config_wifiSoftapHeMuBeamformerSupported" translatable="false">true</bool>
-
     <!-- Indicates that bridged AP mode is supported on this device -->
     <bool name="config_wifiBridgedSoftApSupported" translatable="false">false</bool>
 
@@ -62,11 +50,6 @@
          range string like '36-48,149'. -->
     <string name="config_wifiSoftap5gChannelList" translatable="false" />
 
-    <!-- List of allowed channels in 6GHz band for softap. If the device doesn't want to restrict
-         channels this should be empty. Values is a comma separated channel string and/or channel
-         range string like '36-48,149'. -->
-    <string name="config_wifiSoftap6gChannelList" translatable="false" />
-
     <!-- Boolean indicating that only configurations that have the same pre-shared key will be linked -->
     <bool name="config_wifi_only_link_same_credential_configurations" translatable="false">false</bool>
 
@@ -78,9 +61,6 @@
 
     <!-- Wifi driver supports IEEE80211AC for softap -->
     <bool name="config_wifi_softap_ieee80211ac_supported" translatable="false">true</bool>
-
-    <!-- Wifi driver supports 6GHz band for softap when chip support 6GHz -->
-    <bool name="config_wifiSoftap6ghzSupported" translatable="false">true</bool>
 
     <!-- Indicates that connected MAC randomization is supported on this device -->
     <bool name="config_wifi_connected_mac_randomization_supported" translatable="false">true</bool>
